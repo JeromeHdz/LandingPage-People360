@@ -30,7 +30,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Roadmaps People 360"
+        pretitle="People 360 Roadmaps"
         title={fr.LandingPage.catchPhrase2}
         roadmaps
       ></SectionTitle>
