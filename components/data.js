@@ -7,8 +7,39 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
+import { TbMoodSick } from "react-icons/tb";
+import { FcReading } from "react-icons/fc";
+import { LuBaby } from "react-icons/lu";
+
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
+
+const roadmaps = [
+  {
+    title: "Burn-Out",
+    icon: <TbMoodSick />,
+  },
+  {
+    title: "Départ à la retraite",
+    icon: <FcReading />,
+  },
+  {
+    title: "Parentalité",
+    icon: <LuBaby />,
+  },
+  {
+    title: "Burn-Out",
+    icon: <TbMoodSick />,
+  },
+  {
+    title: "Départ à la retraite",
+    icon: <FcReading />,
+  },
+  {
+    title: "Parentalité",
+    icon: <LuBaby />,
+  },
+];
 
 const benefitOne = {
   title: "Highlight your benefits",
@@ -56,5 +87,4 @@ const benefitTwo = {
   ],
 };
 
-
-export {benefitOne, benefitTwo};
+export { benefitOne, benefitTwo, roadmaps };

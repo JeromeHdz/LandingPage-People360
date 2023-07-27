@@ -2,8 +2,9 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
+import RoadmapsButtons from "../components/roadmapsButtons";
 
-import { benefitOne, benefitTwo } from "../components/data";
+import { benefitOne, benefitTwo, roadmaps } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
@@ -11,6 +12,8 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+
+import fr from "../locales/fr";
 
 const Home = () => {
   return (
@@ -27,13 +30,11 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page"
-      >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
-      </SectionTitle>
+        pretitle="Roadmaps People 360"
+        title={fr.LandingPage.catchPhrase2}
+        roadmaps
+      ></SectionTitle>
+      <RoadmapsButtons data={roadmaps} />
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
