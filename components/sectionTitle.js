@@ -4,7 +4,7 @@ import Container from "./container";
 const SectionTitle = (props) => {
   return (
     <Container
-      className={`flex w-full flex-col mt-4 pb-0 ${
+      className={`flex w-full flex-col my-16 pb-0 ${
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}
     >

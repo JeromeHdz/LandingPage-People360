@@ -39,7 +39,7 @@ const Home = () => {
       <Hero />
 
       {/* FEATURES SECTION */}
-      <Container className="flex w-full py-10 flex-col space-y-8 items-center justify-center text-left ">
+      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-left ">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={fr.LandingPage.featuresSection.preTitle}
@@ -51,7 +51,7 @@ const Home = () => {
       </Container>
 
       {/* ROADMAPS SECTION */}
-      <Container className="flex w-full py-10 flex-col space-y-8 items-center justify-center text-center ">
+      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={fr.LandingPage.roadmapSection.preTitle}
@@ -64,11 +64,11 @@ const Home = () => {
         <p className="max-w-4xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
           {fr.LandingPage.roadmapSection.subtitle2}
         </p>
-        <Cta />
+        <Cta title={fr.Global.cta} />
       </Container>
 
       {/* STAT SECTION */}
-      <Container className="flex w-full py-10 flex-col space-y-8 items-center justify-center text-center ">
+      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={fr.LandingPage.statSection.preTitle}
@@ -101,6 +101,7 @@ const Home = () => {
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq /> */}
+
       {/* CTA FOOTER SECTION */}
       <CtaFooter />
       <Footer />

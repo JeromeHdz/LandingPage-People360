@@ -55,6 +55,25 @@ const fr = {
     benefit1NumberInfo: "31%",
     benefit1Info: "d'efficacité au travail pour les collaborateurs épanouis.",
   },
+  BookDemo: {
+    hero: {
+      catchPhrase:
+        "Réservez une démo de notre logiciel d'accompagnement de vos collaborateur ! 🚀",
+      tagline:
+        "Offrez une expérience impactante de l'onboarding à l'offboarding et fidélisez vos employés.",
+    },
+  },
+  Solution360: {
+    heroSection: {
+      title: "Une plateforme RH ...",
+      subTitle: "La solution 360 qui ...",
+    },
+    featureSection: {
+      preTitle: "Une IA pour vos besoins",
+      title: "Accompagner Individuellement",
+      subtitle: "L'IA au service du parcours...",
+    },
+  },
 };
 
 export default fr;

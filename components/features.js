@@ -1,5 +1,6 @@
 import React from "react";
 import { featuresList } from "../components/data";
+import { IconContext } from "react-icons";
 
 function features() {
   return (
@@ -12,7 +13,15 @@ function features() {
           >
             <div>
               <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-                {feature.icon}
+                <IconContext.Provider
+                  value={{
+                    color: "#4F46E5",
+                    size: "2em",
+                    className: "global-class-name",
+                  }}
+                >
+                  {feature.icon}
+                </IconContext.Provider>
               </div>
               <h6 className="mb-2 font-semibold leading-5">{feature.title}</h6>
               <p className="mb-3 text-sm text-gray-900">

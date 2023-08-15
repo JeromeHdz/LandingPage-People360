@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import Cta from "../components/cta";
+
 import fr from "../locales/fr";
 
 const Benefits = (props) => {
@@ -52,6 +54,9 @@ const Benefits = (props) => {
                 </Benefit>
               ))}
             </div>
+          </div>
+          <div className="flex flex-col w-full mt-8">
+            <Cta title={data.ctaTitle} />
           </div>
         </div>
       </Container>

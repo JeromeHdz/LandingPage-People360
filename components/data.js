@@ -7,13 +7,15 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import { MdOutlineSick, MdElderly } from "react-icons/md";
-import { LuBaby } from "react-icons/lu";
+import { AiOutlineAudit } from "react-icons/ai";
+import { MdOutlineSick, MdElderly, MdQueryStats } from "react-icons/md";
+import { LuBaby, LuHeartHandshake } from "react-icons/lu";
 import { GiUpgrade, GiCycle, GiBoatFishing } from "react-icons/gi";
 import { FaPlaneDeparture, FaPlaneArrival, FaTasks } from "react-icons/fa";
 import { BsFillBandaidFill } from "react-icons/bs";
 import { PiLinkBreakBold } from "react-icons/pi";
 import { BiHandicap } from "react-icons/bi";
+import { TbSchool } from "react-icons/tb";
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
@@ -75,6 +77,7 @@ const benefitOne = {
   desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
   image: benefitOneImg,
   tags: ["Modulable", "Dynamique", "Agile"],
+  ctaTitle: "Envie de tester l'une de nos ...",
   bullets: [
     {
       title: "Understand your customers",
@@ -99,6 +102,7 @@ const benefitTwo = {
   desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
   image: benefitTwoImg,
   tags: ["Modulable", "Dynamique", "Agile"],
+  ctaTitle: "Pret pour une demo ...",
   bullets: [
     {
       title: "Mobile Responsive Template",
@@ -120,84 +124,28 @@ const benefitTwo = {
 
 const featuresList = [
   {
-    icon: (
-      <svg
-        className="w-12 h-12 text-deep-purple-accent-400"
-        stroke="currentColor"
-        viewBox="0 0 52 52"
-      >
-        <polygon
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-          points="29 13 14 29 25 29 23 39 38 23 27 23"
-        />
-      </svg>
-    ),
+    icon: <AiOutlineAudit />,
     title: "Faites le bilan",
     description:
       "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear.",
     link: "/",
   },
   {
-    icon: (
-      <svg
-        className="w-12 h-12 text-deep-purple-accent-400"
-        stroke="currentColor"
-        viewBox="0 0 52 52"
-      >
-        <polygon
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-          points="29 13 14 29 25 29 23 39 38 23 27 23"
-        />
-      </svg>
-    ),
+    icon: <LuHeartHandshake />,
     title: "Accompagner individuellement",
     description:
       "Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea.",
     link: "/",
   },
   {
-    icon: (
-      <svg
-        className="w-12 h-12 text-deep-purple-accent-400"
-        stroke="currentColor"
-        viewBox="0 0 52 52"
-      >
-        <polygon
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-          points="29 13 14 29 25 29 23 39 38 23 27 23"
-        />
-      </svg>
-    ),
+    icon: <TbSchool />,
     title: "Former Collectivement",
     description:
       "A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.",
     link: "/",
   },
   {
-    icon: (
-      <svg
-        className="w-12 h-12 text-deep-purple-accent-400"
-        stroke="currentColor"
-        viewBox="0 0 52 52"
-      >
-        <polygon
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          fill="none"
-          points="29 13 14 29 25 29 23 39 38 23 27 23"
-        />
-      </svg>
-    ),
+    icon: <MdQueryStats />,
     title: "Mesurer votre impact",
     description:
       "Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.",
