@@ -7,44 +7,74 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import { TbMoodSick } from "react-icons/tb";
-import { FcReading } from "react-icons/fc";
+import { MdOutlineSick, MdElderly } from "react-icons/md";
 import { LuBaby } from "react-icons/lu";
+import { GiUpgrade, GiCycle, GiBoatFishing } from "react-icons/gi";
+import { FaPlaneDeparture, FaPlaneArrival, FaTasks } from "react-icons/fa";
+import { BsFillBandaidFill } from "react-icons/bs";
+import { PiLinkBreakBold } from "react-icons/pi";
+import { BiHandicap } from "react-icons/bi";
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const roadmaps = [
   {
-    title: "Burn-Out",
-    icon: <TbMoodSick />,
-  },
-  {
-    title: "Départ à la retraite",
-    icon: <FcReading />,
-  },
-  {
     title: "Parentalité",
     icon: <LuBaby />,
   },
   {
-    title: "Burn-Out",
-    icon: <TbMoodSick />,
+    title: "Promotion",
+    icon: <GiUpgrade />,
   },
   {
-    title: "Départ à la retraite",
-    icon: <FcReading />,
+    title: "Expatriation",
+    icon: <FaPlaneDeparture />,
   },
   {
-    title: "Parentalité",
-    icon: <LuBaby />,
+    title: "Aidant",
+    icon: <BsFillBandaidFill />,
+  },
+  {
+    title: "Maladie",
+    icon: <MdOutlineSick />,
+  },
+  {
+    title: "Management",
+    icon: <FaTasks />,
+  },
+  {
+    title: "Séparation",
+    icon: <PiLinkBreakBold />,
+  },
+  {
+    title: "Impatriation",
+    icon: <FaPlaneArrival />,
+  },
+  {
+    title: "Senior",
+    icon: <MdElderly />,
+  },
+  {
+    title: "Handicap",
+    icon: <BiHandicap />,
+  },
+  {
+    title: "Re-Onboarding",
+    icon: <GiCycle />,
+  },
+  {
+    title: "Retraite",
+    icon: <GiBoatFishing />,
   },
 ];
 
 const benefitOne = {
-  title: "Highlight your benefits",
+  title:
+    "Élaborez des roadmaps personnalisés pour une expérience collaborateur optimale.",
   desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
   image: benefitOneImg,
+  tags: ["Modulable", "Dynamique", "Agile"],
   bullets: [
     {
       title: "Understand your customers",
@@ -68,6 +98,7 @@ const benefitTwo = {
   title: "Offer more benefits here",
   desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
   image: benefitTwoImg,
+  tags: ["Modulable", "Dynamique", "Agile"],
   bullets: [
     {
       title: "Mobile Responsive Template",

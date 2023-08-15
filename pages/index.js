@@ -3,15 +3,18 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 import RoadmapsButtons from "../components/roadmapsButtons";
+import Container from "../components/container";
 
 import { benefitOne, benefitTwo, roadmaps } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
+import CtaFooter from "../components/ctaFooter";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import Stat from "../components/stat";
 
 import fr from "../locales/fr";
 
@@ -19,22 +22,50 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>
+          People 360 - Une expérience sur-mesure et captivante pour vos
+          collaborateurs.
+        </title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
       <Hero />
-      <SectionTitle
-        pretitle="People 360 Roadmaps"
-        title={fr.LandingPage.catchPhrase2}
-        roadmaps
-      ></SectionTitle>
-      <RoadmapsButtons data={roadmaps} />
+
+      {/* ROADMAPS SECTION */}
+      <Container className="flex w-full py-10 flex-col space-y-8 items-center justify-center text-center ">
+        <SectionTitle
+          className="roadmapSection py-0"
+          pretitle={fr.LandingPage.roadmapSection.preTitle}
+          title={fr.LandingPage.roadmapSection.catchPhrase2}
+          roadmaps
+        >
+          {fr.LandingPage.roadmapSection.subtitle}
+        </SectionTitle>
+
+        <RoadmapsButtons data={roadmaps} />
+        <p className="max-w-4xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+          {fr.LandingPage.roadmapSection.subtitle2}
+        </p>
+
+        <Cta />
+      </Container>
+
+      {/* STAT SECTION */}
+      <Container className="flex w-full py-10 flex-col space-y-8 items-center justify-center text-center ">
+        <SectionTitle
+          className="roadmapSection py-0"
+          pretitle={fr.LandingPage.statSection.preTitle}
+          title={fr.LandingPage.statSection.title}
+          roadmaps
+        ></SectionTitle>
+        <Stat />
+      </Container>
+
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
@@ -59,7 +90,7 @@ const Home = () => {
         conversion rate as well as support or chat requests.
       </SectionTitle>
       <Faq />
-      <Cta />
+      <CtaFooter />
       <Footer />
       <PopupWidget />
     </>

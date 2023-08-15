@@ -1,4 +1,8 @@
-<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="44" height="44" rx="6" fill="#4F46E5"/>
-<path d="M31.3662 34H25.7427L17.4282 19.4014V34H11.7725V10.5391H17.4282L25.7266 25.1377V10.5391H31.3662V34Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M44,6C44,2.689 41.311,0 38,0L6,0C2.689,0 0,2.689 0,6L0,38C0,41.311 2.689,44 6,44L38,44C41.311,44 44,41.311 44,38L44,6Z" style="fill:rgb(79,70,229);"/>
+    <g transform="matrix(1,0,0,1,-0.840449,0.168257)">
+        <text x="11.773px" y="34.168px" style="font-family:'SegoeUI-Bold', 'Segoe UI', sans-serif;font-weight:700;font-size:34px;fill:white;">P</text>
+    </g>
 </svg>

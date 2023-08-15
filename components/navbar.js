@@ -2,9 +2,16 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
+import fr from "../locales/fr";
 
 const Navbar = () => {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = [
+    "Solution 360",
+    "Templates",
+    "Nous Connaître",
+    "Company",
+    "Ressources",
+  ];
 
   return (
     <div className="w-full">
@@ -25,7 +32,7 @@ const Navbar = () => {
                         className="w-8"
                       />
                     </span>
-                    <span>Nextly</span>
+                    <span>People 360</span>
                   </span>
                 </Link>
 
@@ -69,7 +76,7 @@ const Navbar = () => {
                       href="/"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                     >
-                      Get Started
+                      {fr.Global.cta}
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -99,7 +106,7 @@ const Navbar = () => {
             href="https://app.people360.fr/login"
             className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
           >
-            Get Started
+            {fr.Global.cta}
           </Link>
 
           <ThemeChanger />
