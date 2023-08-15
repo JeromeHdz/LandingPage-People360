@@ -118,4 +118,91 @@ const benefitTwo = {
   ],
 };
 
-export { benefitOne, benefitTwo, roadmaps };
+const featuresList = [
+  {
+    icon: (
+      <svg
+        className="w-12 h-12 text-deep-purple-accent-400"
+        stroke="currentColor"
+        viewBox="0 0 52 52"
+      >
+        <polygon
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+          points="29 13 14 29 25 29 23 39 38 23 27 23"
+        />
+      </svg>
+    ),
+    title: "Faites le bilan",
+    description:
+      "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear.",
+    link: "/",
+  },
+  {
+    icon: (
+      <svg
+        className="w-12 h-12 text-deep-purple-accent-400"
+        stroke="currentColor"
+        viewBox="0 0 52 52"
+      >
+        <polygon
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+          points="29 13 14 29 25 29 23 39 38 23 27 23"
+        />
+      </svg>
+    ),
+    title: "Accompagner individuellement",
+    description:
+      "Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea.",
+    link: "/",
+  },
+  {
+    icon: (
+      <svg
+        className="w-12 h-12 text-deep-purple-accent-400"
+        stroke="currentColor"
+        viewBox="0 0 52 52"
+      >
+        <polygon
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+          points="29 13 14 29 25 29 23 39 38 23 27 23"
+        />
+      </svg>
+    ),
+    title: "Former Collectivement",
+    description:
+      "A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.",
+    link: "/",
+  },
+  {
+    icon: (
+      <svg
+        className="w-12 h-12 text-deep-purple-accent-400"
+        stroke="currentColor"
+        viewBox="0 0 52 52"
+      >
+        <polygon
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+          points="29 13 14 29 25 29 23 39 38 23 27 23"
+        />
+      </svg>
+    ),
+    title: "Mesurer votre impact",
+    description:
+      "Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.",
+    link: "/",
+  },
+];
+
+export { benefitOne, benefitTwo, roadmaps, featuresList };

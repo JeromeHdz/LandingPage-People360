@@ -15,6 +15,8 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 import Stat from "../components/stat";
+import Features from "../components/features";
+import Contact from "../components/contact";
 
 import fr from "../locales/fr";
 
@@ -36,22 +38,32 @@ const Home = () => {
       <Navbar />
       <Hero />
 
+      {/* FEATURES SECTION */}
+      <Container className="flex w-full py-10 flex-col space-y-8 items-center justify-center text-left ">
+        <SectionTitle
+          className="roadmapSection py-0"
+          pretitle={fr.LandingPage.featuresSection.preTitle}
+          title={fr.LandingPage.featuresSection.title}
+        >
+          {fr.LandingPage.roadmapSection.subtitle}
+        </SectionTitle>
+        <Features />
+      </Container>
+
       {/* ROADMAPS SECTION */}
       <Container className="flex w-full py-10 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={fr.LandingPage.roadmapSection.preTitle}
-          title={fr.LandingPage.roadmapSection.catchPhrase2}
+          title={fr.LandingPage.roadmapSection.title}
           roadmaps
         >
           {fr.LandingPage.roadmapSection.subtitle}
         </SectionTitle>
-
         <RoadmapsButtons data={roadmaps} />
         <p className="max-w-4xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
           {fr.LandingPage.roadmapSection.subtitle2}
         </p>
-
         <Cta />
       </Container>
 
@@ -61,12 +73,11 @@ const Home = () => {
           className="roadmapSection py-0"
           pretitle={fr.LandingPage.statSection.preTitle}
           title={fr.LandingPage.statSection.title}
-          roadmaps
         ></SectionTitle>
         <Stat />
       </Container>
 
-      <Benefits data={benefitOne} />
+      {/* <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
         pretitle="Watch a video"
@@ -89,7 +100,8 @@ const Home = () => {
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>
-      <Faq />
+      <Faq /> */}
+      {/* CTA FOOTER SECTION */}
       <CtaFooter />
       <Footer />
       <PopupWidget />

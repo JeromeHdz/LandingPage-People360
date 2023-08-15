@@ -10,9 +10,14 @@ const fr = {
         "Offrez une expérience impactante de l'onboarding à l'offboarding et fidélisez vos employés.",
       ctaDemo: "Embarquez pour une démo !",
     },
+    featuresSection: {
+      preTitle: "Un Accompagnement Sur-Mesure",
+      title: "Une plateforme unique, ...",
+      subtitle: "People 360 assiste les managers  ...",
+    },
     roadmapSection: {
       preTitle: "Nos Roadmaps",
-      catchPhrase2:
+      title:
         "Via les Roadmaps de People 360, guidez chaque collaborateur tout au long de son voyage professionnel.",
       subtitle: "Opter pour une culture d'entreprise ...",
       subtitle2: "People 360 Agis sur vos ...",
@@ -21,6 +26,10 @@ const fr = {
       preTitle: "Des Données qui Parlent d'Elles-Mêmes",
       title:
         "Boostez les performances de votre entreprise, mesurez votre impact direct",
+    },
+    ctaFooterSection: {
+      catchPhrase: "Prêt à embarquer avec nous ?",
+      catchPhrase2: "Discutons ensemble de l'impact d'une politique QVCT.",
     },
     benefitOne: {
       title:
