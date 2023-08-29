@@ -17,6 +17,8 @@ import PopupWidget from "../components/popupWidget";
 import Stat from "../components/stat";
 import Features from "../components/solution360/features";
 import Contact from "../components/contact";
+import Section3 from "../components/solution360/section3";
+import Section4 from "../components/solution360/section4";
 
 import { InlineWidget } from "react-calendly";
 
@@ -53,7 +55,9 @@ const Solution360 = () => {
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <Benefits data={benefitOne} />
-      <CtaFooter />
+      <Section3 />
+      <Section4 />
+      <CtaFooter props={fr.Solution360.ctaFooter} />
       <Footer />
       <PopupWidget />
     </>

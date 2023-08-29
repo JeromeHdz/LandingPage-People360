@@ -19,8 +19,13 @@ import Features from "../components/features";
 import Contact from "../components/contact";
 
 import fr from "../locales/fr";
+import { Client } from "@notionhq/client";
+import { cleanDataFromNotion, getNotionContentBlockById } from "../utils";
 
-const Home = () => {
+const Home = ({ blocks }) => {
+  console.log(JSON.stringify(blocks, null, 2));
+  const cleanedData = cleanDataFromNotion(blocks);
+
   return (
     <>
       <Head>
@@ -36,45 +41,91 @@ const Home = () => {
       </Head>
 
       <Navbar />
-      <Hero />
+      <Hero data={cleanedData} />
 
       {/* FEATURES SECTION */}
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-left ">
         <SectionTitle
           className="roadmapSection py-0"
-          pretitle={fr.LandingPage.featuresSection.preTitle}
-          title={fr.LandingPage.featuresSection.title}
+          pretitle={
+            getNotionContentBlockById(
+              cleanedData,
+              "9280de45c952402dabcb2dde4af20133"
+            ) || fr.LandingPage.featuresSection.preTitle
+          }
+          title={
+            getNotionContentBlockById(
+              cleanedData,
+              "b7b8fe73cb1f4ca3b2e8d399ee7e35f3"
+            ) || fr.LandingPage.featuresSection.title
+          }
         >
-          {fr.LandingPage.roadmapSection.subtitle}
+          {getNotionContentBlockById(
+            cleanedData,
+            "dc27af491c7642679e935aa31b731a05"
+          ) || fr.LandingPage.roadmapSection.subtitle}
         </SectionTitle>
-        <Features />
+        <Features data={cleanedData} />
       </Container>
 
       {/* ROADMAPS SECTION */}
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"
-          pretitle={fr.LandingPage.roadmapSection.preTitle}
-          title={fr.LandingPage.roadmapSection.title}
+          pretitle={
+            getNotionContentBlockById(
+              cleanedData,
+              "6c37feb099dd469aa5269b8fb9b3e365"
+            ) || fr.LandingPage.roadmapSection.preTitle
+          }
+          title={
+            getNotionContentBlockById(
+              cleanedData,
+              "5faf295af280414abecb783e371d1596"
+            ) || fr.LandingPage.roadmapSection.title
+          }
           roadmaps
         >
-          {fr.LandingPage.roadmapSection.subtitle}
+          {getNotionContentBlockById(
+            cleanedData,
+            "aa4bc3d396ce4e9aab33ccd691b9ddc5"
+          ) || fr.LandingPage.roadmapSection.subtitle}
         </SectionTitle>
         <RoadmapsButtons data={roadmaps} />
         <p className="max-w-4xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-          {fr.LandingPage.roadmapSection.subtitle2}
+          {getNotionContentBlockById(
+            cleanedData,
+            "d601a5dcbd7146258bf3d25947b21aa1"
+          ) || fr.LandingPage.roadmapSection.subtitle2}
         </p>
-        <Cta title={fr.Global.cta} />
+        <Cta
+          title={
+            getNotionContentBlockById(
+              cleanedData,
+              "0d9116d3698d40ca9affceacfc0ec4f1"
+            ) || fr.Global.cta
+          }
+        />
       </Container>
 
       {/* STAT SECTION */}
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"
-          pretitle={fr.LandingPage.statSection.preTitle}
-          title={fr.LandingPage.statSection.title}
+          pretitle={
+            getNotionContentBlockById(
+              cleanedData,
+              "310749b96c7145af9157419f246d646e"
+            ) || fr.LandingPage.statSection.preTitle
+          }
+          title={
+            getNotionContentBlockById(
+              cleanedData,
+              "928e104597064dbba34376f5e208e426"
+            ) || fr.LandingPage.statSection.title
+          }
         ></SectionTitle>
-        <Stat />
+        <Stat data={cleanedData} />
       </Container>
 
       {/* <Benefits data={benefitOne} />
@@ -103,11 +154,30 @@ const Home = () => {
       <Faq /> */}
 
       {/* CTA FOOTER SECTION */}
-      <CtaFooter />
+      <CtaFooter props={fr.LandingPage.ctaFooterSection} data={cleanedData} />
       <Footer />
       <PopupWidget />
     </>
   );
+};
+
+export const getStaticProps = async () => {
+  //Fetch data from notion
+  //create a static page
+
+  const notion = new Client({
+    auth: process.env.NOTION_SECRET,
+  });
+
+  const data = await notion.blocks.children.list({
+    block_id: process.env.HOMEPAGE_ID,
+  });
+
+  return {
+    props: {
+      blocks: data,
+    },
+  };
 };
 
 export default Home;

@@ -14,19 +14,17 @@ const HeroCentered = (props) => {
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
           <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
-            <a href="/" className="mb-6 sm:mx-auto">
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                <IconContext.Provider
-                  value={{
-                    color: "#4F46E5",
-                    size: "2em",
-                    className: "global-class-name",
-                  }}
-                >
-                  <Tb360View />
-                </IconContext.Provider>
-              </div>
-            </a>
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+              <IconContext.Provider
+                value={{
+                  color: "#4F46E5",
+                  size: "2em",
+                  className: "global-class-name",
+                }}
+              >
+                <Tb360View />
+              </IconContext.Provider>
+            </div>
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
               <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
                 <span className="relative inline-block">

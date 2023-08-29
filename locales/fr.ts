@@ -28,8 +28,9 @@ const fr = {
         "Boostez les performances de votre entreprise, mesurez votre impact direct",
     },
     ctaFooterSection: {
-      catchPhrase: "Prêt à embarquer avec nous ?",
-      catchPhrase2: "Discutons ensemble de l'impact d'une politique QVCT.",
+      title: "Prêt à embarquer avec nous ?",
+      subtitle: "Discutons ensemble de l'impact d'une politique QVCT.",
+      buttonTitle: "Demander une demo",
     },
     benefitOne: {
       title:
@@ -72,6 +73,37 @@ const fr = {
       preTitle: "Une IA pour vos besoins",
       title: "Accompagner Individuellement",
       subtitle: "L'IA au service du parcours...",
+    },
+    section3: {
+      title: "Former collectivement ...",
+      subtitle: "Developper les competences",
+      cta: "Un atelier à organiser ?",
+      feature1: {
+        title: "Conferences atelier expert ....",
+        content: "thematiques, ....",
+      },
+      feature2: {
+        title: "Bibliotheques....",
+        content: "Parentalite, maternite, separation, ....",
+      },
+    },
+    section4: {
+      title: "Mesurer l'impact ...",
+      subtitle: "Vos actions QVCT ....",
+      cta: "Un atelier à organiser ?",
+      feature1: {
+        title: "Dashboard automatise ....",
+        content: "les donnness ....",
+      },
+      feature2: {
+        title: "Dashboard automatise ....",
+        content: "Suivi de l'evolution ....",
+      },
+    },
+    ctaFooter: {
+      title: "Vous souhaitez .....",
+      subtitle: "",
+      buttonTitle: "Contacter nous",
     },
   },
 };

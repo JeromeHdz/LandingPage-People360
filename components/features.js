@@ -2,7 +2,9 @@ import React from "react";
 import { featuresList } from "../components/data";
 import { IconContext } from "react-icons";
 
-function features() {
+import { getNotionContentBlockById } from "../utils";
+
+function features({ data }) {
   return (
     <div className="px-4 py-0 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-0">
       <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -23,9 +25,13 @@ function features() {
                   {feature.icon}
                 </IconContext.Provider>
               </div>
-              <h6 className="mb-2 font-semibold leading-5">{feature.title}</h6>
-              <p className="mb-3 text-sm text-gray-900">
-                {feature.description}
+              <h6 className="mb-2 font-semibold leading-5 dark:text-white">
+                {getNotionContentBlockById(data, feature.titleNodtionId) ||
+                  feature.title}
+              </h6>
+              <p className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+                {getNotionContentBlockById(data, feature.descriptionNotionId) ||
+                  feature.description}
               </p>
             </div>
             <a
