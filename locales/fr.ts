@@ -1,31 +1,54 @@
 const fr = {
   Global: {
-    cta: "Demander une demo",
+    cta: "Demander une démo",
   },
   LandingPage: {
     hero: {
       catchPhrase:
-        "Optimisez en toute simplicité les moments de vie de vos collaborateurs",
+        "Réenchantez les transitions de vie de vos salariés, vivez une expérience 360°.",
       tagline:
-        "Offrez une expérience impactante de l'onboarding à l'offboarding et fidélisez vos employés.",
+        "People 360 accompagne chaque collaborateur impacté (salarié, pair, manager) aux moments adéquats, sur les bons leviers, grâce à des programmes sur-mesure.",
       ctaDemo: "Embarquez pour une démo !",
     },
     featuresSection: {
-      preTitle: "Un Accompagnement Sur-Mesure",
-      title: "Une plateforme unique, ...",
-      subtitle: "People 360 assiste les managers  ...",
+      preTitle: "",
+      title:
+        "Une plateforme unique, un soutien complet pour toute votre organisation!",
+      subtitle:
+        "People 360 assiste les managers et responsables RH dans leurs enjeux réglementaires et sociétaux.",
     },
     roadmapSection: {
-      preTitle: "Nos Roadmaps",
+      preTitle: "",
       title:
-        "Via les Roadmaps de People 360, guidez chaque collaborateur tout au long de son voyage professionnel.",
-      subtitle: "Opter pour une culture d'entreprise ...",
-      subtitle2: "People 360 Agis sur vos ...",
+        "Guidez chaque collaborateur tout au long de son voyage professionnel",
+      subtitle:
+        "Optez pour une culture d’entreprise inclusive, transformez les transitions en opportunités pour vous et vos salariés!",
+      subtitle2:
+        "People 360 agit sur l'ensemble de ces leviers, de façon individuelle et adaptée, auprès de toutes les personnes impactées par la transition de vie.",
+      cta: "Réserver ma démo",
     },
     statSection: {
-      preTitle: "Des Données qui Parlent d'Elles-Mêmes",
+      preTitle: "",
       title:
         "Boostez les performances de votre entreprise, mesurez votre impact direct",
+      stats: [
+        {
+          title: "-70% ",
+          data: "Stress",
+        },
+        {
+          title: "-50%",
+          data: "Turnover",
+        },
+        {
+          title: "x2",
+          data: "REX",
+        },
+        {
+          title: "89%",
+          data: "+ Motivés",
+        },
+      ],
     },
     ctaFooterSection: {
       title: "Prêt à embarquer avec nous ?",

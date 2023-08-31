@@ -103,7 +103,7 @@ const Home = ({ blocks }) => {
             getNotionContentBlockById(
               cleanedData,
               "0d9116d3698d40ca9affceacfc0ec4f1"
-            ) || fr.Global.cta
+            ) || fr.LandingPage.roadmapSection.cta
           }
         />
       </Container>

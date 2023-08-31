@@ -7,24 +7,20 @@ import fr from "../locales/fr";
 const Navbar = () => {
   const navigation = [
     {
-      title: "Solution 360",
-      url: "solution360",
+      text: "Solution 360",
+      url: "/solution-360",
     },
     {
-      title: "Templates",
-      url: "templates",
+      text: "Templates",
+      url: "/categorie-templates",
     },
     {
-      title: "Nous Connaître",
-      url: "team",
+      text: "Nous Connaître",
+      url: "/team",
     },
     {
-      title: "Company",
-      url: "company",
-    },
-    {
-      title: "Ressources",
-      url: "ressources",
+      text: "Ressources",
+      url: "/resources",
     },
   ];
 
@@ -81,14 +77,14 @@ const Navbar = () => {
                     {navigation.map((item, index) => (
                       <Link
                         key={index}
-                        href="/"
+                        href={item.url}
                         className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
                       >
-                        {item.title}
+                        {item.text}
                       </Link>
                     ))}
                     <Link
-                      href="/"
+                      href="/book-demo"
                       className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                     >
                       {fr.Global.cta}
@@ -103,13 +99,13 @@ const Navbar = () => {
         {/* menu  */}
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
+            {navigation.map((item, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link
-                  href={"/" + menu.url}
+                  href={item.url}
                   className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
                 >
-                  {menu.title}
+                  {item.text}
                 </Link>
               </li>
             ))}
@@ -118,7 +114,7 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
-            href="https://app.people360.fr/login"
+            href="/book-demo"
             className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
           >
             {fr.Global.cta}

@@ -128,7 +128,7 @@ const PopupWidget = () => {
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
+                        value={`[Contact - Landing Page]${userName} a envoye un message`}
                         {...register("subject")}
                       />
                       <input

@@ -7,13 +7,23 @@ import { BsEnvelopeAtFill } from "react-icons/bs";
 
 export default function Footer() {
   const navigation = [
-    "Solution 360",
-    "Templates",
-    "Nous Connaître",
-    "Company",
-    "Ressources",
+    { text: "Solution 360", url: "/solution-360" },
+    { text: "Templates", url: "/categorie-templates" },
+    {
+      text: "Nous Connaître",
+      url: "/team",
+    },
+    { text: "Ressources", url: "/resources" },
   ];
-  const legal = ["Terms", "Privacy", "Legal"];
+  const legal = [
+    { text: "Sécurité", url: "/securite" },
+    { text: "RGPD", url: "/rgpd" },
+    {
+      text: "Confidentialité",
+      url: "/confidentialite",
+    },
+    { text: "Mentions légales", url: "/mentions-legales" },
+  ];
   return (
     <div className="relative">
       <Container>
@@ -51,10 +61,10 @@ export default function Footer() {
               {navigation.map((item, index) => (
                 <Link
                   key={index}
-                  href="/"
+                  href={item.url}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                  {item.text}
                 </Link>
               ))}
             </div>
@@ -64,10 +74,10 @@ export default function Footer() {
               {legal.map((item, index) => (
                 <Link
                   key={index}
-                  href="/"
+                  href={item.url}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                  {item.text}
                 </Link>
               ))}
             </div>
@@ -75,12 +85,12 @@ export default function Footer() {
           <div>
             <div>Contact us</div>
             <div className="flex mt-1 space-x-5 text-gray-400 dark:text-gray-500">
-              <Link
-                href="/"
+              <a
+                href="mailto:hello@people360.fr"
                 className="w-full text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
               >
-                contact@people360.fr
-              </Link>
+                hello@people360.fr
+              </a>
             </div>
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
               Copyright © {new Date().getFullYear()}.{" "}

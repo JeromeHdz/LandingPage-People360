@@ -127,7 +127,7 @@ const featuresList = [
     icon: <AiOutlineAudit />,
     title: "Faites le bilan",
     description:
-      "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear.",
+      "Des audits actionnables simplement par les RH et les managers. ",
     link: "/",
     titleNodtionId: "4911378ea8a8455ab7c99d7bb2111f39",
     descriptionNotionId: "7b855ae8734c4152b58d1b8e8288b307",
@@ -136,7 +136,7 @@ const featuresList = [
     icon: <LuHeartHandshake />,
     title: "Accompagner individuellement",
     description:
-      "Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea.",
+      "Roadmaps interactives personnalisées pushées automatiquement au bon moment. Assistant personnel 24/24h. Coachings d'experts individuels sur demande.",
     link: "/",
     titleNodtionId: "ae593313308f435489933fd05e3272f7",
     descriptionNotionId: "043a7014ca15476ebab25f7463f5fa93",
@@ -145,7 +145,7 @@ const featuresList = [
     icon: <TbSchool />,
     title: "Former Collectivement",
     description:
-      "A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.",
+      "Conférences, ateliers d'experts, webinaires. Bibliothèque de contenus thématiques.",
     link: "/",
     titleNodtionId: "f098a799c456406999c62bad7da43087",
     descriptionNotionId: "bedc3542f79941b88f8c89c4a295ae4d",
@@ -154,7 +154,7 @@ const featuresList = [
     icon: <MdQueryStats />,
     title: "Mesurer votre impact",
     description:
-      "Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling.",
+      "Dashboard de suivi des performances individuelles et collectives.",
     link: "/",
     titleNodtionId: "3d21f0ad900341d08cea8687dda715ef",
     descriptionNotionId: "6c37feb099dd469aa5269b8fb9b3e365",
