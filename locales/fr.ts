@@ -130,8 +130,8 @@ const fr = {
       },
     },
     ctaFooter: {
-      title: "Vous souhaitez .....",
-      subtitle: "",
+      title: "",
+      subtitle: "Vous souhaitez en savoir plus pour accompagner vos collaborateurs grâce au meilleur de la technologie?",
       buttonTitle: "Contacter nous",
     },
   },

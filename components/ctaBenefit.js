@@ -7,7 +7,7 @@ const CtaBenefit = (props) => {
       href="/book-demo"
       target="_blank"
       rel="noopener"
-      className="max-w-2xl px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
+      className="max-w-2xl px-8 py-4 text-lg font-medium text-center text-white bg-blue-700 rounded-md"
     >
       {props.title}
     </Link>

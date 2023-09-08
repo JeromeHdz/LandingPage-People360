@@ -33,10 +33,10 @@ export default function Footer() {
               {" "}
               <Link
                 href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
+                className="flex items-center space-x-2 text-2xl font-medium text-blue-700 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src="/img/logo.png"
                   alt="N"
                   width="32"
                   height="32"
@@ -62,7 +62,7 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={item.url}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item.text}
                 </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={item.url}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item.text}
                 </Link>
@@ -87,7 +87,7 @@ export default function Footer() {
             <div className="flex mt-1 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="mailto:hello@people360.fr"
-                className="w-full text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
               >
                 hello@people360.fr
               </a>

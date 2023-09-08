@@ -17,7 +17,7 @@ function features({ data }) {
               <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
                 <IconContext.Provider
                   value={{
-                    color: "#4F46E5",
+                    color: "#1D4ED8",
                     size: "2em",
                     className: "global-class-name",
                   }}
