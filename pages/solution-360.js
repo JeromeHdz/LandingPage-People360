@@ -45,16 +45,16 @@ const Solution360 = () => {
         subTitle={fr.Solution360.heroSection.subTitle}
       />
       <Features />
-      {/* <SectionTitle
+      <SectionTitle
         className="roadmapSection py-0"
-        pretitle={fr.Solution360.featureSection.preTitle}
-        title={fr.Solution360.featureSection.title}
+        pretitle=''
+        title={'Accompagner individuellement'}
       >
-        {fr.Solution360.featureSection.subtitle}
-      </SectionTitle> */}
+        {''}
+      </SectionTitle> 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-      <Benefits data={benefitOne} />
+      <Benefits data={benefitThree} />
       <Section3 />
       <Section4 />
       <CtaFooter props={fr.Solution360.ctaFooter} />

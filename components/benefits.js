@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import Cta from "../components/cta";
+import CtaBenefit from "../components/CtaBenefit";
 
 import fr from "../locales/fr";
 
@@ -9,7 +9,7 @@ const Benefits = (props) => {
   const { data } = props;
   return (
     <>
-      <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
+      <Container className="flex flex-wrap xl:px-24 mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
@@ -30,18 +30,20 @@ const Benefits = (props) => {
 
         <div
           className={`flex flex-wrap items-center w-full lg:w-1/2 ${
-            data.imgPos === "right" ? "lg:justify-end" : ""
+            data.imgPos === "right" ? "lg:justify-end pl-24" : ""
           }`}
         >
           <div>
-            <div className="flex flex-col w-full mt-4">
+            <div className={`flex flex-col w-full mt-4 `}>
               <h4 className="text-base font-medium text-gray-400 dark:text-gray-200">
                 {data.tags.map((item) => "#" + item + " ")}
               </h4>
               <h3 id={data.id} className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
                 {data.title}
               </h3>
-
+              <h2 id={data.id} className="max-w-2xl mt-3 text-1xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-2xl dark:text-white">
+                {data.subtitle}
+              </h2>
               <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300" dangerouslySetInnerHTML={{ __html: data.desc }}>
                 
               </p>
@@ -56,7 +58,7 @@ const Benefits = (props) => {
             </div> */}
           </div>
           <div className="flex flex-col w-full mt-8">
-            <Cta title={data.ctaTitle} />
+            <CtaBenefit title={data.ctaTitle} />
           </div>
         </div>
       </Container>

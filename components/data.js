@@ -20,7 +20,7 @@ import { SiYourtraveldottv } from "react-icons/si"
 import { PiHandWavingLight } from "react-icons/pi"
 
 
-import benefitOneImg from "../public/img/benefit-one.png";
+import benefitOneImg from "../public/img/solution360/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const roadmaps = [
@@ -75,41 +75,14 @@ const roadmaps = [
 ];
 
 const benefitOne = {
-  title:
-    "Élaborez des roadmaps personnalisés pour une expérience collaborateur optimale.",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
-  image: benefitOneImg,
-  tags: ["Modulable", "Dynamique", "Agile"],
-  ctaTitle: "Envie de tester l'une de nos ...",
-  bullets: [
-    {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
-    },
-    {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
-    },
-    {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
-    },
-  ],
-};
-
-const benefitTwo = {
-  title: "Accompagner individuellement ",
-  subtitle:'L’IA au service du parcours collaborateur, accessible à tous',
+  title: "L’IA au service du parcours collaborateur, accessible à tous",
   subsubtitle:'Des roadmaps interactives, sur-mesure, engageantes et utiles ',
-  desc: `Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
-  Bien plus qu'une to do list, des notifications push sont envoyées automatiquement sur l'agenda des collaborateurs(salarié, manager, collègue). <br/>
-  Rappels réglementaires, tâches à ne pas rater, quizz d'auto-évaluation, bonnes pratiques, contenus informatifs (vidéos, audios, écrits...)  <br/>
+  desc: `<b>Des roadmaps interactives, sur-mesure, engageantes et utiles </b><br><br> Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
+  Bien plus qu'une to do list, des notifications push sont envoyées automatiquement sur l'agenda des collaborateurs(salarié, manager, collègue). <br/><br/>
+  Rappels réglementaires, tâches à ne pas rater, quizz d'auto-évaluation, bonnes pratiques, contenus informatifs (vidéos, audios, écrits...)  <br/><br/>
   Chaque collaborateur peut adapter sa roadmap selon ses timings et préférences. <br/><br/>
   Roadmaps disponibles par thématique: parentalité, reconversion, aidants, maladie etc...`,
-  image: benefitTwoImg,
+  image: benefitOneImg,
   tags: ["Modulable", "Dynamique", "Agile"],
   ctaTitle: "Envie de tester l'une de nos roadmaps dans votre entreprise?",
   bullets: [
@@ -131,6 +104,59 @@ const benefitTwo = {
   ],
 };
 
+const benefitTwo = {
+  title:
+    "Assistant personnel 24/24h",
+  desc: "Pour toutes les questions qui nécessitent une réponse rapide, efficace et sure, mais pas de consultation spécifique auprès d'un expert, l'assitant personnel est disponible 24h/24.<br><br> Grâce à notre technologie unique basée sur l'intelligence artificielle et l'expertise de nos coachs, vous êtes assurés de bénéficier d'une expérience hors norme.",
+  image: benefitTwoImg,
+  tags: ["Modulable", "Dynamique", "Agile"],
+  ctaTitle: "Prêt pour une démo de l'assistant personnel?",
+  bullets: [
+    {
+      title: "Understand your customers",
+      desc: "Then explain the first point breifly in one or two lines.",
+      icon: <FaceSmileIcon />,
+    },
+    {
+      title: "Improve acquisition",
+      desc: "Here you can add the next benefit point.",
+      icon: <ChartBarSquareIcon />,
+    },
+    {
+      title: "Drive customer retention",
+      desc: "This will be your last bullet point in this section.",
+      icon: <CursorArrowRaysIcon />,
+    },
+  ],
+};
+
+const benefitThree = {
+  title: "Coaching d'expert spécialisé",
+  subtitle: '',
+  desc: `Prenez RDV individuellement avec nos experts certifiés, selon vos besoins.<br><br>
+  Notre algorithme maison, la technologie "perfect match" vous proposera une sélection des 3 experts les plus adaptés. <br><br>
+  Coachs spécialisés, avocats, comptables, thérapeutes, psychologues, prenez un rdv en ligne sur leur agenda partagé.`,
+  image: benefitOneImg,
+  tags: ["Modulable", "Dynamique", "Agile"],
+  ctaTitle: "Vous souhaitez organiser des RDV avec des experts pour vos salariés?",
+  bullets: [
+    {
+      title: "Mobile Responsive Template",
+      desc: "Nextly is designed as a mobile first responsive template.",
+      icon: <DevicePhoneMobileIcon />,
+    },
+    {
+      title: "Powered by Next.js & TailwindCSS",
+      desc: "This template is powered by latest technologies and tools.",
+      icon: <AdjustmentsHorizontalIcon />,
+    },
+    {
+      title: "Dark & Light Mode",
+      desc: "Nextly comes with a zero-config light & dark mode. ",
+      icon: <SunIcon />,
+    },
+  ],
+};
 const featuresList = [
   {
     icon: <AiOutlineAudit />,
@@ -173,4 +199,4 @@ const featuresList = [
   },
 ];
 
-export { benefitOne, benefitTwo, roadmaps, featuresList };
+export { benefitOne, benefitTwo, benefitThree, roadmaps, featuresList };
