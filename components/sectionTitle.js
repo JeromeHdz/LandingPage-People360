@@ -16,7 +16,7 @@ const SectionTitle = (props) => {
 
       {props.title && (
         <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-          <span className="relative inline-block">
+          {/* <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
               fill="currentColor"
@@ -40,8 +40,8 @@ const SectionTitle = (props) => {
               />
             </svg>
             <span className="relative">{props.title.split(" ")[0]}</span>
-          </span>{" "}
-          {props.title.split(" ").slice(1).join(" ")}
+          </span>{" "} */}
+          {props.title}
         </h2>
       )}
 

@@ -12,7 +12,7 @@ const HeroCentered = (props) => {
     <>
       <Container className="flex flex-wrap "></Container>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+        <div className="max-w-xl sm:mx-auto lg:max-w-5xl">
           <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
             {/* <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
               <IconContext.Provider
@@ -25,9 +25,9 @@ const HeroCentered = (props) => {
                 <Tb360View />
               </IconContext.Provider>
             </div> */}
-            <div className="max-w-2xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <div className="max-w-2xl mb-10 md:mx-auto sm:text-center lg:max-w-5xl md:mb-12">
               <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
-                <span className="relative inline-block">
+                {/* <span className="relative inline-block">
                   <svg
                     viewBox="0 0 52 24"
                     fill="currentColor"
@@ -51,8 +51,8 @@ const HeroCentered = (props) => {
                     />
                   </svg>
                   <span className="relative">{props.title.split(" ")[0]}</span>
-                </span>{" "}
-                {props.title.split(" ").slice(1).join(" ")}
+                </span>{" "} */}
+                {props.title}
               </h2>
               <p className="max-w-4xl mt-3 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
                 {props.subTitle}
