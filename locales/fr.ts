@@ -32,21 +32,27 @@ const fr = {
       title:
         "Boostez les performances de votre entreprise, mesurez votre impact direct",
       stats: [
+        
         {
-          title: "-70% ",
-          data: "Stress",
+          data: "-50%",
+          title: "Turnover",
         },
         {
-          title: "-50%",
-          data: "Turnover",
+          data: "x2",
+          title: "REX",
+        },
+        
+        {
+          data: "+130%",
+          title: "Performance<br>Salariés",
         },
         {
-          title: "x2",
-          data: "REX",
+          data: "-70% ",
+          title: "Stress",
         },
         {
-          title: "89%",
-          data: "+ Motivés",
+          data: "89%",
+          title: "+ Motivés",
         },
       ],
     },
@@ -89,8 +95,8 @@ const fr = {
   },
   Solution360: {
     heroSection: {
-      title: "Une plateforme RH ...",
-      subTitle: "La solution 360 qui ...",
+      title: "Une plateforme RH digitale complète, automatisée et personnalisée, basée sur l’avancée technologique de l’IA et l’expertise des coachs.",
+      subTitle: "La solution 360 qui impacte positivement tous vos collaborateurs et votre activité",
     },
     featureSection: {
       preTitle: "Une IA pour vos besoins",

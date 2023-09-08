@@ -38,22 +38,22 @@ const Benefits = (props) => {
               <h4 className="text-base font-medium text-gray-400 dark:text-gray-200">
                 {data.tags.map((item) => "#" + item + " ")}
               </h4>
-              <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+              <h3 id={data.id} className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
                 {data.title}
               </h3>
 
-              <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
-                {data.desc}
+              <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300" dangerouslySetInnerHTML={{ __html: data.desc }}>
+                
               </p>
             </div>
 
-            <div className="w-full mt-5">
+            {/* <div className="w-full mt-5">
               {data.bullets.map((item, index) => (
                 <Benefit key={index} title={item.title} icon={item.icon}>
                   {item.desc}
                 </Benefit>
               ))}
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col w-full mt-8">
             <Cta title={data.ctaTitle} />

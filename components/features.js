@@ -34,13 +34,13 @@ function features({ data }) {
                   feature.description}
               </p>
             </div>
-            {/* <a
+            <a
               href={feature.link}
               aria-label=""
               className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-800 hover:text-deep-purple-800"
             >
               En savoir plus
-            </a> */}
+            </a>
           </div>
         ))}
       </div>

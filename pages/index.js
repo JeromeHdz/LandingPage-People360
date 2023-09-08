@@ -28,6 +28,7 @@ const Home = ({ blocks }) => {
 
   return (
     <>
+
       <Head>
         <title>
           People 360 - Une expérience sur-mesure et captivante pour vos
@@ -42,7 +43,6 @@ const Home = ({ blocks }) => {
 
       <Navbar />
       <Hero data={cleanedData} />
-
       {/* FEATURES SECTION */}
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-left ">
         <SectionTitle
@@ -63,7 +63,7 @@ const Home = ({ blocks }) => {
           {getNotionContentBlockById(
             cleanedData,
             "dc27af491c7642679e935aa31b731a05"
-          ) || fr.LandingPage.roadmapSection.subtitle}
+          ) || fr.LandingPage.featuresSection.subtitle}
         </SectionTitle>
         <Features data={cleanedData} />
       </Container>

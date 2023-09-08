@@ -25,8 +25,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+    <div className="w-full px-16">
+      <nav className="container relative flex flex-wrap items-center justify-between p-8 lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
@@ -120,7 +120,7 @@ const Navbar = () => {
             {fr.Global.cta}
           </Link>
 
-          <ThemeChanger />
+          {/* <ThemeChanger /> */}
         </div>
       </nav>
     </div>
