@@ -22,6 +22,8 @@ import { PiHandWavingLight } from "react-icons/pi"
 
 import benefitOneImg from "../public/img/solution360/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
+import benefitThreeImg from "../public/img/solution360/benefit-three.png";
+
 
 const roadmaps = [
   {
@@ -136,7 +138,7 @@ const benefitThree = {
   desc: `Prenez RDV individuellement avec nos experts certifiés, selon vos besoins.<br><br>
   Notre algorithme maison, la technologie "perfect match" vous proposera une sélection des 3 experts les plus adaptés. <br><br>
   Coachs spécialisés, avocats, comptables, thérapeutes, psychologues, prenez un rdv en ligne sur leur agenda partagé.`,
-  image: benefitOneImg,
+  image: benefitThreeImg,
   tags: ["Modulable", "Dynamique", "Agile"],
   ctaTitle: "Vous souhaitez organiser des RDV avec des experts pour vos salariés?",
   bullets: [

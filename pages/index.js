@@ -24,7 +24,7 @@ import { cleanDataFromNotion, getNotionContentBlockById } from "../utils";
 
 const Home = ({ blocks }) => {
   console.log(JSON.stringify(blocks, null, 2));
-  const cleanedData = cleanDataFromNotion(blocks);
+  const cleanedData = null//cleanDataFromNotion(blocks);
 
   return (
     <>
@@ -113,16 +113,18 @@ const Home = ({ blocks }) => {
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={
-            getNotionContentBlockById(
-              cleanedData,
-              "310749b96c7145af9157419f246d646e"
-            ) || fr.LandingPage.statSection.preTitle
+            // getNotionContentBlockById(
+            //   cleanedData,
+            //   "310749b96c7145af9157419f246d646e"
+            // ||)
+             fr.LandingPage.statSection.preTitle
           }
           title={
-            getNotionContentBlockById(
-              cleanedData,
-              "928e104597064dbba34376f5e208e426"
-            ) || fr.LandingPage.statSection.title
+            // getNotionContentBlockById(
+            //   cleanedData,
+            //   "928e104597064dbba34376f5e208e426"
+            // ) || 
+            fr.LandingPage.statSection.title
           }
         ></SectionTitle>
         <Stat data={cleanedData} />
@@ -161,23 +163,23 @@ const Home = ({ blocks }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  //Fetch data from notion
-  //create a static page
+// export const getStaticProps = async () => {
+//   //Fetch data from notion
+//   //create a static page
 
-  const notion = new Client({
-    auth: process.env.NOTION_SECRET,
-  });
+//   const notion = new Client({
+//     auth: process.env.NOTION_SECRET,
+//   });
 
-  const data = await notion.blocks.children.list({
-    block_id: process.env.HOMEPAGE_ID,
-  });
+//   const data = await notion.blocks.children.list({
+//     block_id: process.env.HOMEPAGE_ID,
+//   });
 
-  return {
-    props: {
-      blocks: data,
-    },
-  };
-};
+//   return {
+//     props: {
+//       blocks: data,
+//     },
+//   };
+// };
 
 export default Home;

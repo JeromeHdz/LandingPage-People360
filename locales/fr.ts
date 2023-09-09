@@ -5,15 +5,15 @@ const fr = {
   LandingPage: {
     hero: {
       catchPhrase:
-        "Réenchantez les transitions de vie de vos salariés, vivez une expérience 360°.",
+        "Réenchantez les transitions de vie de vos salariés, vivez une expérience 360°",
       tagline:
-        "People 360 accompagne chaque collaborateur impacté (salarié, pair, manager) aux moments adéquats, sur les bons leviers, grâce à des programmes sur-mesure.",
+        "People 360 accompagne chaque collaborateur (salarié, pair, manager) aux moments adéquats, sur les bons leviers, grâce à des programmes sur-mesure.",
       ctaDemo: "Embarquez pour une démo !",
     },
     featuresSection: {
       preTitle: "",
       title:
-        "Une plateforme unique, un soutien complet pour toute votre organisation!",
+        "Une plateforme QVCT unique, un soutien complet pour toute votre organisation!",
       subtitle:
         "People 360 assiste les managers et responsables RH dans leurs enjeux réglementaires et sociétaux.",
     },
