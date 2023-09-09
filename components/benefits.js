@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import CtaBenefit from "../components/CtaBenefit";
+import CtaBenefit from "./CtaBenefit";
 
 import fr from "../locales/fr";
 
