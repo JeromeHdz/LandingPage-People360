@@ -24,11 +24,10 @@ import { cleanDataFromNotion, getNotionContentBlockById } from "../utils";
 
 const Home = ({ blocks }) => {
   console.log(JSON.stringify(blocks, null, 2));
-  const cleanedData = null//cleanDataFromNotion(blocks);
+  const cleanedData = null; //cleanDataFromNotion(blocks);
 
   return (
     <>
-
       <Head>
         <title>
           People 360 - Une expérience sur-mesure et captivante pour vos
@@ -41,10 +40,11 @@ const Home = ({ blocks }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
-      <Hero data={cleanedData} />
       {/* FEATURES SECTION */}
-      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-left ">
+      <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left ">
+        <Navbar />
+        <Hero data={cleanedData} />
+
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={
@@ -117,13 +117,13 @@ const Home = ({ blocks }) => {
             //   cleanedData,
             //   "310749b96c7145af9157419f246d646e"
             // ||)
-             fr.LandingPage.statSection.preTitle
+            fr.LandingPage.statSection.preTitle
           }
           title={
             // getNotionContentBlockById(
             //   cleanedData,
             //   "928e104597064dbba34376f5e208e426"
-            // ) || 
+            // ) ||
             fr.LandingPage.statSection.title
           }
         ></SectionTitle>

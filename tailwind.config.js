@@ -12,6 +12,10 @@ module.exports = {
     extend: {
       colors: {
         trueGray: colors.neutral,
+        borderColor: {
+          // extend the border color
+          "border-red-600": "#1D4ED8",
+        },
       },
     },
     fontFamily: {

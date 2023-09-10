@@ -38,28 +38,29 @@ const Solution360 = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
-      <HeroCentered
-        title={fr.Solution360.heroSection.title}
-        subTitle={fr.Solution360.heroSection.subTitle}
-      />
-      <Features />
-      <SectionTitle
-        className="roadmapSection py-0"
-        pretitle=''
-        title={'Accompagner individuellement'}
-      >
-        {''}
-      </SectionTitle> 
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-      <Benefits data={benefitThree} />
-      <Section3 />
-      <Section4 />
-      <CtaFooter props={fr.Solution360.ctaFooter} />
-      <Footer />
-      <PopupWidget />
+      <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left ">
+        <Navbar />
+        <HeroCentered
+          title={fr.Solution360.heroSection.title}
+          subTitle={fr.Solution360.heroSection.subTitle}
+        />
+        <Features />
+        <SectionTitle
+          className="roadmapSection py-0"
+          pretitle=""
+          title={"Accompagner individuellement"}
+        >
+          {""}
+        </SectionTitle>
+        <Benefits data={benefitOne} />
+        <Benefits imgPos="right" data={benefitTwo} />
+        <Benefits data={benefitThree} />
+        <Section3 />
+        <Section4 />
+        <CtaFooter props={fr.Solution360.ctaFooter} />
+        <Footer />
+        <PopupWidget />
+      </Container>
     </>
   );
 };

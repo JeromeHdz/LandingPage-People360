@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full px-16">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 lg:justify-between xl:px-0">
+      <nav className="container relative flex flex-wrap items-center justify-between lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
