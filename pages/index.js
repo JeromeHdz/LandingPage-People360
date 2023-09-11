@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/hero";
+import Hero2 from "../components/hero2";
+
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 import RoadmapsButtons from "../components/roadmapsButtons";
@@ -43,8 +45,8 @@ const Home = ({ blocks }) => {
       {/* FEATURES SECTION */}
       <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left ">
         <Navbar />
-        <Hero data={cleanedData} />
-
+        {/* <Hero data={cleanedData} /> */}
+        <Hero2 />
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={

@@ -131,11 +131,11 @@ export default function Footer() {
             </Link>
 
             <div className="max-w-md mt-4 ">
-              <div>People 360</div>
-              <div className="text-gray-500 dark:text-gray-400">
+              {/*<div>People 360</div>
+               <div className="text-gray-500 dark:text-gray-400">
                 People 360 n'est pas un service d'urgence. <br /> En cas
                 d'urgence, contactez le 15.
-              </div>
+              </div> */}
             </div>
           </div>
 

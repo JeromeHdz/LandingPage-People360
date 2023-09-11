@@ -29,51 +29,71 @@ const roadmaps = [
   {
     title: "Parentalité",
     icon: <MdStroller />,
-  },
-  {
-    title: "Promotion",
-    icon: <PiShootingStarFill />,
-  },
-  {
-    title: "Expatriation",
-    icon: <SiYourtraveldottv />,
-  },
-  {
-    title: "Aidant",
-    icon: <FaHandHoldingHeart />,
+    color:"bg-rose-50",
   },
   {
     title: "Maladie",
     icon: <MdOutlineSick />,
-  },
-  {
-    title: "Management",
-    icon: <FaTasks />,
-  },
-  {
-    title: "Séparation",
-    icon: <PiLinkBreakBold />,
-  },
-  {
-    title: "Impatriation",
-    icon: <FaPlaneArrival />,
-  },
-  {
-    title: "Senior",
-    icon: <MdElderly />,
+    color: "bg-rose-100",
+
   },
   {
     title: "Handicap",
     icon: <BiHandicap />,
+    color: "bg-rose-200",
+
   },
   {
-    title: "Re-Onboarding",
-    icon: <GiCycle />,
+    title: "Aidant",
+    icon: <FaHandHoldingHeart />,
+    color: "bg-rose-300",
+
+  },
+  {
+    title: "Senior",
+    icon: <MdElderly />,
+    color: "bg-rose-400",
+
+  },
+  {
+    title: "Promotion",
+    icon: <PiShootingStarFill />,
+    color: "bg-blue-50",
+
+  },
+  {
+    title: "Expatriation",
+    icon: <SiYourtraveldottv />,
+    color: "bg-blue-100",
+
+  },
+  {
+    title: "Impatriation",
+    icon: <FaPlaneArrival />,
+    color: "bg-blue-200",
+
+  },
+  {
+    title: "Management",
+    icon: <FaTasks />,
+    color: "bg-blue-300",
+
   },
   {
     title: "Retraite",
     icon: <GiBoatFishing />,
+    color: "bg-blue-400",
+
   },
+  // {
+  //   title: "Séparation",
+  //   icon: <PiLinkBreakBold />,
+  // },
+  // {
+  //   title: "Re-Onboarding",
+  //   icon: <GiCycle />,
+  // },
+  
 ];
 
 const benefitOne = {
@@ -174,7 +194,7 @@ const featuresList = [
     icon: <LuHeartHandshake />,
     title: "Accompagner individuellement",
     description:
-      "Roadmaps interactives personnalisées pushées automatiquement au bon moment. Assistant personnel 24/24h. Coachings d'experts individuels sur demande.",
+      "Roadmaps interactives personnalisées pushées au bon moment. Assistant personnel 24/24h. Coaching individualisés avec des experts dédiés.",
     link: "/solution-360#accompagner-individuellement",
     titleNodtionId: "ae593313308f435489933fd05e3272f7",
     descriptionNotionId: "043a7014ca15476ebab25f7463f5fa93",

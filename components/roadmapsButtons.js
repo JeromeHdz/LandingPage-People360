@@ -7,7 +7,7 @@ const RoadmapsButtons = (props) => {
     <div className="grid md:auto-cols-max gap-4 md:grid-flow-col md:grid-rows-auto grid-rows-2">
       {data &&
         data.map((item, index) => (
-          <button key={index} className="btn">
+          <button key={index} className={"btn "+item.color}>
             {item.icon} {item.title}
           </button>
         ))}

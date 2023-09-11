@@ -14,8 +14,7 @@ function Features() {
           >
             Faites le bilan
           </h2>
-        </div>
-        <div className="lg:w-1/2">
+        
           <p className="text-base text-gray-700 md:text-lg dark:text-gray-300">
             Fixons ensemble vos enjeux prioritaires grâce à un audit de vos
             collaborateurs!
@@ -24,58 +23,49 @@ function Features() {
       </div>
       <div className="grid gap-8 row-gap-10 sm:grid-cols-2 lg:grid-cols-2">
         <div>
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-            <IconContext.Provider
-              value={{
-                color: "#4F46E5",
-                size: "2em",
-                className: "global-class-name",
-              }}
-            >
-              <BsFullscreen />
-            </IconContext.Provider>
-          </div>
           <h6 className="mb-2 font-semibold leading-5 dark:text-white">
             Audit global quantitatif et qualitatif
           </h6>
-          <p className="mb-3 text-sm text-gray-900 dark:text-gray-300">
-            Plan d'action, propositions d'outils et solutions adaptées <br />
-            Plan de communication et guides dédiés
-          </p>
-          <p className="mb-3 text-sm text-gray-900 dark:text-gray-300">
-            Géré intégralement par notre équipe experte.
-          </p>
-          <p className="mb-3 text-sm text-gray-900 dark:text-gray-300">
-            Idéal pour avoir une vision d'ensemble des collaborateurs d'une{" "}
-            <br /> entreprise et démarrer une action à l'échelle.
-          </p>
+          <ul class="list-disc">
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Plan d'action, propositions d'outils et solutions adaptées <br />
+              
+            </li>
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Plan de communication et guides dédiés
+            </li>
+            
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Géré intégralement par notre équipe experte
+
+            </li>
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Idéal pour avoir une vision d'ensemble des collaborateurs d'une{" "}
+              <br /> entreprise et démarrer une action à l'échelle
+            </li>
+          </ul>
         </div>
         <div>
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
-            <IconContext.Provider
-              value={{
-                color: "#4F46E5",
-                size: "2em",
-                className: "global-class-name",
-              }}
-            >
-              <BsFullscreenExit />
-            </IconContext.Provider>
-          </div>
           <h6 className="mb-2 font-semibold leading-5 dark:text-white">
-            Micro-audits assistés actionnables par les managers.
+            Micro-audits assistés actionnables par les managers
           </h6>
-          <p className="mb-3 text-sm text-gray-900 dark:text-gray-300">
-            Des templates formatés par thématique auditée. <br />
-            Personnalisation des templates.
-          </p>
-          <p className="mb-3 text-sm text-gray-900 dark:text-gray-300">
-            Un assistant virtuel pour vous accompagner dans la configuration
-          </p>
-          <p className="mb-3 text-sm text-gray-900 dark:text-gray-300">
-            Idéal pour prendre le pouls d'une équipe - simplicité de mise en
-            oeuvre pour le manager.
-          </p>
+          <ul class="list-disc">
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Des templates formatés par thématique auditée <br />
+            </li>
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Templates personnalisables
+            </li>
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Un assistant virtuel pour vous accompagner dans la configuration
+
+
+            </li>
+            <li className="mb-3 text-sm text-gray-900 dark:text-gray-300">
+              Idéal pour prendre le pouls d'une équipe - simplicité de mise en
+              oeuvre pour le manager
+            </li>
+          </ul>
         </div>
       </div>
     </div>
