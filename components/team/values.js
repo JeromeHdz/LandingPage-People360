@@ -23,12 +23,12 @@ function Values() {
           </div>
           <div className="text-center md:border-r">
             <h6 className="text-3xl font-bold lg:text-4xl xl:text-4xl">
-              Service
+              Inclusion
             </h6>
           </div>
           <div className="text-center">
             <h6 className="text-xl font-bold lg:text-2xl xl:text-4xl">
-              Exigence
+              Excellence
             </h6>
           </div>
         </div>

@@ -40,11 +40,9 @@ function Section4() {
             Dashboard RH / Manager
           </h5>
           <p className="text-gray-700">
-            Les données sont anonymisées.
+            Données sont anonymisées.
             <br />
-            Graphiques vision d'ensemble et ROIste.
-            <br />
-            Analyse détaillée.
+            Reporting visuel détaillé et ROIste.
           </p>
         </div>
         <div className="text-center">

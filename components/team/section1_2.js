@@ -2,18 +2,16 @@ import React from "react";
 
 function section1_2() {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-10 lg:grid-cols-2">
-        <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-          <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400"></div>
-          <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+    <div className="px-4 py-16 mx-auto w-full lg:max-w-screen-xl lg:px-8 lg:py-20">
+      <div className="w-full flex flex-col justify-center md:pr-8 xl:pr-0 ">
+        <div className=" mb-6 w-2/3">
+          <h2 className=" w-full mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
               Une rencontre
               <br className="hidden md:block" />
               qui donne des ailes
             </h2>
 
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-gray-700 ">
               <b>
                 People 360 est né de la rencontre de deux entrepreneurs experts
                 de la parentalité et engagés pour le bien-être au service de la
@@ -35,7 +33,7 @@ function section1_2() {
               matériel médical aux pharmacies et entreprises partenaires.
               <br />
               Après des années dans la formation et l'édition, notamment chez
-              Télélangues, Laurent a fondé 1001 parents, une start up dédiée à
+              Télélangue, Laurent a fondé 1001 parents, une start up dédiée à
               l'accompagnement des salariés parents.
               <br />
               <br />
@@ -47,7 +45,7 @@ function section1_2() {
               </b>{" "}
               <br />
               Et pour donner vie à leur projet, ils s'associent à Jérôme,
-              l'expert de la tech et de l'IA. Il partage avec nous cette vision
+              l'expert de la tech et de l'IA. Il partage avec eux cette vision
               du bien-être qui lui a cruellement manquée en Corée.
               <br />
               <br />
@@ -56,28 +54,7 @@ function section1_2() {
               collaborateurs à l'ère post covid.
             </p>
           </div>
-        </div>
-        <div className="flex items-center justify-center -mx-4 lg:pl-8">
-          <div className="flex flex-col items-end px-3">
-            <img
-              className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-              src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-            <img
-              className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-          </div>
-          <div className="px-3">
-            <img
-              className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-              src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-              alt=""
-            />
-          </div>
-        </div>
+        
       </div>
     </div>
   );

@@ -12,21 +12,21 @@ function Customers() {
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
-        src="/img/team/fixed/decathlon.png"
+        src="/img/team/fixed/playbac.png"
         alt="P"
         width="250"
         height="150"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
-        src="/img/team/fixed/orano.png"
+        src="/img/team/fixed/babichou.png"
         alt="P"
         width="250"
         height="150"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
-        src="/img/team/fixed/adp.png"
+        src="/img/team/fixed/red.png"
         alt="P"
         width="250"
         height="150"

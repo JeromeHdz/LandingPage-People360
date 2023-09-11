@@ -13,7 +13,7 @@ function Social_Ambition() {
         </p>
       </div>
       <div className="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
-        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:border-l-blue-500 hover:-translate-y-2">
+        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:border-l-rose-500 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">
               Bien-être au travail et santé mentale
@@ -23,24 +23,25 @@ function Social_Ambition() {
                 Faciliter l'équilibre vie personnelle/professionnelle des
                 collaborateurs
               </li>
-              <li className="py-4">
-                Un bon équilibre permet de diminuer de 14% les dépenses de santé
+              <li className="py-2">
+                Enrayer les arrêts de carrière et démissions liées à
+                une incompatibilité de la situation de vie personnelle (aidant,
+                handicap, maladie, seniors) avec les attentes professionnelles
               </li>
+              {/* <li className="py-4">
+                Un bon équilibre permet de diminuer de 14% les dépenses de santé
+              </li> */}
             </ul>
           </div>
         </div>
-        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:border-l-blue-500 hover:-translate-y-2">
+        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:border-l-green-500 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">
               Continuité dans la vie active, retour à l'emploi
             </h6>
 
             <ul className="list-disc pl-3">
-              <li className="py-2">
-                Enrayer les arrêts de carrière trop longs, et démissions liées à
-                une incompatibilité de la situation de vie personnelle (aidant,
-                handicap, maladie, seniors) avec les attentes professionnelles
-              </li>
+              
               <li className="py-4">
                 Faciliter la continuité et le retour à l'emploi, après une pause
                 d'activité (maternité...)
@@ -65,20 +66,20 @@ function Social_Ambition() {
             </ul>
           </div>
         </div>
-        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:border-l-blue-500 hover:-translate-y-2">
+        <div className="duration-300 transform bg-white border-l-4 border-deep-purple-accent-400 hover:border-l-yellow-500 hover:-translate-y-2">
           <div className="h-full p-5 border border-l-0 rounded-r shadow-sm">
             <h6 className="mb-2 font-semibold leading-5">
               Culture d'entreprise inclusive
             </h6>
             <ul className="list-disc pl-3">
               <li className="py-4">
-                Nous facilitons l’appropriation par tous les collaborateurs
+                Favoriser l’appropriation par tous les collaborateurs
                 d’une culture d’entreprise inclusive, qui transforme les
                 transitions en opportunités pour l’employeur et les salariés.
               </li>
               <li className="py-4">
-                Nous ciblons tous les publics, les plus plus fragiles et/ou en
-                reconversion
+              Permettre à tous les publics, les plus fragiles et/ou en
+                reconversion de bénéficier d'un accompagnement individualisé
               </li>
             </ul>
           </div>

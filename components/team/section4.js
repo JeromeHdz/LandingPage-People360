@@ -76,7 +76,7 @@ function Section4() {
 
           <p className="mb-6 py-8 text-base text-indigo-100 md:text-lg">
             Acteur de l'innovation sociale, notre expertise est reconnue et
-            ancrée auprès des institutions locales parisiennes et acteurs de
+            ancrée auprès des institutions et acteurs de
             l'économie sociale et solidaire.
           </p>
         </div>
