@@ -88,15 +88,15 @@ const fr = {
   BookDemo: {
     hero: {
       catchPhrase:
-        "Réservez une démo de notre logiciel d'accompagnement de vos collaborateur ! 🚀",
+        "Réservez une démo de notre logiciel d'accompagnement de vos collaborateurs ! 🚀",
       tagline:
         "Offrez une expérience impactante de l'onboarding à l'offboarding et fidélisez vos employés.",
     },
   },
   Solution360: {
     heroSection: {
-      title: "Une plateforme RH digitale complète, automatisée et personnalisée, basée sur l’avancée technologique de l’IA et l’expertise des coachs.",
-      subTitle: "La solution 360 qui impacte positivement tous vos collaborateurs et votre activité",
+      title: "Une plateforme RH individualisée, basée sur l’avancée technologique de l’IA et l’expertise de coachs.",
+      subTitle: "La solution 360 impacte positivement tous vos collaborateurs et votre activité",
     },
     featureSection: {
       preTitle: "Une IA pour vos besoins",

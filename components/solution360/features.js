@@ -16,7 +16,7 @@ function Features() {
           </h2>
         
           <p className="text-base text-gray-700 md:text-lg dark:text-gray-300">
-            Fixons ensemble vos enjeux prioritaires grâce à un audit de vos
+            Définissez vos enjeux prioritaires grâce à un audit de vos
             collaborateurs!
           </p>
         </div>

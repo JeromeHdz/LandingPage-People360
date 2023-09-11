@@ -21,7 +21,7 @@ import { PiHandWavingLight } from "react-icons/pi"
 
 
 import benefitOneImg from "../public/img/solution360/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
+import benefitTwoImg from "../public/img/solution360/benefit-two.png";
 import benefitThreeImg from "../public/img/solution360/benefit-three.png";
 
 
@@ -99,14 +99,14 @@ const roadmaps = [
 const benefitOne = {
   title: "L’IA au service du parcours collaborateur, accessible à tous",
   subsubtitle:'Des roadmaps interactives, sur-mesure, engageantes et utiles ',
-  desc: `<b>Des roadmaps interactives, sur-mesure, engageantes et utiles </b><br><br> Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
-  Bien plus qu'une to do list, des notifications push sont envoyées automatiquement sur l'agenda des collaborateurs(salarié, manager, collègue). <br/><br/>
-  Rappels réglementaires, tâches à ne pas rater, quizz d'auto-évaluation, bonnes pratiques, contenus informatifs (vidéos, audios, écrits...)  <br/><br/>
-  Chaque collaborateur peut adapter sa roadmap selon ses timings et préférences. <br/><br/>
-  Roadmaps disponibles par thématique: parentalité, reconversion, aidants, maladie etc...`,
+  desc: `<b>Individualisée: </b>: Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
+  <b>Dynamique: </b>Bien plus qu'une to do list, des notifications push sont envoyées automatiquement sur l'agenda des collaborateurs(salarié, manager, collègue). <br/><br/>
+  <b>Complète: </b>Rappels réglementaires, tâches à ne pas rater, quizz d'auto-évaluation, bonnes pratiques, contenus informatifs (vidéos, audios, écrits...)  <br/><br/>
+  <b>Modulable: </b>Chaque collaborateur peut adapter sa roadmap selon ses timings et préférences. <br/><br/>
+  <b>Spécialisée: </b>Roadmaps disponibles par thématique: parentalité, reconversion, aidants, maladie etc...`,
   image: benefitOneImg,
   tags: ["Modulable", "Dynamique", "Agile"],
-  ctaTitle: "Envie de tester l'une de nos roadmaps dans votre entreprise?",
+  ctaTitle: "Envie de tester l'une de nos roadmaps ?",
   bullets: [
     {
       title: "Mobile Responsive Template",
@@ -131,7 +131,7 @@ const benefitTwo = {
     "Assistant personnel 24/24h",
   desc: "Pour toutes les questions qui nécessitent une réponse rapide, efficace et sure, mais pas de consultation spécifique auprès d'un expert, l'assitant personnel est disponible 24h/24.<br><br> Grâce à notre technologie unique basée sur l'intelligence artificielle et l'expertise de nos coachs, vous êtes assurés de bénéficier d'une expérience hors norme.",
   image: benefitTwoImg,
-  tags: ["Modulable", "Dynamique", "Agile"],
+  tags: ["Individualisé", "Disponible", "Facilitateur"],
   ctaTitle: "Prêt pour une démo de l'assistant personnel?",
   bullets: [
     {
@@ -159,7 +159,7 @@ const benefitThree = {
   Notre algorithme maison, la technologie "perfect match" vous proposera une sélection des 3 experts les plus adaptés. <br><br>
   Coachs spécialisés, avocats, comptables, thérapeutes, psychologues, prenez un rdv en ligne sur leur agenda partagé.`,
   image: benefitThreeImg,
-  tags: ["Modulable", "Dynamique", "Agile"],
+  tags: ["Expertise", "Certifiés", "Adaptés"],
   ctaTitle: "Vous souhaitez organiser des RDV avec des experts pour vos salariés?",
   bullets: [
     {

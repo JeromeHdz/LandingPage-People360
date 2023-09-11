@@ -7,7 +7,7 @@ import fr from "../locales/fr";
 const Navbar = () => {
   const navigation = [
     {
-      text: "Solution 360",
+      text: "Nos Solutions",
       url: "/solution-360",
     },
     {

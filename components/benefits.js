@@ -18,7 +18,7 @@ const Benefits = (props) => {
           <div>
             <Image
               src={data.image}
-              width="521"
+              width="350"
               height="auto"
               alt="Benefits"
               className={"object-cover"}
@@ -38,13 +38,16 @@ const Benefits = (props) => {
               <h4 className="text-base font-medium text-gray-400 dark:text-gray-200">
                 {data.tags.map((item) => "#" + item + " ")}
               </h4>
-              <h3 id={data.id} className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+              <h3 id={data.id} className="max-w-2xl mt-3 text-xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight">
                 {data.title}
               </h3>
-              <h2 id={data.id} className="max-w-2xl mt-3 text-1xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-2xl dark:text-white">
+              <h2 id={data.id} className="max-w-2xl mt-3 text-lg font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-2xl ">
                 {data.subtitle}
               </h2>
-              <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300" dangerouslySetInnerHTML={{ __html: data.desc }}>
+              <h3 id={data.id} className="max-w-2xl mt-3 text-lg font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight ">
+                Des roadmaps interactives, sur-mesure, engageantes et utiles
+              </h3>
+              <p className="max-w-2xl py-4 text-md leading-normal text-gray-500  " dangerouslySetInnerHTML={{ __html: data.desc }}>
                 
               </p>
             </div>

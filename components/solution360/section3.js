@@ -13,15 +13,14 @@ function Section3() {
   return (
     <div className="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20">
       <div className="flex flex-col mb-6 lg:flex-row md:mb-10">
-        <div className="lg:w-1/2">
+        <div className="">
           <h2
             id="bilan"
             className="max-w-md mb-6 font-sans text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl sm:leading-none xl:max-w-lg dark:text-white"
           >
             Former collectivement
           </h2>
-        </div>
-        <div className="lg:w-1/2">
+        
           <p className="text-base text-gray-700 md:text-lg dark:text-gray-300">
             Développer les soft skills axées sur l'inclusion, l'empathie et le
             bien-être mental
@@ -32,9 +31,10 @@ function Section3() {
         <div>
           <Image
             src="/img/solution360/workshop_01.jpg"
-            width={500}
-            height={300}
+            width={300}
+            height={200}
             alt=""
+            className="mx-auto"
           />
           <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
             Conférences, ateliers d'experts, webinaires
@@ -47,9 +47,10 @@ function Section3() {
         <div>
           <Image
             src="/img/solution360/workshop_02.jpg"
-            width={500}
-            height={300}
+            width={300}
+            height={200}
             alt=""
+            className="mx-auto"
           />
           <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
             Bibliothèque de contenus thématiques
