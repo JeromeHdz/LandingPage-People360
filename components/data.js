@@ -194,7 +194,7 @@ const featuresList = [
     icon: <LuHeartHandshake />,
     title: "Accompagner individuellement",
     description:
-      "Roadmaps interactives personnalisées pushées au bon moment. Assistant personnel 24/24h. Coaching individualisés avec des experts dédiés.",
+      "Roadmaps interactives personnalisées pushées au bon moment. Assistant personnel 24/24h. Coachings individualisés avec des experts dédiés.",
     link: "/solution-360#accompagner-individuellement",
     titleNodtionId: "ae593313308f435489933fd05e3272f7",
     descriptionNotionId: "043a7014ca15476ebab25f7463f5fa93",

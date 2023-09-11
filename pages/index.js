@@ -43,7 +43,7 @@ const Home = ({ blocks }) => {
       </Head>
 
       {/* FEATURES SECTION */}
-      <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left bg-blancCasse">
+      <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left">
         <Navbar />
         {/* <Hero data={cleanedData} /> */}
         <Hero2 />
