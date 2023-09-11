@@ -10,18 +10,18 @@ const Navbar = () => {
       text: "Nos Solutions",
       url: "/solution-360",
     },
-    {
-      text: "Templates",
-      url: "/categorie-templates",
-    },
+    // {
+    //   text: "Templates",
+    //   url: "/categorie-templates",
+    // },
     {
       text: "Nous Connaître",
       url: "/team",
     },
-    {
-      text: "Ressources",
-      url: "/resources",
-    },
+    // {
+    //   text: "Ressources",
+    //   url: "/resources",
+    // },
   ];
 
   return (

@@ -22,63 +22,30 @@ function Section4() {
             Nous assistons les managers et responsables RH dans leurs enjeux
             réglementaires et sociétaux.
           </p>
-          <p className="mb-6 text-base text-indigo-100 md:text-lg">
-            Les résultats d'une politique favorisant le bien-être des salariés
-            ont été mis en évidence par plusieurs études indépendantes :
-          </p>
-
-          <div className="grid border divide-y rounded lg:col-span-3 sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
-            <div className="flex flex-col justify-between space-y-6 p-10">
-              <div>
-                <p className="text-lg font-semibold text-white sm:text-base">
-                  Salariés + motivés
-                </p>
-                <p className="text-2xl font-bold text-white sm:text-xl">89%</p>
-              </div>
-              <div>
-                <p className="text-lg font-semibold text-white sm:text-base">
-                  Turnover divisé par
-                </p>
-                <p className="text-2xl font-bold text-white sm:text-xl">2</p>
-              </div>
-              <div>
-                <p className="text-lg font-semibold text-white sm:text-base">
-                  Performance salarié
-                </p>
-                <p className="text-2xl font-bold text-white sm:text-xl">
-                  +130%
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-between p-10">
-              <div>
-                <p className="text-lg font-semibold text-white sm:text-base">
-                  Amelioration du bien-être de{/* vont mieux */}
-                </p>
-                <p className="text-2xl font-bold text-white sm:text-xl">
-                  88% des Salariés
-                </p>
-              </div>
-              <div>
-                <p className="text-lg font-semibold text-white sm:text-base">
-                  Meilleure capacité d’adaptation
-                </p>
-                <p className="text-2xl font-bold text-white sm:text-xl">77%</p>
-              </div>
-              <div>
-                <p className="text-lg font-semibold text-white sm:text-base">
-                  Environnement + inclusif
-                </p>
-                <p className="text-2xl font-bold text-white sm:text-xl">78%</p>
-              </div>
-            </div>
-          </div>
-
-          <p className="mb-6 py-8 text-base text-indigo-100 md:text-lg">
+         
+          
+          <p className=" py-8 text-base text-indigo-100 md:text-lg">
             Acteur de l'innovation sociale, notre expertise est reconnue et
             ancrée auprès des institutions et acteurs de
             l'économie sociale et solidaire.
           </p>
+          <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
+            <div class="grid row-gap-8 sm:grid-cols-3">
+              <div class="text-center">
+                <h6 class="text-5xl font-bold text-white">88%</h6>
+                <p class="font-bold text-white">                  des salariés vont mieux
+</p>
+              </div>
+              <div class="text-center">
+                <h6 class="text-5xl font-bold text-white">77%</h6>
+                <p class="font-bold text-white"> Meilleure capacité d’adaptation</p>
+              </div>
+              <div class="text-center">
+                <h6 class="text-5xl font-bold text-white">78%</h6>
+                <p class="font-bold text-white">  Environnement + inclusif</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

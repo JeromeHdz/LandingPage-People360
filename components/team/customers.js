@@ -7,57 +7,57 @@ function Customers() {
       <Image
         src="/img/team/fixed/afpa.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
         src="/img/team/fixed/playbac.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
         src="/img/team/fixed/babichou.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
         src="/img/team/fixed/red.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
         src="/img/team/fixed/pnco.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
         src="/img/team/fixed/mdp.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
         src="/img/team/fixed/cci.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
       <Image
         src="/img/team/fixed/bpi.png"
         alt="P"
-        width="250"
-        height="150"
+        width="175"
+        height="100"
         className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
       />
     </div>
