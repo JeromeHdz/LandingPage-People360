@@ -49,15 +49,6 @@ export default function Footer() {
                 <span>People 360</span>
               </Link>
             </div>
-
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              People 360 vous accompagne, vous et vos collaborateurs, tout au
-              long de leur parcours professionnel.
-            </div>
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              People 360 n'est pas un service d'urgence. <br /> En cas
-              d'urgence, contactez le 15.
-            </div>
           </div>
 
           <div>
