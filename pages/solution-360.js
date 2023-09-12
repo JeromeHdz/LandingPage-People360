@@ -49,10 +49,10 @@ const Solution360 = () => {
           className="roadmapSection py-0"
           pretitle=""
           title={"Accompagner individuellement"}
-        >
-          {""}
-        </SectionTitle>
-        <Benefits data={benefitOne} />
+        />
+        <span id="accompagner-individuellement"></span>
+        <SectionTitle />
+        <Benefits  data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
         <Benefits data={benefitThree} />
         <Section3 />

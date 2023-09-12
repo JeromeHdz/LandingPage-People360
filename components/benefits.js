@@ -18,7 +18,7 @@ const Benefits = (props) => {
           <div>
             <Image
               src={data.image}
-              width="350"
+              width="auto"
               height="auto"
               alt="Benefits"
               className={"object-cover"}
@@ -45,7 +45,7 @@ const Benefits = (props) => {
                 {data.subtitle}
               </h2>
               <h3 id={data.id} className="max-w-2xl mt-3 text-lg font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight ">
-                Des roadmaps interactives, sur-mesure, engageantes et utiles
+                
               </h3>
               <p className="max-w-2xl py-4 text-md leading-normal text-gray-500  " dangerouslySetInnerHTML={{ __html: data.desc }}>
                 

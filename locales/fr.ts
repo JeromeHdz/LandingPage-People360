@@ -95,7 +95,7 @@ const fr = {
   },
   Solution360: {
     heroSection: {
-      title: "Une plateforme RH individualisée, basée sur l’avancée technologique de l’IA et l’expertise de coachs.",
+      title: "Une plateforme RH individualisée, basée sur l’avancée technologique de l’IA et l’expertise de coachs",
       subTitle: "La solution 360 impacte positivement tous vos collaborateurs et votre activité",
     },
     featureSection: {

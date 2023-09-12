@@ -99,8 +99,10 @@ const roadmaps = [
 const benefitOne = {
   title: "L’IA au service du parcours collaborateur, accessible à tous",
   subsubtitle:'Des roadmaps interactives, sur-mesure, engageantes et utiles ',
-  desc: `<b>Individualisée: </b>: Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
-  <b>Dynamique: </b>Bien plus qu'une to do list, des notifications push sont envoyées automatiquement sur l'agenda des collaborateurs(salarié, manager, collègue). <br/><br/>
+  desc: `                <b>Des roadmaps interactives, sur-mesure, engageantes et utiles</b><br/><br/>
+
+  <b>Individualisée: </b>: Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
+  <b>Dynamique: </b>Bien plus qu'une to do list, des notifications push sont envoyées automatiquement sur l'agenda des collaborateurs (salarié, manager, collègue). <br/><br/>
   <b>Complète: </b>Rappels réglementaires, tâches à ne pas rater, quizz d'auto-évaluation, bonnes pratiques, contenus informatifs (vidéos, audios, écrits...)  <br/><br/>
   <b>Modulable: </b>Chaque collaborateur peut adapter sa roadmap selon ses timings et préférences. <br/><br/>
   <b>Spécialisée: </b>Roadmaps disponibles par thématique: parentalité, reconversion, aidants, maladie etc...`,
