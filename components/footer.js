@@ -31,8 +31,8 @@ export default function Footer() {
   return (
     <div className="relative">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-4">
-          <div className="">
+        <div className="grid max-w-screen-xl grid-cols-1 md:grid-cols-2 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-4">          
+        <div className="">
             <div>
               {" "}
               <Link
@@ -57,14 +57,14 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={item.url}
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full text-center md:text-left px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
                   {item.text}
                 </Link>
               ))}
             </div>
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <div>Nous rencontrer</div>
             <div className="flex mt-1 space-x-5 text-gray-400 dark:text-gray-500">
               <a
@@ -109,7 +109,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="text-left">
+          <div className="text-center md:text-left">
             Newsletter
             <div className="max-w-md my-4 text-gray-500 dark:text-gray-400">
               Actualités RH, infos clés, livres blancs et webinaires,
@@ -121,11 +121,10 @@ export default function Footer() {
       </Container>
 
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 mx-auto mt-5 border-t-4 border-blue-600 lg:grid-cols-5">
-          <div className=" pt-6">
+        <div className="grid max-w-screen-xl grid-cols-1 md:grid-cols-3 gap-10 mx-auto mt-5 border-t-4 border-blue-600 lg:grid-cols-5">          <div className=" pt-6">
             <Link
               href="/"
-              className="w-full py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+              className="w-full text-center md:text-left py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
             >
               Mentions légales
             </Link>
@@ -177,8 +176,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copywright 2023 - Made with <span className="text-blue-500">♥</span>{" "}
+        <div className="my-10 text-xs sm:text-sm text-center text-gray-600 dark:text-gray-400">          Copywright 2023 - Made with <span className="text-blue-500">♥</span>{" "}
           by People 360
         </div>
       </Container>
