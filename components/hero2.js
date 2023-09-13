@@ -9,7 +9,7 @@ const Hero2 = ({ data }) => {
   return (
     <div className="relative w-full">
       
-      <Image
+      {/* <Image
         src={
           getNotionImageById(data, "16810fbb8a1f4f1d82a3b0bf28fb00dc") ||
           heroImg
@@ -17,24 +17,16 @@ const Hero2 = ({ data }) => {
         className="absolute inset-0 object-cover w-full h-full"
         alt="Hero Illustration"
         loading="eager"
-      />
-      <div className="relative bg-rose-50 bg-opacity-75">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="flex flex-col items-center justify-between xl:flex-row">
-            <div className="w-full  mb-12 xl:mb-0 xl:pr-16">
-              <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                {/* {getNotionContentBlockById(
-                  data,
-                  "5a5fb2f4cbbc49eab54314fc22a9cf35"
-                ) || fr.LandingPage.hero.catchPhrase} */}
+      /> */}
+      
+      <div className=" mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:pb-20 h-screen">
+          <div className="flex flex-col items-left justify-between xl:flex-row">
+          <div className=" w-full mb-12 xl:mb-0 grid gap-10 md:grid-cols-2 md:items-center">
+            <div className="">
+              <h2 className="mb-8 xl:mt-[-150px] font-sans text-xl relative z-3 font-semi-bold tracking-tight text-dark-ceruelean sm:text-4xl sm:leading-none md:mr-[-40%]">
                 Réenchantez les transitions de vie de vos salariés, vivez une expérience 360°
-                {/* <br className="hidden md:block" />
-              can imagine{' '}
-              <span className="inline-block text-deep-purple-accent-400">
-                is real
-              </span> */}
               </h2>
-              <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+            <p className="w-full my-8 text-base text-dark-ceruelean md:text-xl">
                 {getNotionContentBlockById(
                   data,
                   "b00f0812bbca44abaae427d3130926e9"
@@ -44,7 +36,7 @@ const Hero2 = ({ data }) => {
                 href="/book-demo"
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-orange-400 rounded-md "
+              className="px-8 py-4 my-8 md:text-lg font-medium text-center text-white bg-dark-ceruelean rounded-md "
               >
                 {getNotionContentBlockById(
                   data,
@@ -52,9 +44,17 @@ const Hero2 = ({ data }) => {
                 ) || fr.LandingPage.hero.ctaDemo}
               </Link>
             </div>
+            <div>
+              <img
+                className="z-1"
+                src="img/home/home-girl.png"
+                alt=""
+              />
+            </div>
+            </div>
             </div>
         </div>
-      </div>
+      
     </div>
   );
 };

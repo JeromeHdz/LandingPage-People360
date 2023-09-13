@@ -40,13 +40,27 @@ const Home = ({ blocks }) => {
           content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
 
       {/* FEATURES SECTION */}
-      <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left">
+      <section class="relative w-full h-screen">
+        <img
+          src="img/home/hero.bg-sans.jpg"
+          class="absolute top-0 left-0 object-cover w-full h-full z-5"
+          alt="Image alt text"
+        />
+        <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-12 lg:px-32 xl:px-0 max-w-screen-xl text-left">
+        
         <Navbar />
         {/* <Hero data={cleanedData} /> */}
         <Hero2 />
+      </Container>
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
+      </section>
+      <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left bg- bg-cover bg-no-repeat">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={
@@ -66,10 +80,14 @@ const Home = ({ blocks }) => {
             cleanedData,
             "dc27af491c7642679e935aa31b731a05"
           ) || fr.LandingPage.featuresSection.subtitle}
+      
         </SectionTitle>
-        <Features data={cleanedData} />
-      </Container>
+        
+      
 
+        <Features data={cleanedData} />
+      
+      </Container>
       {/* ROADMAPS SECTION */}
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle

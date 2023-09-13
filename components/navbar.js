@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import fr from "../locales/fr";
@@ -25,18 +24,18 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full px-16">
-      <nav className="container relative flex flex-wrap items-center justify-between lg:justify-between xl:px-0">
+    <div className="w-full">
+      <nav className=" relative flex flex-wrap items-center justify-between lg:justify-between">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-blue-700 dark:text-gray-100">
+                  <span className="flex items-center space-x-2 text-2xl font-medium text-dark-ceruelean">
                     <span>
                       <Image
-                        src="/img/logo.png"
+                        src="/img/logo-6.png"
                         alt="P"
                         width="32"
                         height="32"
@@ -78,7 +77,7 @@ const Navbar = () => {
                       <Link
                         key={index}
                         href={item.url}
-                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                        className="w-full px-4 py-2 -ml-4 text-dark-ceruelean-500 rounded-md  hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none"
                       >
                         {item.text}
                       </Link>
@@ -103,7 +102,7 @@ const Navbar = () => {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={item.url}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  className="inline-block px-4 py-2 text-lg font-normal text-dark-ceruelean font-semi-bold no-underline rounded-md hover:text-white focus:text-white-700 focus:bg-white-100 focus:outline-none "
                 >
                   {item.text}
                 </Link>
@@ -115,7 +114,7 @@ const Navbar = () => {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
             href="/book-demo"
-            className="px-6 py-2 text-white bg-blue-700 rounded-md md:ml-5"
+            className="px-6 py-2 text-white font-semi-bold bg-dark-ceruelean rounded-md md:ml-5"
           >
             {fr.Global.cta}
           </Link>

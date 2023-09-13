@@ -17,7 +17,7 @@ const Hero = ({ data }) => {
         >
           <path d="M50 0H100L50 100H0L50 0Z" />
         </svg>
-        <Image
+        {/* <Image
           src={
             getNotionImageById(data, "16810fbb8a1f4f1d82a3b0bf28fb00dc") ||
             heroImg
@@ -25,7 +25,7 @@ const Hero = ({ data }) => {
           className={"object-cover pr-16 rounded-lg"}
           alt="Hero Illustration"
           loading="eager"
-        />
+        /> */}
       </div>
       <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-8 md:px-0 lg:px-8 lg:max-w-screen-xl">
         <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
