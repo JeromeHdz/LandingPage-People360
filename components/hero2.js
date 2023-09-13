@@ -23,10 +23,10 @@ const Hero2 = ({ data }) => {
           <div className="flex flex-col items-left justify-between xl:flex-row">
           <div className=" w-full mb-12 xl:mb-0 grid gap-10 md:grid-cols-2 md:items-center">
             <div className="">
-              <h2 className="mb-8 xl:mt-[-150px] font-sans text-xl relative z-3 font-semi-bold tracking-tight text-dark-ceruelean sm:text-4xl sm:leading-none md:mr-[-40%]">
+              <h2 className="mb-8 xl:mt-[-150px] font-sans text-xl relative z-3 font-semi-bold tracking-tight text-dark-cerulean sm:text-4xl sm:leading-none md:mr-[-40%]">
                 Réenchantez les transitions de vie de vos salariés, vivez une expérience 360°
               </h2>
-            <p className="w-full my-8 text-base text-dark-ceruelean md:text-xl">
+            <p className="w-full my-8 text-base text-dark-cerulean md:text-xl">
                 {getNotionContentBlockById(
                   data,
                   "b00f0812bbca44abaae427d3130926e9"
@@ -36,7 +36,7 @@ const Hero2 = ({ data }) => {
                 href="/book-demo"
                 target="_blank"
                 rel="noopener"
-              className="px-8 py-4 my-8 md:text-lg font-medium text-center text-white bg-dark-ceruelean rounded-md "
+                className="px-8 py-4 my-8 md:text-lg font-medium text-center text-white bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean rounded-md "
               >
                 {getNotionContentBlockById(
                   data,

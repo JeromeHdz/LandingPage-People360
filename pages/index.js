@@ -45,7 +45,7 @@ const Home = ({ blocks }) => {
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
 
-      {/* FEATURES SECTION */}
+      {/* HERO SECTION */}
       <section class="relative w-full h-screen">
         <img
           src="img/home/hero.bg-sans.jpg"
@@ -60,7 +60,10 @@ const Home = ({ blocks }) => {
       </Container>
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
       </section>
-      <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left bg- bg-cover bg-no-repeat">
+
+
+      {/* FEATURE SECTION */}
+      <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left ">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={

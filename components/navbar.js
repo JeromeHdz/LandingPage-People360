@@ -32,7 +32,7 @@ const Navbar = () => {
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-medium text-dark-ceruelean">
+                  <span className="flex items-center space-x-2 text-2xl font-medium text-dark-cerulean">
                     <span>
                       <Image
                         src="/img/logo-6.png"
@@ -77,7 +77,7 @@ const Navbar = () => {
                       <Link
                         key={index}
                         href={item.url}
-                        className="w-full px-4 py-2 -ml-4 text-dark-ceruelean-500 rounded-md  hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none"
+                        className="w-full px-4 py-2 -ml-4 text-dark-cerulean-500 rounded-md  hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none"
                       >
                         {item.text}
                       </Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={item.url}
-                  className="inline-block px-4 py-2 text-lg font-normal text-dark-ceruelean font-semi-bold no-underline rounded-md hover:text-white focus:text-white-700 focus:bg-white-100 focus:outline-none "
+                  className="inline-block px-4 py-2 text-lg font-normal text-dark-cerulean  font-semi-bold no-underline rounded-md hover:text-floral-white focus:text-white-700 focus:bg-white-100 focus:outline-none "
                 >
                   {item.text}
                 </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
             href="/book-demo"
-            className="px-6 py-2 text-white font-semi-bold bg-dark-ceruelean rounded-md md:ml-5"
+            className="px-6 py-2 text-white font-semi-bold bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean rounded-md md:ml-5"
           >
             {fr.Global.cta}
           </Link>

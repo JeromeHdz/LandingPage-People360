@@ -14,40 +14,40 @@ module.exports = {
     },
     extend: {
       backgroundColor: {
-        "floral-white": "#FBFBEF",
+        "floral-white": "#FFF6ED",
         "powder-blue": "#B1DFE7",
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
         
 
-        "light-cerulean":"#00bd9f",
-        "dark-ceruelean":"#00856c",
+        "light-cerulean": "#00bd9f",
+        "dark-cerulean": "#00856c",
         "dark-grey":"#402e32",
         "light-grey":"#bca79d",
       },
       textColor:{
-        "floral-white": "#FBFBEF",
+        "floral-white": "#FFF6ED",
         "powder-blue": "#B1DFE7",
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
 
         "light-cerulean": "#00bd9f",
-        "dark-ceruelean": "#00856c",
+        "dark-cerulean": "#00856c",
         "dark-grey": "#402e32",
         "light-grey": "#bca79d",
       },
       colors: {
         trueGray: colors.neutral,
-        "floral-white": "#FBFBEF",
+        "floral-white": "#FFF6ED",
         "powder-blue": "#B1DFE7",
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
         
         "light-cerulean": "#00bd9f",
-        "dark-ceruelean": "#00856c",
+        "dark-cerulean": "#00856c",
         "dark-grey": "#402e32",
         "light-grey": "#bca79d",
         borderColor: {

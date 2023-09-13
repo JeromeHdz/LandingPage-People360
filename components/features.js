@@ -13,10 +13,10 @@ function features({ data }) {
             key={index}
             className="flex flex-col p-5 border rounded shadow-sm"
           >
-            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-powder-blue">
               <IconContext.Provider
                 value={{
-                  color: "#1D4ED8",
+                  color: "#00856c",
                   size: "2em",
                   className: "global-class-name",
                 }}
@@ -28,14 +28,14 @@ function features({ data }) {
               {getNotionContentBlockById(data, feature.titleNodtionId) ||
                 feature.title}
             </h6>
-            <p className="mb-3 text-sm text-gray-900 dark:text-gray-300 sm:text-center md:text-left">
+            <p className="mb-3 text-sm sm:text-center md:text-left">
               {getNotionContentBlockById(data, feature.descriptionNotionId) ||
                 feature.description}
             </p>
             <a
               href={feature.link}
               aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-800 hover:text-deep-purple-800"
+              className="inline-flex items-center font-semibold transition-colors duration-200 hover:text-light-cerulean"
             >
               En savoir plus
             </a>

@@ -9,13 +9,13 @@ const SectionTitle = (props) => {
       }`}
     >
       {props.pretitle && (
-        <div className="text-sm font-bold tracking-wider text-blue-700 uppercase">
+        <div className="text-sm font-bold tracking-wider  uppercase">
           {props.pretitle}
         </div>
       )}
 
       {props.title && (
-        <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">
+        <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight  lg:leading-tight lg:text-4xl ">
           {/* <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -46,7 +46,7 @@ const SectionTitle = (props) => {
       )}
 
       {props.children && (
-        <p className="max-w-4xl pt-6 mt-3 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        <p className="max-w-4xl pt-6 mt-3 text-lg leading-normal lg:text-xl xl:text-xl ">
           {props.children}
         </p>
       )}

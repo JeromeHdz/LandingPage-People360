@@ -6,12 +6,14 @@
   html,
   body {
     /* @apply dark:bg-trueGray-900; */
-    @apply bg-floral-white
+    @apply bg-floral-white;
+    @apply text-dark-cerulean;
   }
 
   .VJL48qbQzWENTFAh1Knk e9TS9yoMqqIN2PqBo1QG f3c_Dda7HKHqraeedxG1 {
     display: none;
   }
+
 }
 
 .icon,
