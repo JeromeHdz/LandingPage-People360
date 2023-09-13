@@ -9,6 +9,28 @@
     @apply bg-floral-white;
     @apply text-dark-cerulean;
   }
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-container {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.animate-scroll-left {
+  animation: scroll-left linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
 
   .VJL48qbQzWENTFAh1Knk e9TS9yoMqqIN2PqBo1QG f3c_Dda7HKHqraeedxG1 {
     display: none;

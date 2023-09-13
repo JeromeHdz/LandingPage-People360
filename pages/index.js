@@ -89,9 +89,15 @@ const Home = ({ blocks }) => {
       
 
         <Features data={cleanedData} />
-      
+        
       </Container>
+      <img
+        src="img/home/feature-bottom.jpg"
+        class=" top-0 left-0 object-cover w-full h-full z-5"
+        alt="Image alt text"
+      />
       {/* ROADMAPS SECTION */}
+      <section class="relative w-full h-screen bg-pale-salmon">
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"
@@ -130,6 +136,7 @@ const Home = ({ blocks }) => {
           }
         />
       </Container>
+      </section >
 
       {/* STAT SECTION */}
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
