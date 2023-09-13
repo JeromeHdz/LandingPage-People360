@@ -121,7 +121,7 @@ const Home = ({ blocks }) => {
           ) || fr.LandingPage.roadmapSection.subtitle}
         </SectionTitle>
         <RoadmapsButtons data={roadmaps} />
-        <p className="max-w-4xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        <p className="max-w-4xl text-lg leading-normal lg:text-xl xl:text-xl ">
           {getNotionContentBlockById(
             cleanedData,
             "d601a5dcbd7146258bf3d25947b21aa1"
@@ -186,8 +186,15 @@ const Home = ({ blocks }) => {
       <Faq /> */}
 
       {/* CTA FOOTER SECTION */}
+      {/* FOOTER  */}
+      <section class="relative w-full bg-antique-white">
+      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
+
       <CtaFooter props={fr.LandingPage.ctaFooterSection} data={cleanedData} />
-      <Footer />
+
+      
+          <Footer /></Container></section>
+      
       <PopupWidget />
     </>
   );

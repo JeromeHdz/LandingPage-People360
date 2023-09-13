@@ -8,7 +8,7 @@ function Stat({ data }) {
       {fr.LandingPage.statSection.stats.map((el, index) => (
         <div className={'stat w-full md:w-1/2 lg:w-1/5 p-2'} key={index}>
           <div className="stat-title text-xl" dangerouslySetInnerHTML={{ __html: el.title }}></div>
-          <div className="stat-value text-blue-600">{el.data}</div>
+          <div className="stat-value ">{el.data}</div>
         </div>
       ))}
     </div>

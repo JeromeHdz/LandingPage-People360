@@ -24,6 +24,11 @@ import benefitOneImg from "../public/img/solution360/benefit-one.png";
 import benefitTwoImg from "../public/img/solution360/benefit-two.png";
 import benefitThreeImg from "../public/img/solution360/benefit-three.png";
 
+import auditImg from "../public/img/home/audit.jpg";
+import coachingImg from "../public/img/home/coaching.jpg";
+import dashboardImg from "../public/img/home/dashboard.jpg";
+import groupeImg from "../public/img/home/groupe.jpg";
+
 
 const roadmaps = [
   {
@@ -184,6 +189,7 @@ const benefitThree = {
 const featuresList = [
   {
     icon: <AiOutlineAudit />,
+    imgLink:auditImg,
     title: "Faites le bilan",
     description:
       "Des audits actionnables simplement par les RH et les managers. ",
@@ -193,6 +199,7 @@ const featuresList = [
   },
   {
     id:"accompagner-individuellement",
+    imgLink: coachingImg,
     icon: <LuHeartHandshake />,
     title: "Accompagner individuellement",
     description:
@@ -203,6 +210,7 @@ const featuresList = [
   },
   {
     id:"former-collectivement",
+    imgLink: groupeImg,
     icon: <TbSchool />,
     title: "Former Collectivement",
     description:
@@ -213,6 +221,7 @@ const featuresList = [
   },
   {
     id:"mesurer-votre-impact",
+    imgLink: dashboardImg,
     icon: <MdQueryStats />,
     title: "Mesurer votre impact",
     description:

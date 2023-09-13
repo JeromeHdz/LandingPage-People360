@@ -7,7 +7,7 @@ const Cta = (props) => {
       href="/book-demo"
       target="_blank"
       rel="noopener"
-      className="w-3/5 px-8 py-4 text-lg font-medium text-center text-white bg-blue-700 rounded-md "
+      className="w-3/5 px-8 py-4 text-lg font-medium text-center text-white bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean bg-blue-700 rounded-md "
     >
       {props.title}
     </Link>

@@ -37,10 +37,10 @@ export default function Footer() {
               {" "}
               <Link
                 href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-blue-700 dark:text-gray-100"
+                className="flex items-center space-x-2 text-2xl font-medium "
               >
                 <Image
-                  src="/img/logo.png"
+                  src="/img/logo-6.png"
                   alt="N"
                   width="32"
                   height="32"
@@ -57,20 +57,20 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={item.url}
-                  className="w-full text-center md:text-left px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                  className="w-full text-center md:text-left px-4 py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
                 >
                   {item.text}
                 </Link>
               ))}
             </div>
           </div>
-          <div className="text-center md:text-left">
-            <div>Nous rencontrer</div>
-            <div className="flex mt-1 space-x-5 text-gray-400 dark:text-gray-500">
+          <div className="text-center  md:text-left">
+            <div className="font-semi-bold">Nous rencontrer</div>
+            <div className="flex mt-1 space-x-5 ">
               <a
                 href="mailto:hello@people360.fr"
                 target="_blank"
-                className="w-full text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
               >
                 <div>
                   <span className="icon">
@@ -80,11 +80,11 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="flex mt-4 space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="flex mt-4 space-x-5 ">
               <a
                 href="https://goo.gl/maps/qrTxBDsxQAhtyVYg8"
                 target="_blank"
-                className="w-full text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
               >
                 <div>
                   <span className="icon">
@@ -94,11 +94,11 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="flex mt-4 space-x-5 text-gray-400 dark:text-gray-500">
+            <div className="flex mt-4 space-x-5  ">
               <a
                 href="https://goo.gl/maps/qrTxBDsxQAhtyVYg8"
                 target="_blank"
-                className="w-full text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
               >
                 <div>
                   <span className="icon">
@@ -109,9 +109,9 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="text-center md:text-left">
-            Newsletter
-            <div className="max-w-md my-4 text-gray-500 dark:text-gray-400">
+          <div className="text-center md:text-left ">
+            <span className="font-semi-bold">Newsletter</span>
+            <div className="max-w-md my-4">
               Actualités RH, infos clés, livres blancs et webinaires,
               inscrivez-vous à notre newsletter pour rester informé.
             </div>
@@ -121,17 +121,17 @@ export default function Footer() {
       </Container>
 
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 md:grid-cols-3 gap-10 mx-auto mt-5 border-t-4 border-blue-600 lg:grid-cols-5">          <div className=" pt-6">
+        <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-10 mx-auto mt-5 border-t-4 border-dark-cerulean lg:grid-cols-5">          <div className=" pt-6">
             <Link
               href="/"
-              className="w-full text-center md:text-left py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+              className="w-full text-center md:text-left py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
             >
               Mentions légales
             </Link>
 
             <div className="max-w-md mt-4 ">
               {/*<div>People 360</div>
-               <div className="text-gray-500 dark:text-gray-400">
+               <div className=" dark:text-gray-400">
                 People 360 n'est pas un service d'urgence. <br /> En cas
                 d'urgence, contactez le 15.
               </div> */}
@@ -142,7 +142,7 @@ export default function Footer() {
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0 ">
               <Link
                 href="/"
-                className="w-full py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
               >
                 CGS
               </Link>
@@ -151,7 +151,7 @@ export default function Footer() {
           <div className="pt-6">
             <Link
               href="/"
-              className="w-full py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+              className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
             >
               CGU
             </Link>
@@ -159,7 +159,7 @@ export default function Footer() {
           <div className="pt-6">
             <Link
               href="/"
-              className="w-full py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+              className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
             >
               Charte de confidentialité
             </Link>
@@ -168,7 +168,7 @@ export default function Footer() {
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0 pt-6">
               <Link
                 href="/"
-                className="w-full py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
               >
                 Charte de déontologie
               </Link>
@@ -176,10 +176,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="my-10 text-xs sm:text-sm text-center text-gray-600 dark:text-gray-400">          Copywright 2023 - Made with <span className="text-blue-500">♥</span>{" "}
-          by People 360
-        </div>
+        
       </Container>
+      <div className="py-10 text-xs sm:text-sm text-center font-semibold">          Copywright 2023 - Made with <span className="text-dark-cerulean">♥</span>{" "}
+        by People 360
+      </div>
     </div>
   );
 }
