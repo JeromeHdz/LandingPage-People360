@@ -22,7 +22,7 @@ const BookDemo = () => {
           name="description"
           content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/favico/favicon.ico" />
       </Head>
 
       <Container className="flex flex-wrap ">

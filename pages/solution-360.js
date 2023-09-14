@@ -36,7 +36,7 @@ const Solution360 = () => {
           name="description"
           content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/img/ico/favicon.ico" />
       </Head>
       <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left ">
         <Navbar />
