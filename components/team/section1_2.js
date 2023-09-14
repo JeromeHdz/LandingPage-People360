@@ -41,7 +41,7 @@ function section1_2() {
               <b>
                 d’accompagner plus largement les transitions de vie qui
                 impactent l’équilibre, l’activité et la stabilité
-                professionnelles des salariés.
+                professionnelle des salariés.
               </b>{" "}
               <br />
               Et pour donner vie à leur projet, ils s'associent à Jérôme,
