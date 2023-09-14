@@ -4,7 +4,7 @@ import Hero2 from "../components/hero2";
 
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
-import RoadmapsButtons from "../components/roadmapsButtons";
+// import RoadmapsButtons from "../components/roadmapsButtons";
 import Container from "../components/container";
 
 import { benefitOne, benefitTwo, roadmaps } from "../components/data";
@@ -23,6 +23,10 @@ import Contact from "../components/contact";
 import fr from "../locales/fr";
 import { Client } from "@notionhq/client";
 import { cleanDataFromNotion, getNotionContentBlockById } from "../utils";
+
+import dynamic from 'next/dynamic';
+
+const RoadmapsButtons = dynamic(() => import('../components/roadmapsButtons'), { ssr: false });
 
 const Home = ({ blocks }) => {
   console.log(JSON.stringify(blocks, null, 2));
@@ -97,7 +101,7 @@ const Home = ({ blocks }) => {
         alt="Image alt text"
       />
       {/* ROADMAPS SECTION */}
-      <section class="relative w-full h-screen bg-pale-salmon">
+      <section class="relative w-full h-auto bg-pale-salmon">
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"

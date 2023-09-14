@@ -35,59 +35,69 @@ const roadmaps = [
     title: "Parentalité",
     icon: <MdStroller />,
     color:"bg-rose-50",
+    imgLink: "/img/home/parentalite.jpg"
   },
   {
     title: "Maladie",
     icon: <MdOutlineSick />,
     color: "bg-rose-100",
+    imgLink: "/img/home/maladie.jpg"
 
   },
   {
     title: "Handicap",
     icon: <BiHandicap />,
     color: "bg-rose-200",
+    imgLink: "/img/home/handicap.jpg"
 
   },
   {
     title: "Aidant",
     icon: <FaHandHoldingHeart />,
     color: "bg-rose-300",
+    imgLink: "/img/home/aidant.jpg"
 
   },
   {
     title: "Senior",
     icon: <MdElderly />,
     color: "bg-rose-400",
+    imgLink: "/img/home/senior.jpg"
 
   },
   {
     title: "Promotion",
     icon: <PiShootingStarFill />,
     color: "bg-blue-50",
+    imgLink: "/img/home/promotion.jpg"
 
   },
   {
     title: "Expatriation",
     icon: <SiYourtraveldottv />,
     color: "bg-blue-100",
+    imgLink: "/img/home/expat.jpg"
 
   },
   {
     title: "Impatriation",
     icon: <FaPlaneArrival />,
     color: "bg-blue-200",
+    imgLink: "/img/home/impat.jpg"
 
   },
   {
     title: "Management",
     icon: <FaTasks />,
     color: "bg-blue-300",
+    imgLink: "/img/home/management.jpg"
 
   },
   {
     title: "Retraite",
     icon: <GiBoatFishing />,
     color: "bg-blue-400",
+    imgLink: "/img/home/retraite.jpg"
 
   },
   // {
