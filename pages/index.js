@@ -61,7 +61,7 @@ const Home = ({ blocks }) => {
           class="absolute top-0 left-0 object-cover w-full h-full z-5"
           alt="Image alt text"
         />
-        <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-12 lg:px-32 xl:px-0 max-w-screen-xl text-left">
+        <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-12 px-8 md:px-32 xl:px-0 max-w-screen-xl text-left">
           <Navbar />
           {/* <Hero data={cleanedData} /> */}
           <Hero2 />

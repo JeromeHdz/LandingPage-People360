@@ -13,7 +13,7 @@ const RoadmapsButtons = (props) => {
   const { data } = props;
   console.log(data);
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+    <div className="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
       {data &&
         data.map((item, index) => (
           <div
@@ -28,7 +28,7 @@ const RoadmapsButtons = (props) => {
                 alt="Benefits"
                 className="object-cover mx-auto rounded-3xl text-center "
               />
-              <div className="relative px-8 mx-8 -mt-12">
+              <div className="relative px-0 md:px-8 mx-8 -mt-12">
                 <div className="bg-floral-white p-6 rounded-lg shadow-lg">
                   <h4 className="mt-1 font-semibold uppercase leading-tight truncate">
                     {item.title}

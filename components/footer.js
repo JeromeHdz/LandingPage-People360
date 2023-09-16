@@ -31,8 +31,8 @@ export default function Footer() {
   return (
     <div className="relative">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 md:grid-cols-2 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-4">          
-        <div className="">
+        <div className="grid max-w-screen-xl grid-cols-1 md:grid-cols-2 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-4">
+          <div className="flex md:justify-start justify-center">
             <div>
               {" "}
               <Link
@@ -121,7 +121,9 @@ export default function Footer() {
       </Container>
 
       <Container>
-        <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-10 mx-auto mt-5 border-t-4 border-dark-cerulean lg:grid-cols-5">          <div className=" pt-6">
+        <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-10 mx-auto mt-5 border-t-4 border-dark-cerulean lg:grid-cols-5">
+          {" "}
+          <div className=" pt-6">
             <Link
               href="/"
               className="w-full text-center md:text-left py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
@@ -137,7 +139,6 @@ export default function Footer() {
               </div> */}
             </div>
           </div>
-
           <div className="pt-6">
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0 ">
               <Link
@@ -175,11 +176,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        
       </Container>
-      <div className="py-10 text-xs sm:text-sm text-center font-semibold">          Copywright 2023 - Made with <span className="text-dark-cerulean">♥</span>{" "}
-        by People 360
+      <div className="py-10 text-xs sm:text-sm text-center font-semibold">
+        {" "}
+        Copywright 2023 - Made with{" "}
+        <span className="text-dark-cerulean">♥</span> by People 360
       </div>
     </div>
   );
