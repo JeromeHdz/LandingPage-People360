@@ -31,7 +31,7 @@ const RoadmapsButtons = dynamic(() => import("../components/roadmapsButtons"), {
 });
 
 const Home = ({ blocks }) => {
-  console.log(JSON.stringify(blocks, null, 2));
+  // console.log(JSON.stringify(blocks, null, 2));
   const cleanedData = null; //cleanDataFromNotion(blocks);
 
   return (

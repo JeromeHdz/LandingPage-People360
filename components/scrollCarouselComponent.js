@@ -4,6 +4,8 @@ import React from "react";
 import ScrollCarousel from "scroll-carousel";
 
 const ScrollCarouselComponent = (props) => {
+  const { data } = props;
+  console.log(data);
   return (
     <ScrollCarousel
       autoplay
