@@ -24,9 +24,11 @@ import fr from "../locales/fr";
 import { Client } from "@notionhq/client";
 import { cleanDataFromNotion, getNotionContentBlockById } from "../utils";
 
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const RoadmapsButtons = dynamic(() => import('../components/roadmapsButtons'), { ssr: false });
+const RoadmapsButtons = dynamic(() => import("../components/roadmapsButtons"), {
+  ssr: false,
+});
 
 const Home = ({ blocks }) => {
   console.log(JSON.stringify(blocks, null, 2));
@@ -46,7 +48,10 @@ const Home = ({ blocks }) => {
         <link rel="icon" href="/img/ico/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       {/* HERO SECTION */}
@@ -57,14 +62,12 @@ const Home = ({ blocks }) => {
           alt="Image alt text"
         />
         <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-12 lg:px-32 xl:px-0 max-w-screen-xl text-left">
-        
-        <Navbar />
-        {/* <Hero data={cleanedData} /> */}
-        <Hero2 />
-      </Container>
+          <Navbar />
+          {/* <Hero data={cleanedData} /> */}
+          <Hero2 />
+        </Container>
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
       </section>
-
 
       {/* FEATURE SECTION */}
       <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left ">
@@ -87,13 +90,9 @@ const Home = ({ blocks }) => {
             cleanedData,
             "dc27af491c7642679e935aa31b731a05"
           ) || fr.LandingPage.featuresSection.subtitle}
-      
         </SectionTitle>
-        
-      
 
         <Features data={cleanedData} />
-        
       </Container>
       <img
         src="img/home/feature-bottom.jpg"
@@ -102,45 +101,45 @@ const Home = ({ blocks }) => {
       />
       {/* ROADMAPS SECTION */}
       <section class="relative w-full h-auto bg-pale-salmon">
-      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
-        <SectionTitle
-          className="roadmapSection py-0"
-          pretitle={
-            getNotionContentBlockById(
+        <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
+          <SectionTitle
+            className="roadmapSection py-0"
+            pretitle={
+              getNotionContentBlockById(
+                cleanedData,
+                "6c37feb099dd469aa5269b8fb9b3e365"
+              ) || fr.LandingPage.roadmapSection.preTitle
+            }
+            title={
+              getNotionContentBlockById(
+                cleanedData,
+                "5faf295af280414abecb783e371d1596"
+              ) || fr.LandingPage.roadmapSection.title
+            }
+            roadmaps
+          >
+            {getNotionContentBlockById(
               cleanedData,
-              "6c37feb099dd469aa5269b8fb9b3e365"
-            ) || fr.LandingPage.roadmapSection.preTitle
-          }
-          title={
-            getNotionContentBlockById(
+              "aa4bc3d396ce4e9aab33ccd691b9ddc5"
+            ) || fr.LandingPage.roadmapSection.subtitle}
+          </SectionTitle>
+          <RoadmapsButtons data={roadmaps} />
+          <p className="max-w-4xl text-lg leading-normal lg:text-xl xl:text-xl ">
+            {getNotionContentBlockById(
               cleanedData,
-              "5faf295af280414abecb783e371d1596"
-            ) || fr.LandingPage.roadmapSection.title
-          }
-          roadmaps
-        >
-          {getNotionContentBlockById(
-            cleanedData,
-            "aa4bc3d396ce4e9aab33ccd691b9ddc5"
-          ) || fr.LandingPage.roadmapSection.subtitle}
-        </SectionTitle>
-        <RoadmapsButtons data={roadmaps} />
-        <p className="max-w-4xl text-lg leading-normal lg:text-xl xl:text-xl ">
-          {getNotionContentBlockById(
-            cleanedData,
-            "d601a5dcbd7146258bf3d25947b21aa1"
-          ) || fr.LandingPage.roadmapSection.subtitle2}
-        </p>
-        <Cta
-          title={
-            getNotionContentBlockById(
-              cleanedData,
-              "0d9116d3698d40ca9affceacfc0ec4f1"
-            ) || fr.LandingPage.roadmapSection.cta
-          }
-        />
-      </Container>
-      </section >
+              "d601a5dcbd7146258bf3d25947b21aa1"
+            ) || fr.LandingPage.roadmapSection.subtitle2}
+          </p>
+          <Cta
+            title={
+              getNotionContentBlockById(
+                cleanedData,
+                "0d9116d3698d40ca9affceacfc0ec4f1"
+              ) || fr.LandingPage.roadmapSection.cta
+            }
+          />
+        </Container>
+      </section>
 
       {/* STAT SECTION */}
       <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
@@ -192,13 +191,16 @@ const Home = ({ blocks }) => {
       {/* CTA FOOTER SECTION */}
       {/* FOOTER  */}
       <section class="relative w-full bg-antique-white">
-      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
+        <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
+          <CtaFooter
+            props={fr.LandingPage.ctaFooterSection}
+            data={cleanedData}
+          />
 
-      <CtaFooter props={fr.LandingPage.ctaFooterSection} data={cleanedData} />
+          <Footer />
+        </Container>
+      </section>
 
-      
-          <Footer /></Container></section>
-      
       <PopupWidget />
     </>
   );
