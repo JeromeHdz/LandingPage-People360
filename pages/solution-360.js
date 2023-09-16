@@ -37,13 +37,30 @@ const Solution360 = () => {
           content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
         />
         <link rel="icon" href="/img/ico/favicon.ico" />
-      </Head>
-      <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left ">
-        <Navbar />
-        <HeroCentered
-          title={fr.Solution360.heroSection.title}
-          subTitle={fr.Solution360.heroSection.subTitle}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
         />
+      </Head>
+      {/* HERO SECTION */}
+      <section class="relative w-full h-screen">
+        <img
+          src="img/solution360/hero-bg.png"
+          class="absolute top-0 left-0 object-cover w-full h-full z-5"
+          alt="Image alt text"
+        />
+        <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left ">
+          <Navbar />
+          <HeroCentered
+            title={fr.Solution360.heroSection.title}
+            subTitle={fr.Solution360.heroSection.subTitle}
+          />
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
+        </Container>
+      </section>
+      <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left ">
         <Features />
         <SectionTitle
           className="roadmapSection py-0"
@@ -52,7 +69,7 @@ const Solution360 = () => {
         />
         <span id="accompagner-individuellement"></span>
         <SectionTitle />
-        <Benefits  data={benefitOne} />
+        <Benefits data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
         <Benefits data={benefitThree} />
         <Section3 />

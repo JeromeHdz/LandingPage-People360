@@ -142,7 +142,7 @@ const Home = ({ blocks }) => {
       </section>
 
       {/* STAT SECTION */}
-      <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
+      <Container className="flex w-full px-6 py-16 flex-col space-y-8 items-center justify-center text-center ">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={
