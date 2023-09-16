@@ -43,7 +43,7 @@ const HeroCentered = (props) => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-10 lg:px-64">
+      <div className="flex justify-center items-center mt-10 px-64">
         <Cta title={fr.Global.cta} className="w-2/3" />
       </div>
     </div>
