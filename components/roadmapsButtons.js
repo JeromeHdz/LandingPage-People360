@@ -1,7 +1,7 @@
 // 'use client'; // For Next JS 13 app router
 
 import React from "react";
-import ScrollCarousel from "scroll-carousel-react";
+import ScrollCarousel from "scroll-carousel";
 import Image from "next/image";
 
 const RoadmapsButtons = (props) => {
