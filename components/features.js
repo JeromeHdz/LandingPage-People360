@@ -29,14 +29,14 @@ function features({ data }) {
                 </div>
 
                 <div className="flex-grow rounded-b ">
-                  <div className="p-5 text-center">
+                  <div className="text-center">
                     {" "}
                     {/* Centering text */}
                     <h6 className="mb-2 text-lg font-bold leading-5 w4">
                       {feature.title.toUpperCase()}
                     </h6>
                     <p
-                      className="text-md mx-auto w-3/5"
+                      className="text-md mx-auto w-full md:w-3/5"
                       dangerouslySetInnerHTML={{ __html: feature.description }}
                     ></p>
                     <div className="pt-2 font-bold underline">

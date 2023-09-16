@@ -126,7 +126,7 @@ export default function Footer() {
           <div className=" pt-6">
             <Link
               href="/"
-              className="w-full text-center md:text-left py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
+              className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
             >
               Mentions légales
             </Link>
@@ -140,14 +140,12 @@ export default function Footer() {
             </div>
           </div>
           <div className="pt-6">
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0 ">
-              <Link
-                href="/"
-                className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
-              >
-                CGS
-              </Link>
-            </div>
+            <Link
+              href="/"
+              className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
+            >
+              CGS
+            </Link>
           </div>
           <div className="pt-6">
             <Link
@@ -166,14 +164,12 @@ export default function Footer() {
             </Link>
           </div>
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0 pt-6">
-              <Link
-                href="/"
-                className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
-              >
-                Charte de déontologie
-              </Link>
-            </div>
+            <Link
+              href="/"
+              className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
+            >
+              Charte de déontologie
+            </Link>
           </div>
         </div>
       </Container>
