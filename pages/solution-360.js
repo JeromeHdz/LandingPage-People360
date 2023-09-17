@@ -65,14 +65,15 @@ const Solution360 = () => {
         </section>
       </section>
       <section class="relative w-screen bg-pale-salmon ">
-        <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center  ">
+        <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center">
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
           <div className=" w-full ">
             <Features />
           </div>
         </Container>
       </section>
 
-      <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left ">
+      <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle=""

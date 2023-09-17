@@ -115,7 +115,9 @@ export default function Footer() {
               Actualités RH, infos clés, livres blancs et webinaires,
               inscrivez-vous à notre newsletter pour rester informé.
             </div>
-            <BtnNewsletter title={"Je m'inscris à la newsletter"} />
+            <div className="flex flex-col w-full mt-8">
+              <BtnNewsletter title={"Je m'inscris à la newsletter"} />
+            </div>
           </div>
         </div>
       </Container>
@@ -163,7 +165,7 @@ export default function Footer() {
               Charte de confidentialité
             </Link>
           </div>
-          <div>
+          <div className="pt-6">
             <Link
               href="/"
               className="w-full py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "

@@ -13,19 +13,18 @@ module.exports = {
       center: true,
     },
     extend: {
-      borderColor:{
+      borderColor: {
         "floral-white": "#FFF6ED",
         "powder-blue": "#B1DFE7",
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
 
-
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
         "dark-grey": "#402e32",
         "light-grey": "#bca79d",
-        "peps-orange": "#F77F3A"
+        "peps-orange": "#F77F3A",
       },
       backgroundColor: {
         "floral-white": "#FFF6ED",
@@ -33,20 +32,21 @@ module.exports = {
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
-        
+        "orange-people": "#E89C5A",
 
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
-        "dark-grey":"#402e32",
-        "light-grey":"#bca79d",
-        "peps-orange":"#F77F3A"
+        "dark-grey": "#402e32",
+        "light-grey": "#bca79d",
+        "peps-orange": "#F77F3A",
       },
-      textColor:{
+      textColor: {
         "floral-white": "#FFF6ED",
         "powder-blue": "#B1DFE7",
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
+        "orange-people": "#E89C5A",
 
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
@@ -60,7 +60,8 @@ module.exports = {
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
-        
+        "orange-people": "#E89C5A",
+
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
         "dark-grey": "#402e32",
@@ -71,15 +72,15 @@ module.exports = {
         },
       },
       fontFamily: {
-        'quicksand': ['Quicksand', 'sans-serif'],
+        quicksand: ["Quicksand", "sans-serif"],
       },
       fontWeight: {
-        'light':'300',
-        'regular': '400',
-        'medium': '500',
-        'semi-bold': '600',
-        'bold': '700',
-      }
+        light: "300",
+        regular: "400",
+        medium: "500",
+        "semi-bold": "600",
+        bold: "700",
+      },
     },
     fontFamily: {
       sans: ["quicksand", ...defaultTheme.fontFamily.sans],

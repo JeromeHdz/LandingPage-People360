@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "./container";
 import fr from "../locales/fr";
-import Cta from "../components/cta";
+import CtaSolution from "../components/ctaSolution";
 
 import { Tb360View } from "react-icons/tb";
 import { IconContext } from "react-icons";
@@ -44,7 +44,7 @@ const HeroCentered = (props) => {
       </div>
 
       <div className="flex justify-center items-center mt-10 px-0 xl:px-64 w-2/3 mx-auto">
-        <Cta title={fr.Global.cta} className="" />
+        <CtaSolution title={fr.Global.cta} />
       </div>
     </div>
   );

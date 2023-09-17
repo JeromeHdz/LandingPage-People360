@@ -7,11 +7,10 @@ const BtnNewsletter = (props) => {
       href="/"
       target="_blank"
       rel="noopener"
-      className="px-4 sm:px-8 py-1 sm:py-2 text-sm sm:text-sm font-medium text-center text-white bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean rounded-md"
+      className="w-full px-2 lg:px-8 py-4 text-md md:text-lg font-medium text-center text-white bg-dark-cerulean hover:bg-orange-people rounded-xl "
     >
       {props.title}
     </Link>
-
   );
 };
 
