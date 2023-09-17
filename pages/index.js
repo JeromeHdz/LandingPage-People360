@@ -61,7 +61,7 @@ const Home = ({ blocks }) => {
           className="absolute top-0 left-0 object-cover w-full h-full z-5"
           alt="Image alt text"
         />
-        <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-12 px-8 md:px-32 xl:px-0 max-w-screen-xl text-left">
+        <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-8 md:px-32 xl:px-0 max-w-screen-xl text-left">
           <Navbar />
           {/* <Hero data={cleanedData} /> */}
           <Hero2 />
@@ -70,7 +70,7 @@ const Home = ({ blocks }) => {
       </section>
 
       {/* FEATURE SECTION */}
-      <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left ">
+      <Container className="flex z-1 w-full flex-col space-y-8 py-46 md:py-32 px-8  sm:py-0 items-center justify-center text-left ">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle={
@@ -101,7 +101,7 @@ const Home = ({ blocks }) => {
       />
       {/* ROADMAPS SECTION */}
       <section className="relative w-full h-auto bg-pale-salmon">
-        <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
+        <Container className="flex w-full py-16 flex-col px-8 space-y-8 items-center justify-center text-center ">
           <SectionTitle
             className="roadmapSection py-0"
             pretitle={
