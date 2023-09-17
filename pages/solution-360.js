@@ -56,13 +56,13 @@ const Solution360 = () => {
           class="absolute top-0 left-0 object-cover w-full h-full z-5"
           alt="Image alt text"
         />
-        <section class="relative w-full h-screen flex justify-between items-center">
+        <section class="relative w-full h-screen flex justify-between items-center z-10">
           <HeroCentered
             title={fr.Solution360.heroSection.title}
             subTitle={fr.Solution360.heroSection.subTitle}
           />
-          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-pale-salmon to-transparent z-6"></div>
         </section>
+        <div className="absolute  bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-pale-salmon to-transparent z-6"></div>
       </section>
       <section class="relative w-screen bg-pale-salmon ">
         <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center">

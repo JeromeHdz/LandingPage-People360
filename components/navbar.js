@@ -48,7 +48,7 @@ const Navbar = () => {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 ml-auto 0 rounded-md lg:hidden hover:text-dark-cerulean focus:text-white focus:bg-dark-cerulean focus:outline-none "
                 >
                   <svg
                     className="w-6 h-6 fill-current"
@@ -77,14 +77,14 @@ const Navbar = () => {
                       <Link
                         key={index}
                         href={item.url}
-                        className="w-full px-4 py-2 -ml-4 text-dark-cerulean-500 rounded-md  hover:text-blue-700 focus:text-blue-700 focus:bg-indigo-100 focus:outline-none"
+                        className="w-full px-4 py-2 -ml-4 text-dark-cerulean-500 rounded-md   focus:bg-light-cerulean focus:outline-none"
                       >
                         {item.text}
                       </Link>
                     ))}
                     <Link
                       href="/book-demo"
-                      className="w-full px-6 py-2 mt-3 text-center text-white bg-blue-700 rounded-md lg:ml-5"
+                      className="w-full px-6 py-2 mt-3 text-center text-white bg-dark-cerulean rounded-md lg:ml-5"
                     >
                       {fr.Global.cta}
                     </Link>

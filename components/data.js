@@ -67,7 +67,7 @@ const roadmaps = [
     title: "Senior",
     icon: <MdElderly />,
     color: "bg-rose-400",
-    imgLink: "/img/home/senior.jpg",
+    imgLink: "/img/home/senior2.jpg",
   },
   {
     title: "Promotion",
