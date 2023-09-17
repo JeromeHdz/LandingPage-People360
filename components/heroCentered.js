@@ -8,8 +8,8 @@ import { IconContext } from "react-icons";
 
 const HeroCentered = (props) => {
   return (
-    <div className=" py-16 lg:py-20 w-full">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <div className="mx-auto">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-4">
         {/* First Image */}
         <div className="relative w-full h-72 lg:h-auto">
           <Image
@@ -17,16 +17,16 @@ const HeroCentered = (props) => {
             alt="Benefits"
             layout="fill"
             objectFit="contain"
-            className="rounded-3xl"
+            className="rounded-3xl lg:min-h-[500px]"
           />
         </div>
 
         {/* Title and Subtitle */}
-        <div className="max-w-2xl mb-10 md:mx-auto text-center lg:max-w-5xl md:mb-12 px-8">
-          <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight ">
+        <div className="max-w-2xl mb-10 md:mx-auto text-center lg:max-w-5xl md:mb-12">
+          <h2 className=" mt-3 text-2xl  lg:text-3xl  xl:text-4xl font-bold leading-snug tracking-tight mx-6">
             {props.title}
           </h2>
-          <p className="pt-6 mt-3 text-center text-lg leading-normal ">
+          <p className="pt-6 mt-3 text-center text-lg leading-normal mx-6">
             {props.subTitle}
           </p>
         </div>
@@ -38,13 +38,13 @@ const HeroCentered = (props) => {
             alt="Benefits"
             layout="fill"
             objectFit="contain"
-            className="rounded-3xl"
+            className="rounded-3xl lg:min-h-[500px]"
           />
         </div>
       </div>
 
-      <div className="flex justify-center items-center mt-10 px-64">
-        <Cta title={fr.Global.cta} className="w-2/3" />
+      <div className="flex justify-center items-center mt-10 px-0 xl:px-64 w-2/3 mx-auto">
+        <Cta title={fr.Global.cta} className="" />
       </div>
     </div>
   );

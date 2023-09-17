@@ -15,7 +15,7 @@ const SectionTitle = (props) => {
       )}
 
       {props.title && (
-        <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight  lg:leading-tight lg:text-4xl ">
+        <h2 className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight  lg:leading-tight lg:text-5xl ">
           {/* <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -46,7 +46,7 @@ const SectionTitle = (props) => {
       )}
 
       {props.children && (
-        <p className="max-w-4xl pt-6 mt-3 text-lg leading-normal lg:text-xl xl:text-xl ">
+        <p className="max-w-4xl pt-6 mt-3 text-lg leading-normal lg:text-xl xl:text-3xl ">
           {props.children}
         </p>
       )}

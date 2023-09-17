@@ -15,11 +15,11 @@ const Benefits = (props) => {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}
         >
-          <div>
+          <div className="shadow-2xl rounded-2xl overflow-hidden">
             <Image
               src={data.image}
-              width="auto"
-              height="auto"
+              width="800"
+              height="555"
               alt="Benefits"
               className={"object-cover"}
               placeholder="blur"
@@ -35,21 +35,29 @@ const Benefits = (props) => {
         >
           <div>
             <div className={`flex flex-col w-full mt-4 `}>
-              <h4 className="text-base font-medium text-gray-400 dark:text-gray-200">
+              <h4 className="text-2xl font-medium ">
                 {data.tags.map((item) => "#" + item + " ")}
               </h4>
-              <h3 id={data.id} className="max-w-2xl mt-3 text-xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight">
+              <h3
+                id={data.id}
+                className="max-w-2xl mt-3 text-4xl font-bold leading-snug tracking-tight  lg:leading-tight"
+              >
                 {data.title}
               </h3>
-              <h2 id={data.id} className="max-w-2xl mt-3 text-lg font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-2xl ">
+              <h2
+                id={data.id}
+                className="max-w-2xl mt-3 text-2xl font-bold leading-snug tracking-tight  lg:leading-tight lg:text-2xl "
+              >
                 {data.subtitle}
               </h2>
-              <h3 id={data.id} className="max-w-2xl mt-3 text-lg font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight ">
-                
-              </h3>
-              <p className="max-w-2xl py-4 text-md leading-normal text-gray-500  " dangerouslySetInnerHTML={{ __html: data.desc }}>
-                
-              </p>
+              <h3
+                id={data.id}
+                className="max-w-2xl mt-3 text-2xl font-bold leading-snug tracking-tight  lg:leading-tight "
+              ></h3>
+              <p
+                className="max-w-2xl py-4 text-xl leading-normal  "
+                dangerouslySetInnerHTML={{ __html: data.desc }}
+              ></p>
             </div>
 
             {/* <div className="w-full mt-5">
@@ -73,18 +81,14 @@ function Benefit(props) {
   return (
     <>
       <div className="flex items-start mt-8 space-x-3">
-        <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-blue-700 rounded-md w-11 h-11 ">
+        <div className="flex items-center justify-center flex-shrink-0 mt-1 rounded-md w-11 h-11 ">
           {React.cloneElement(props.icon, {
-            className: "w-7 h-7 text-indigo-50",
+            className: "w-7 h-7 ",
           })}
         </div>
         <div>
-          <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
-            {props.title}
-          </h4>
-          <p className="mt-1 text-gray-500 dark:text-gray-400">
-            {props.children}
-          </p>
+          <h4 className="text-xl font-medium">{props.title}</h4>
+          <p className="mt-1  ">{props.children}</p>
         </div>
       </div>
     </>

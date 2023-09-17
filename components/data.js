@@ -8,97 +8,96 @@ import {
 } from "@heroicons/react/24/solid";
 
 import { AiOutlineAudit } from "react-icons/ai";
-import { MdOutlineSick, MdElderly, MdQueryStats, MdStroller } from "react-icons/md";
+import {
+  MdOutlineSick,
+  MdElderly,
+  MdQueryStats,
+  MdStroller,
+} from "react-icons/md";
 import { LuBaby, LuHeartHandshake } from "react-icons/lu";
 import { GiUpgrade, GiCycle, GiBoatFishing, GiPuzzle } from "react-icons/gi";
-import { FaPlaneDeparture, FaPlaneArrival, FaTasks, FaHandHoldingHeart } from "react-icons/fa";
+import {
+  FaPlaneDeparture,
+  FaPlaneArrival,
+  FaTasks,
+  FaHandHoldingHeart,
+} from "react-icons/fa";
 import { BsFillBandaidFill } from "react-icons/bs";
 import { PiLinkBreakBold, PiShootingStarFill } from "react-icons/pi";
 import { BiHandicap } from "react-icons/bi";
 import { TbSchool } from "react-icons/tb";
-import { SiYourtraveldottv } from "react-icons/si"
-import { PiHandWavingLight } from "react-icons/pi"
+import { SiYourtraveldottv } from "react-icons/si";
+import { PiHandWavingLight } from "react-icons/pi";
 
-
-import benefitOneImg from "../public/img/solution360/benefit-one.png";
-import benefitTwoImg from "../public/img/solution360/benefit-two.png";
-import benefitThreeImg from "../public/img/solution360/benefit-three.png";
+import benefitOneImg from "../public/img/solution360/benefit-one.jpg";
+import benefitTwoImg from "../public/img/solution360/benefit-two.jpg";
+import benefitThreeImg from "../public/img/solution360/benefit-three.jpg";
 
 import auditImg from "../public/img/home/audit.jpg";
 import coachingImg from "../public/img/home/coaching.jpg";
 import dashboardImg from "../public/img/home/dashboard.jpg";
 import groupeImg from "../public/img/home/groupe.jpg";
 
-
 const roadmaps = [
   {
     title: "Parentalité",
     icon: <MdStroller />,
-    color:"bg-rose-50",
-    imgLink: "/img/home/parentalite.jpg"
+    color: "bg-rose-50",
+    imgLink: "/img/home/parentalite.jpg",
   },
   {
     title: "Maladie",
     icon: <MdOutlineSick />,
     color: "bg-rose-100",
-    imgLink: "/img/home/maladie.jpg"
-
+    imgLink: "/img/home/maladie.jpg",
   },
   {
     title: "Handicap",
     icon: <BiHandicap />,
     color: "bg-rose-200",
-    imgLink: "/img/home/handicap.jpg"
-
+    imgLink: "/img/home/handicap.jpg",
   },
   {
     title: "Aidant",
     icon: <FaHandHoldingHeart />,
     color: "bg-rose-300",
-    imgLink: "/img/home/aidant.jpg"
-
+    imgLink: "/img/home/aidant.jpg",
   },
   {
     title: "Senior",
     icon: <MdElderly />,
     color: "bg-rose-400",
-    imgLink: "/img/home/senior.jpg"
-
+    imgLink: "/img/home/senior.jpg",
   },
   {
     title: "Promotion",
     icon: <PiShootingStarFill />,
     color: "bg-blue-50",
-    imgLink: "/img/home/promotion.jpg"
-
+    imgLink: "/img/home/promotion.jpg",
   },
   {
     title: "Expatriation",
     icon: <SiYourtraveldottv />,
     color: "bg-blue-100",
-    imgLink: "/img/home/expat.jpg"
-
+    imgLink: "/img/home/expat.jpg",
   },
   {
     title: "Impatriation",
     icon: <FaPlaneArrival />,
     color: "bg-blue-200",
-    imgLink: "/img/home/impat.jpg"
-
+    imgLink: "/img/home/impat.jpg",
   },
   {
     title: "Management",
     icon: <FaTasks />,
     color: "bg-blue-300",
-    imgLink: "/img/home/management.jpg"
-
+    imgLink: "/img/home/management.jpg",
   },
   {
     title: "Retraite",
     icon: <GiBoatFishing />,
     color: "bg-blue-400",
-    imgLink: "/img/home/retraite.jpg"
-
+    imgLink: "/img/home/retraite.jpg",
   },
   // {
   //   title: "Séparation",
@@ -108,12 +107,11 @@ const roadmaps = [
   //   title: "Re-Onboarding",
   //   icon: <GiCycle />,
   // },
-  
 ];
 
 const benefitOne = {
   title: "L’IA au service du parcours collaborateur, accessible à tous",
-  subsubtitle:'Des roadmaps interactives, sur-mesure, engageantes et utiles ',
+  subsubtitle: "Des roadmaps interactives, sur-mesure, engageantes et utiles ",
   desc: `                <b>Des roadmaps interactives, sur-mesure, engageantes et utiles</b><br/><br/>
 
   <b>Individualisée: </b>: Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
@@ -144,8 +142,7 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title:
-    "Assistant personnel 24/24h",
+  title: "Assistant personnel 24/24h",
   desc: "Pour toutes les questions qui nécessitent une réponse rapide, efficace et sure, mais pas de consultation spécifique auprès d'un expert, l'assitant personnel est disponible 24h/24.<br><br> Grâce à notre technologie unique basée sur l'intelligence artificielle et l'expertise de nos coachs, vous êtes assurés de bénéficier d'une expérience hors norme.",
   image: benefitTwoImg,
   tags: ["Individualisé", "Disponible", "Facilitateur"],
@@ -171,13 +168,14 @@ const benefitTwo = {
 
 const benefitThree = {
   title: "Coaching d'expert spécialisé",
-  subtitle: '',
+  subtitle: "",
   desc: `Prenez RDV individuellement avec nos experts certifiés, selon vos besoins.<br><br>
   Notre algorithme maison, la technologie "perfect match" vous proposera une sélection des 3 experts les plus adaptés. <br><br>
   Coachs spécialisés, avocats, comptables, thérapeutes, psychologues, prenez un rdv en ligne sur leur agenda partagé.`,
   image: benefitThreeImg,
   tags: ["Expertise", "Certifiés", "Adaptés"],
-  ctaTitle: "Vous souhaitez organiser des RDV avec des experts pour vos salariés?",
+  ctaTitle:
+    "Vous souhaitez organiser des RDV avec des experts pour vos salariés?",
   bullets: [
     {
       title: "Mobile Responsive Template",
@@ -199,7 +197,7 @@ const benefitThree = {
 const featuresList = [
   {
     icon: <AiOutlineAudit />,
-    imgLink:auditImg,
+    imgLink: auditImg,
     title: "Faites le bilan",
     description:
       "Des audits actionnables simplement par les RH et les managers. ",
@@ -208,7 +206,7 @@ const featuresList = [
     descriptionNotionId: "7b855ae8734c4152b58d1b8e8288b307",
   },
   {
-    id:"accompagner-individuellement",
+    id: "accompagner-individuellement",
     imgLink: coachingImg,
     icon: <LuHeartHandshake />,
     title: "Accompagner individuellement",
@@ -219,7 +217,7 @@ const featuresList = [
     descriptionNotionId: "043a7014ca15476ebab25f7463f5fa93",
   },
   {
-    id:"former-collectivement",
+    id: "former-collectivement",
     imgLink: groupeImg,
     icon: <TbSchool />,
     title: "Former Collectivement",
@@ -230,7 +228,7 @@ const featuresList = [
     descriptionNotionId: "bedc3542f79941b88f8c89c4a295ae4d",
   },
   {
-    id:"mesurer-votre-impact",
+    id: "mesurer-votre-impact",
     imgLink: dashboardImg,
     icon: <MdQueryStats />,
     title: "Mesurer votre impact",

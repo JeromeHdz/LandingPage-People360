@@ -19,14 +19,14 @@ const Hero2 = ({ data }) => {
       /> */}
 
       <div className=" mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:pb-20 h-screen">
-        <div className="flex flex-col items-left justify-between xl:flex-row">
+        <div className="flex flex-col items-center justify-between xl:flex-row">
           <div className=" w-full mb-12 xl:mb-0 grid gap-10 md:grid-cols-2 md:items-center">
             <div className="">
-              <h2 className="mb-8 xl:mt-[-150px] font-sans text-xl relative z-3 font-semi-bold tracking-tight text-dark-cerulean sm:text-4xl sm:leading-none md:mr-[-40%]">
+              <h2 className="mb-8 xl:mt-[-150px] font-sans text-4xl relative z-3 font-semi-bold tracking-tight text-dark-cerulean sm:text-5xl sm:leading-none md:mr-[-40%]">
                 Réenchantez les transitions de vie de vos salariés, vivez une
                 expérience 360°
               </h2>
-              <p className="w-full my-8 text-base text-dark-cerulean md:text-xl">
+              <p className="w-full my-8 text-base text-xl text-dark-cerulean md:text-2xl">
                 {getNotionContentBlockById(
                   data,
                   "b00f0812bbca44abaae427d3130926e9"

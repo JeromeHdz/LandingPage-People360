@@ -45,35 +45,39 @@ const Solution360 = () => {
         />
       </Head>
       {/* HERO SECTION */}
-      <Container className="flex z-1 w-full flex-col sm:py-0 justify-center text-left ">
+      <Container className="flex z-1 w-full px-8 md:px-0 flex-col sm:py-0 justify-center text-left ">
         <div className="pt-8">
           <Navbar />
         </div>
       </Container>
-      <section class="relative w-full h-screen flex items-center justify-center">
+      <section class="relative w-full h-screen ">
         <img
           src="img/solution360/hero-bg.png"
           class="absolute top-0 left-0 object-cover w-full h-full z-5"
           alt="Image alt text"
         />
-        <Container className="flex z-1 w-full flex-col py-32 sm:py-0 items-center justify-center text-left ">
+        <section class="relative w-full h-screen flex justify-between items-center">
           <HeroCentered
             title={fr.Solution360.heroSection.title}
             subTitle={fr.Solution360.heroSection.subTitle}
           />
-          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-pale-salmon to-transparent z-6"></div>
+        </section>
+      </section>
+      <section class="relative w-screen bg-pale-salmon ">
+        <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center  ">
+          <div className=" w-full ">
+            <Features />
+          </div>
         </Container>
       </section>
 
       <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center text-left ">
-        <Features />
         <SectionTitle
           className="roadmapSection py-0"
           pretitle=""
           title={"Accompagner individuellement"}
         />
-        <span id="accompagner-individuellement"></span>
-        <SectionTitle />
         <Benefits data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
         <Benefits data={benefitThree} />

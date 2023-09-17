@@ -124,7 +124,7 @@ const Home = ({ blocks }) => {
             ) || fr.LandingPage.roadmapSection.subtitle}
           </SectionTitle>
           <RoadmapsButtons data={roadmaps} />
-          <p className="max-w-4xl text-lg leading-normal lg:text-xl xl:text-xl ">
+          <p className="max-w-4xl text-2xl leading-normal lg:text-xl xl:text-2xl ">
             {getNotionContentBlockById(
               cleanedData,
               "d601a5dcbd7146258bf3d25947b21aa1"
