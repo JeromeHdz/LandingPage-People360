@@ -26,7 +26,7 @@ function Features() {
           <h6 className="mb-2 font-semibold leading-5 ">
             Audit global quantitatif et qualitatif
           </h6>
-          <ul class="list-disc px-6">
+          <ul className="list-disc px-6">
             <li className="mb-3 text-xl ">
               Plan d'action et de communication, propositions d'outils et
               solutions adaptées <br />
@@ -45,7 +45,7 @@ function Features() {
           <h6 className="mb-2 font-semibold leading-5 ">
             Micro-audits assistés actionnables par les managers
           </h6>
-          <ul class="list-disc px-6">
+          <ul className="list-disc px-6">
             <li className="mb-3 text-xl ">
               Des templates formatés par thématique auditée et personnalisables
               <br />

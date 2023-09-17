@@ -13,10 +13,7 @@ function Section3() {
   return (
     <div className="py-16 w-full md:px-24 lg:py-20">
       <div className="flex flex-col mb-6 lg:flex-row md:mb-10">
-        <div
-          className="flex flex-col items-center text-center"
-          id="former-collectivement"
-        >
+        <div className="flex flex-col" id="former-collectivement">
           <h2
             id="bilan"
             className="max-w-5xl mt-3 text-3xl font-bold leading-snug tracking-tight  lg:leading-tight lg:text-5xl "
@@ -30,7 +27,7 @@ function Section3() {
           </p>
         </div>
       </div>
-      <div className=" flex flex-col items-center text-center grid gap-6 row-gap-5 lg:grid-cols-2 ">
+      <div className=" flex flex-col items-center grid gap-6 row-gap-5 text-center lg:grid-cols-2 ">
         <div>
           <Image
             src="/img/solution360/workshop_01.jpg"
@@ -39,10 +36,10 @@ function Section3() {
             alt=""
             className="mx-auto shadow-2xl rounded-2xl overflow-hidden"
           />
-          <h5 className="mb-2 pt-8 text-xl font-bold leading-none sm:text-2xl">
+          <h5 className="mb-2 pt-8 text-xl font-bold leading-none text-center sm:text-2xl">
             Conférences, ateliers d'experts, webinaires
           </h5>
-          <p className="text-xl">
+          <p className="text-xl text-center">
             Thématiques à sélectionner parmi notre catalogue ou organisation
             sur-mesure.
           </p>

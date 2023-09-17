@@ -55,10 +55,10 @@ const Home = ({ blocks }) => {
       </Head>
 
       {/* HERO SECTION */}
-      <section class="relative w-full h-screen">
+      <section className="relative w-full h-screen">
         <img
           src="img/home/hero.bg-sans.jpg"
-          class="absolute top-0 left-0 object-cover w-full h-full z-5"
+          className="absolute top-0 left-0 object-cover w-full h-full z-5"
           alt="Image alt text"
         />
         <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-12 px-8 md:px-32 xl:px-0 max-w-screen-xl text-left">
@@ -96,11 +96,11 @@ const Home = ({ blocks }) => {
       </Container>
       <img
         src="img/home/feature-bottom.jpg"
-        class=" top-0 left-0 object-cover w-full h-full z-5"
+        className=" top-0 left-0 object-cover w-full h-full z-5"
         alt="Image alt text"
       />
       {/* ROADMAPS SECTION */}
-      <section class="relative w-full h-auto bg-pale-salmon">
+      <section className="relative w-full h-auto bg-pale-salmon">
         <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
           <SectionTitle
             className="roadmapSection py-0"
@@ -190,7 +190,7 @@ const Home = ({ blocks }) => {
 
       {/* CTA FOOTER SECTION */}
       {/* FOOTER  */}
-      <section class="relative w-full bg-antique-white">
+      <section className="relative w-full bg-antique-white">
         <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
           <CtaFooter
             props={fr.LandingPage.ctaFooterSection}

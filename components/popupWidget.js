@@ -205,10 +205,10 @@ const PopupWidget = () => {
                         )}
                       </div>
 
-                      <div class="mb-4">
+                      <div className="mb-4">
                         <label
                           for="phone"
-                          class="block text-sm mb-2 text-gray-600 dark:text-gray-400"
+                          className="block text-sm mb-2 text-gray-600 dark:text-gray-400"
                         >
                           Numéro de téléphone
                         </label>
