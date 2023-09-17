@@ -37,8 +37,8 @@ const Navbar = () => {
                       <Image
                         src="/img/logo-6.png"
                         alt="P"
-                        width="32"
-                        height="32"
+                        width="64"
+                        height="64"
                         className="w-8"
                       />
                     </span>
@@ -102,7 +102,7 @@ const Navbar = () => {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={item.url}
-                  className="inline-block px-4 py-2 text-lg font-normal text-dark-cerulean  font-semi-bold no-underline rounded-md hover:text-floral-white focus:text-white-700 focus:bg-white-100 focus:outline-none "
+                  className="text-xl inline-block px-4 py-2  font-normal text-dark-cerulean  font-semi-bold no-underline rounded-md hover:text-floral-white focus:text-white-700 focus:bg-white-100 focus:outline-none "
                 >
                   {item.text}
                 </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
             href="/book-demo"
-            className="px-6 py-2 text-white font-semi-bold bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean rounded-md md:ml-5"
+            className="px-6 py-2 text-white  font-semi-bold bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean rounded-md md:ml-5"
           >
             {fr.Global.cta}
           </Link>
