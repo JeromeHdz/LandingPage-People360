@@ -12,12 +12,12 @@ import { AiFillLinkedin } from "react-icons/ai";
 export default function Footer() {
   const navigation = [
     { text: "Solution 360", url: "/solution-360" },
-    { text: "Templates", url: "/categorie-templates" },
+    // { text: "Templates", url: "/categorie-templates" },
     {
       text: "Nous Connaître",
       url: "/team",
     },
-    { text: "Ressources", url: "/resources" },
+    // { text: "Ressources", url: "/resources" },
   ];
   const legal = [
     { text: "Sécurité", url: "/securite" },
@@ -96,7 +96,7 @@ export default function Footer() {
             </div>
             <div className="flex mt-4 space-x-5  ">
               <a
-                href="https://goo.gl/maps/qrTxBDsxQAhtyVYg8"
+                href="https://www.linkedin.com/company/people360-futureofwork-hr"
                 target="_blank"
                 className="w-full  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
               >

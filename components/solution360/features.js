@@ -28,10 +28,8 @@ function Features() {
           </h6>
           <ul class="list-disc px-6">
             <li className="mb-3 text-xl ">
-              Plan d'action, propositions d'outils et solutions adaptées <br />
-            </li>
-            <li className="mb-3 text-xl ">
-              Plan de communication et guides dédiés
+              Plan d'action et de communication, propositions d'outils et
+              solutions adaptées <br />
             </li>
 
             <li className="mb-3 text-xl ">
@@ -49,9 +47,10 @@ function Features() {
           </h6>
           <ul class="list-disc px-6">
             <li className="mb-3 text-xl ">
-              Des templates formatés par thématique auditée <br />
+              Des templates formatés par thématique auditée et personnalisables
+              <br />
             </li>
-            <li className="mb-3 text-xl">Templates personnalisables</li>
+
             <li className="mb-3 text-xl ">
               Un assistant virtuel pour vous accompagner dans la configuration
             </li>

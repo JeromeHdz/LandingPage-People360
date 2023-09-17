@@ -23,7 +23,7 @@ const HeroCentered = (props) => {
 
         {/* Title and Subtitle */}
         <div className="max-w-2xl mb-10 md:mx-auto text-center lg:max-w-5xl md:mb-12">
-          <h2 className=" mt-3 text-2xl  lg:text-3xl  xl:text-4xl font-bold leading-snug tracking-tight mx-6">
+          <h2 className=" mt-3 text-2xl  md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-snug tracking-tight mx-6">
             {props.title}
           </h2>
           <p className="pt-6 mt-3 text-center text-lg leading-normal mx-6">

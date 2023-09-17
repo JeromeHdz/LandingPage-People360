@@ -28,41 +28,38 @@ function Section4() {
         </div>
       </div>
       <div className="grid gap-6 row-gap-5 lg:grid-cols-2 ">
-        <div>
+        <div className="flex flex-col items-center text-center">
           <Image
             src="/img/solution360/dashboard_01.jpg"
             width={300}
             height={200}
             alt=""
-            className="mx-auto shadow-2xl rounded-2xl overflow-hidden"
+            className="shadow-2xl rounded-2xl overflow-hidden"
           />
-          <h5 className="mb-2 pt-8 text-xl font-bold leading-none sm:text-2xl">
+          <h5 className="mb-2 pt-8 text-2xl font-bold leading-none sm:text-2xl">
             Dashboard RH / Manager
           </h5>
-          <p className="">
+          <p className="text-xl">
             Données sont anonymisées.
             <br />
             Reporting visuel détaillé et ROIste.
           </p>
         </div>
-        <div>
+        <div className="flex flex-col items-center text-center">
           <Image
             src="/img/solution360/dashboard_02.jpg"
             width={300}
             height={200}
             alt=""
-            className="mx-auto shadow-2xl rounded-2xl overflow-hidden"
+            className="shadow-2xl rounded-2xl overflow-hidden"
           />
-          <h5 className="mb-2 pt-8 text-xl font-bold leading-none sm:text-2xl">
+          <h5 className="mb-2 pt-8 text-2xl font-bold leading-none sm:text-2xl">
             Dashboard Collaborateur
           </h5>
-          <p className="">
-            Suivi de l'évolution individuelle.
-            <br />
-            Pour action évolutifs.
-          </p>
+          <p className="text-xl">Suivi de l'évolution individuelle.</p>
         </div>
       </div>
+
       <div className="flex flex-col w-full mt-8 mx-auto justify-center items-center">
         <CtaSolution title={"Un atelier à organiser?"} />
       </div>
