@@ -5,13 +5,13 @@ function section1_2() {
     <div className="px-4 py-16 mx-auto w-full lg:max-w-screen-xl lg:px-8 lg:py-20">
       <div className="w-full flex flex-col justify-center md:pr-8 xl:pr-0 ">
         <div className=" mb-6 w-2/3">
-          <h2 className=" w-full mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          <h2 className=" w-full mb-6 font-sans text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none">
               Une rencontre
               <br className="hidden md:block" />
               qui donne des ailes
             </h2>
 
-            <p className="text-base text-gray-700 ">
+            <p className="text-base  ">
               <b>
                 People 360 est né de la rencontre de deux entrepreneurs experts
                 de la parentalité et engagés pour le bien-être au service de la

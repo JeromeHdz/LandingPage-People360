@@ -110,15 +110,13 @@ const roadmaps = [
 ];
 
 const benefitOne = {
-  title: "L’IA au service du parcours collaborateur, accessible à tous",
+  title: "Des roadmaps interactives, sur-mesure, engageantes et utiles ",
   subsubtitle: "Des roadmaps interactives, sur-mesure, engageantes et utiles ",
-  desc: `                <b>Des roadmaps interactives, sur-mesure, engageantes et utiles</b><br/><br/>
-
-  <b>Individualisée: </b>: Elles impliquent les équipes, les bonnes personnes, au bon moment, quand elles en ont besoin. <br/><br/>
-  <b>Dynamique: </b>Bien plus qu'une to do list, des notifications push sont envoyées automatiquement sur l'agenda des collaborateurs (salarié, manager, collègue). <br/><br/>
-  <b>Complète: </b>Rappels réglementaires, tâches à ne pas rater, quizz d'auto-évaluation, bonnes pratiques, contenus informatifs (vidéos, audios, écrits...)  <br/><br/>
-  <b>Modulable: </b>Chaque collaborateur peut adapter sa roadmap selon ses timings et préférences. <br/><br/>
-  <b>Spécialisée: </b>Roadmaps disponibles par thématique: parentalité, reconversion, aidants, maladie etc...`,
+  desc: `<b>Individualisée: </b>: Elles impliquent les bonnes personnes. <br/><br/>
+  <b>Dynamique: </b>Bien plus qu'une to do list, des notifications sont envoyées automatiquement. <br/><br/>
+  <b>Complète: </b>Rappels réglementaires, quizz, bonnes pratiques, contenus informatifs<br/><br/>
+  <b>Modulable: </b>Chaque collaborateur peut adapter sa roadmap selon ses thématiques, timings et préférences. <br/><br/>`
+    ,
   image: benefitOneImg,
   tags: ["Modulable", "Dynamique", "Agile"],
   ctaTitle: "Envie de tester l'une de nos roadmaps ?",
@@ -210,7 +208,7 @@ const featuresList = [
     icon: <LuHeartHandshake />,
     title: "Accompagner individuellement",
     description:
-      "Roadmaps interactives personnalisées pushées au bon moment. <br/>Assistant personnel 24/24h. <br/>Coachings individualisés avec des experts dédiés.",
+      "Programmes personnalisées. <br/>Assistant personnel 24/24h. <br/>Coachings experts dédiés.",
     link: "/solution-360#accompagner-individuellement",
     titleNodtionId: "ae593313308f435489933fd05e3272f7",
     descriptionNotionId: "043a7014ca15476ebab25f7463f5fa93",
@@ -232,7 +230,7 @@ const featuresList = [
     icon: <MdQueryStats />,
     title: "Mesurer votre impact",
     description:
-      "Dashboard de suivi des performances individuelles et collectives.",
+      "Dashboard de suivi des performances.",
     link: "/solution-360#mesurer-votre-impact",
     titleNodtionId: "3d21f0ad900341d08cea8687dda715ef",
     descriptionNotionId: "6c37feb099dd469aa5269b8fb9b3e365",

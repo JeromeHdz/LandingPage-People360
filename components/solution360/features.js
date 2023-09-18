@@ -36,8 +36,7 @@ function Features() {
               Géré intégralement par notre équipe experte
             </li>
             <li className="mb-3 text-xl">
-              Idéal pour avoir une vision d'ensemble des collaborateurs d'une{" "}
-              <br /> entreprise et démarrer une action à l'échelle
+              Idéal pour avoir une vision d'ensemble des collaborateurs d'une entreprise et démarrer une action à l'échelle
             </li>
           </ul>
         </div>

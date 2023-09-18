@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import fr from "../locales/fr";
 
-const Navbar = () => {
+const Navbar = ({color}) => {
   const navigation = [
     {
       text: "Nos Solutions",
@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className=" relative flex flex-wrap items-center justify-between lg:justify-between">
+      <nav className={`relative flex flex-wrap items-center justify-between lg:justify-between ${color === "white" ? "text-floral-white" : ""}`}>
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
@@ -35,14 +35,14 @@ const Navbar = () => {
                   <span className="flex items-center space-x-2 text-2xl font-medium text-dark-cerulean">
                     <span>
                       <Image
-                        src="/img/logo-6.png"
+                        src={color !== "white" ? "/img/logo-6.png" : "/img/logo-white.png"}
                         alt="P"
                         width="64"
                         height="64"
                         className="w-8"
                       />
                     </span>
-                    <span>People 360</span>
+                    <span className={` ${color === "white" ? "text-floral-white" : ""}`}>People 360</span>
                   </span>
                 </Link>
 
@@ -102,7 +102,7 @@ const Navbar = () => {
               <li className="mr-3 nav__item" key={index}>
                 <Link
                   href={item.url}
-                  className="text-xl inline-block px-4 py-2  font-normal text-dark-cerulean  font-semi-bold no-underline rounded-md hover:text-floral-white focus:text-white-700 focus:bg-white-100 focus:outline-none "
+                  className={` ${color === "white" ? "text-floral-white" : ""} text-xl inline-block px-4 py-2  font-normal text-dark-cerulean  font-semi-bold no-underline rounded-md hover:text-floral-white focus:text-white-700 focus:bg-white-100 focus:outline-none`}
                 >
                   {item.text}
                 </Link>
@@ -114,7 +114,7 @@ const Navbar = () => {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
             href="/book-demo"
-            className="px-6 py-2 text-white  font-semi-bold bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean rounded-md md:ml-5"
+            className={` ${color === "white" ? "bg-floral-white text-dark-cerulean hover:bg-pale-salmon" : "text-white"} px-6 py-2   font-semi-bold bg-dark-cerulean hover:bg-floral-white hover:text-dark-cerulean rounded-md md:ml-5`}
           >
             {fr.Global.cta}
           </Link>

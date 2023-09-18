@@ -5,7 +5,7 @@ function Section1_1() {
     <div className="relative flex flex-col-reverse w-full py-16 lg:py-0 lg:flex-col">
       <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
         <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
-          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-left">
+          <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none md:text-left">
             The quick, brown fox
             <br className="hidden md:block" />
             jumps over a lazy dog

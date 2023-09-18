@@ -45,7 +45,7 @@ const Solution360 = () => {
         />
       </Head>
       {/* HERO SECTION */}
-      <Container className="flex z-1 w-full px-8 md:px-0 flex-col sm:py-0 justify-center text-left ">
+      <Container className="relative flex z-10 w-full flex-col space-y-8 px-8 md:px-32 xl:px-0 max-w-screen-xl text-left">
         <div className="pt-8">
           <Navbar />
         </div>
@@ -74,15 +74,21 @@ const Solution360 = () => {
       </section>
 
       <section>
-      <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
+      <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-center">
         <SectionTitle
           className="roadmapSection py-0"
           pretitle=""
           title={"Accompagner individuellement"}
-        />
-        <Benefits data={benefitOne} />
-        <Benefits imgPos="right" data={benefitTwo} />
-        <Benefits data={benefitThree} />
+          subTitle={""}
+          >L’IA au service du parcours collaborateur, accessible à tous</SectionTitle>
+        
+        </Container>
+      </section>
+      <section>
+        <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
+      <Benefits data={benefitOne} />
+      <Benefits imgPos="right" data={benefitTwo} />
+      <Benefits data={benefitThree} />
         </Container>
       </section>
 

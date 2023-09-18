@@ -3,11 +3,7 @@ import Container from "./container";
 
 const SectionTitle = (props) => {
   return (
-    <Container
-      className={`flex w-full flex-col my-16 pb-0 ${
-        props.align === "left" ? "" : "items-center justify-center text-center"
-      }`}
-    >
+    <div className="pt-16">
       {props.pretitle && (
         <div className="text-sm font-bold tracking-wider  uppercase">
           {props.pretitle}
@@ -50,7 +46,7 @@ const SectionTitle = (props) => {
           {props.children}
         </p>
       )}
-    </Container>
+    </div>
   );
 };
 

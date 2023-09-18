@@ -9,7 +9,7 @@ import { RiHomeSmileFill } from "react-icons/ri";
 import { MdAlternateEmail } from "react-icons/md";
 import { AiFillLinkedin } from "react-icons/ai";
 
-export default function Footer() {
+export default function Footer({color}) {
   const navigation = [
     { text: "Solution 360", url: "/solution-360" },
     // { text: "Templates", url: "/categorie-templates" },
@@ -30,17 +30,18 @@ export default function Footer() {
   ];
   return (
     <div className="relative">
-      <Container>
+      <Container className={` ${color === "dark-cerulean" ? "bg-dark-cerulean text-floral-white border rounded-2xl " : ""} `}
+>
         <div className="grid max-w-screen-xl grid-cols-1 md:grid-cols-2 gap-10 pt-10 mx-auto mt-5 lg:grid-cols-4">
           <div className="flex md:justify-start justify-center">
-            <div>
+            <div className={` ${color === "dark-cerulean" ? "ml-4" : ""} `}>
               {" "}
               <Link
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium "
               >
                 <Image
-                  src="/img/logo-6.png"
+                  src={color !== "dark-cerulean" ? "/img/logo-6.png" : "/img/logo-white.png"}
                   alt="N"
                   width="32"
                   height="32"
@@ -52,12 +53,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            <div className={` flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0`}>
               {navigation.map((item, index) => (
                 <Link
                   key={index}
                   href={item.url}
-                  className="w-full text-center md:text-left px-4 py-2  rounded-md  hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none "
+                  className={`  ${color === " dark-cerulean" ? "hover:text-pale-salmon" : "hover:text-light-cerulean"} w-full text-center md:text-left px-4 py-2  rounded-md   focus:bg-indigo-100 focus:outline-none `}
                 >
                   {item.text}
                 </Link>

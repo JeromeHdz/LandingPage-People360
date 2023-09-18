@@ -60,9 +60,9 @@ function Section4() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full mt-8 mx-auto justify-center items-center">
+      {/* <div className="flex flex-col w-full mt-8 mx-auto justify-center items-center">
         <CtaSolution title={"Un atelier à organiser?"} />
-      </div>
+      </div> */}
     </div>
   );
 }
