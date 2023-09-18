@@ -19,6 +19,7 @@ module.exports = {
         "antique-white": "#FFE9D6",
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
+        "purple-people": "#D48C73",
 
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
@@ -33,6 +34,8 @@ module.exports = {
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
         "orange-people": "#E89C5A",
+        "purple-people": "#D48C73",
+
 
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
@@ -47,6 +50,8 @@ module.exports = {
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
         "orange-people": "#E89C5A",
+        "purple-people": "#D48C73",
+
 
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
@@ -61,6 +66,8 @@ module.exports = {
         "pale-salmon": "#FFBE85",
         "pale-copper": "#D48C73",
         "orange-people": "#E89C5A",
+        "purple-people": "#D48C73",
+
 
         "light-cerulean": "#00bd9f",
         "dark-cerulean": "#00856c",
@@ -69,6 +76,8 @@ module.exports = {
         borderColor: {
           // extend the border color
           "border-red-600": "#1D4ED8",
+          "purple-people": "#D48C73",
+
         },
       },
       fontFamily: {

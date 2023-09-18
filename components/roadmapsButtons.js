@@ -28,9 +28,9 @@ const RoadmapsButtons = (props) => {
                 alt="Benefits"
                 className="object-cover mx-auto rounded-3xl text-center "
               />
-              <div className="relative px-0 md:px-8 mx-8 -mt-12">
+              <div className="relative px-0  mx-8 -mt-12">
                 <div className="bg-floral-white p-6 rounded-lg shadow-lg">
-                  <h4 className="mt-1 font-semibold uppercase leading-tight truncate">
+                  <h4 className="mt-1 font-semibold uppercase leading-tight text-sm md:text-base lg:text-lg">
                     {item.title}
                   </h4>
                 </div>

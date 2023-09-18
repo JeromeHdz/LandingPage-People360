@@ -22,7 +22,7 @@ const BookDemo = () => {
           name="description"
           content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
         />
-        <link rel="icon" href="/img/favico/favicon.ico" />
+        <link rel="icon" href="/img/ico/favicon.ico" />
       </Head>
 
       <Container className="flex flex-wrap ">
@@ -44,7 +44,7 @@ const BookDemo = () => {
                 height: "400px",
                 width: "500px",
               }}
-              url="https://calendly.com/jerome-people360"
+              url="https://calendly.com/hello-people360/30min"
             />
           </div>
         </div>

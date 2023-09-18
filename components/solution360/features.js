@@ -23,7 +23,7 @@ function Features() {
       </div>
       <div className="grid gap-8 row-gap-10 sm:grid-cols-2 lg:grid-cols-2">
         <div>
-          <h6 className="mb-2 font-semibold leading-5 ">
+          <h6 className="mb-2 text-2xl font-semibold leading-5 ">
             Audit global quantitatif et qualitatif
           </h6>
           <ul className="list-disc px-6">
@@ -42,7 +42,7 @@ function Features() {
           </ul>
         </div>
         <div>
-          <h6 className="mb-2 font-semibold leading-5 ">
+          <h6 className="mb-2 text-2xl font-semibold leading-5 ">
             Micro-audits assistés actionnables par les managers
           </h6>
           <ul className="list-disc px-6">

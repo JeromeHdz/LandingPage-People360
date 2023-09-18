@@ -62,9 +62,9 @@ const Solution360 = () => {
             subTitle={fr.Solution360.heroSection.subTitle}
           />
         </section>
-        <div className="absolute  bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-pale-salmon to-transparent z-6"></div>
+        <div className="absolute  bottom-0 left-0  right-0 h-40 bg-gradient-to-t from-pale-salmon to-transparent z-6"></div>
       </section>
-      <section className="relative w-screen bg-pale-salmon ">
+      <section className="relative md:px-24 w-screen bg-pale-salmon ">
         <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center">
           <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
           <div className=" w-full ">
@@ -73,6 +73,7 @@ const Solution360 = () => {
         </Container>
       </section>
 
+      <section>
       <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
         <SectionTitle
           className="roadmapSection py-0"
@@ -82,12 +83,33 @@ const Solution360 = () => {
         <Benefits data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
         <Benefits data={benefitThree} />
+        </Container>
+      </section>
+
+      <section className="relative w-full bg-purple-people">
+        <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left text-white">
         <Section3 />
+        </Container>
+      </section>
+
+      <section>
+        <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
         <Section4 />
+        </Container>
+      </section>
+
+      <section>
+        <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
         <CtaFooter props={fr.Solution360.ctaFooter} />
-        <Footer />
         <PopupWidget />
       </Container>
+      </section>
+      {/* FOOTER  */}
+      <section className="relative w-full bg-antique-white">
+        <Container className="flex w-full py-16 flex-col space-y-8 items-center justify-center text-center ">
+          <Footer />
+        </Container>
+      </section>
     </>
   );
 };

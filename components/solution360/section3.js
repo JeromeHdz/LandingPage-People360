@@ -27,44 +27,49 @@ function Section3() {
           </p>
         </div>
       </div>
-      <div className=" flex flex-col items-center grid gap-6 row-gap-5 text-center lg:grid-cols-2 ">
-        <div>
-          <Image
-            src="/img/solution360/workshop_01.jpg"
-            width={300}
-            height={200}
-            alt=""
-            className="mx-auto shadow-2xl rounded-2xl overflow-hidden"
-          />
-          <h5 className="mb-2 pt-8 text-xl font-bold leading-none text-center sm:text-2xl">
-            Conférences, ateliers d'experts, webinaires
-          </h5>
-          <p className="text-xl text-center">
-            Thématiques à sélectionner parmi notre catalogue ou organisation
-            sur-mesure.
-          </p>
+      <div className="flex flex-col lg:flex-row items-start justify-center gap-6 text-center">
+        <div className="w-1/2 lg:w-auto">
+          <div className="max-w-md mx-auto">
+            <Image
+              src="/img/solution360/workshop_01.jpg"
+              width={300}
+              height={200}
+              alt=""
+              className="mx-auto shadow-2xl rounded-2xl overflow-hidden"
+            />
+            <h5 className="mb-2 pt-8 text-xl font-bold leading-none text-center sm:text-2xl">
+              Conférences, ateliers d'experts, webinaires
+            </h5>
+            <p className="text-xl text-center">
+              Thématiques à sélectionner parmi notre catalogue ou organisation
+              sur-mesure.
+            </p>
+          </div>
         </div>
-        <div>
-          <Image
-            src="/img/solution360/workshop_02.jpg"
-            width={300}
-            height={200}
-            alt=""
-            className="mx-auto shadow-2xl rounded-2xl overflow-hidden"
-          />
-          <h5 className="mb-2 pt-8 text-xl font-bold leading-none sm:text-2xl">
-            Bibliothèque de contenus thématiques
-          </h5>
-          <p className="text-xl">
-            Parentalité, maternité, séparation, aidants, seniors, reconversion,
-            maladie, handicap, expatriation, impatriation, départ à la
-            retraite...
-            <br />
-            <br />
-            Accessible 24h/24
-          </p>
+        <div className="w-1/2 lg:w-auto">
+          <div className="max-w-md mx-auto">
+            <Image
+              src="/img/solution360/workshop_02.jpg"
+              width={300}
+              height={200}
+              alt=""
+              className="mx-auto shadow-2xl rounded-2xl overflow-hidden"
+            />
+            <h5 className="mb-2 pt-8 text-xl font-bold leading-none sm:text-2xl">
+              Bibliothèque de contenus thématiques
+            </h5>
+            <p className="text-xl">
+              Parentalité, maternité, séparation, aidants, seniors, reconversion,
+              maladie, handicap, expatriation, impatriation, départ à la
+              retraite...
+              <br />
+              <br />
+              Accessible 24h/24
+            </p>
+          </div>
         </div>
       </div>
+
       <div className="flex flex-col w-full mt-8 mx-auto justify-center items-center">
         <CtaSolution title={"Un atelier à organiser?"} />
       </div>
