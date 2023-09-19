@@ -7,7 +7,7 @@ const BtnNewsletter = (props) => {
       href="/"
       target="_blank"
       rel="noopener"
-      className="w-full px-2 lg:px-8 py-4 text-md md:text-lg font-medium text-center text-white bg-dark-cerulean hover:bg-orange-people rounded-xl "
+      className={` ${props.color === "dark-cerulean" ? "bg-floral-white text-dark-cerulean" : "bg-dark-cerulean"}  w-full px-2 lg:px-8 py-4 text-md md:text-lg font-medium text-center  hover:bg-orange-people rounded-xl`}
     >
       {props.title}
     </Link>

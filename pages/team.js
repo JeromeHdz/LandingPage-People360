@@ -96,7 +96,7 @@ const team = () => {
         <Container className="flex w-full flex-col space-y-8 items-center justify-center text-left ">
         <SectionTitle title={"Nos partenaires"} />
         <Customers />
-          <Footer color={"dark-cerulean"}/>
+        <Footer color={"dark-cerulean"} className='pr-3'/>
       </Container>
       </section>
     </div>
