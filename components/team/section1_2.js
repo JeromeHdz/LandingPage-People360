@@ -16,7 +16,7 @@ function section1_2() {
             <b>
               People 360 est né de la rencontre de deux entrepreneurs experts de
               la parentalité et engagés pour le bien-être au service de la
-              performance au travail{" "}
+              performance au travail
             </b>
             <br />
             <br />
