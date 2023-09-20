@@ -73,9 +73,10 @@ const Solution360 = () => {
         </Container>
       </section>
 
-      <section>
+      <section id="accompagner-individuellement">
       <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-center">
         <SectionTitle
+         
           className="roadmapSection py-0"
           pretitle=""
           title={"Accompagner individuellement"}
@@ -92,13 +93,13 @@ const Solution360 = () => {
         </Container>
       </section>
 
-      <section className="relative w-full bg-purple-people">
+      <section id="former-collectivement" className="relative w-full bg-purple-people">
         <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left text-white">
         <Section3 />
         </Container>
       </section>
 
-      <section>
+      <section id="mesurer-votre-impact">
         <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
         <Section4 />
         </Container>

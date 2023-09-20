@@ -25,19 +25,19 @@ const BookDemo = () => {
         <link rel="icon" href="/img/ico/favicon.ico" />
       </Head>
 
-      <Container className="flex flex-wrap ">
+      <Container className="flex flex-wrap  ">
         <Navbar />
-        <div className="flex items-center w-full lg:w-1/2">
+        <div className="flex items-center w-full lg:w-1/2 pt-16">
           <div className="max-w-2xl mb-8">
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white">
+            <h1 className="text-4xl font-bold leading-snug tracking-tight  lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight ">
               {fr.BookDemo.hero.catchPhrase}
             </h1>
-            <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            <p className="py-5 text-xl leading-normal lg:text-xl xl:text-2xl ">
               {fr.BookDemo.hero.tagline}
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
+        <div className="flex items-center justify-center w-full lg:w-1/2 pt-16">
           <div className="">
             <InlineWidget
               styles={{
@@ -49,7 +49,7 @@ const BookDemo = () => {
           </div>
         </div>
       </Container>
-      <Footer />
+      <Footer color={'dark-cerulean'}/>
       <PopupWidget />
     </>
   );
