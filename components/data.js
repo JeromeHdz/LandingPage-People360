@@ -30,8 +30,8 @@ import { SiYourtraveldottv } from "react-icons/si";
 import { PiHandWavingLight } from "react-icons/pi";
 
 import benefitOneImg from "../public/img/solution360/benefit-one.jpg";
-import benefitTwoImg from "../public/img/solution360/benefit-two.jpg";
-import benefitThreeImg from "../public/img/solution360/benefit-three.jpg";
+import benefitTwoImg from "../public/img/solution360/benefit-Two.jpg";
+import benefitThreeImg from "../public/img/solution360/benefit-Three.jpg";
 
 import auditImg from "../public/img/home/audit.jpg";
 import coachingImg from "../public/img/home/coaching.jpg";
