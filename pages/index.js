@@ -51,7 +51,10 @@ const Home = ({ blocks }) => {
           content="People 360 accompagne chaque collaborateur (salarié, pair, manager) aux moments adéquats, sur les bons leviers, grâce à des programmes sur-mesure."
         />
         <meta property="og:url" content="https://www.people360.fr/" />
-        <meta property="og:image" content="/img/solution360/benefit-two.jpg" />
+        <meta
+          property="og:image"
+          content="/img/solution360/benefit-three.jpg"
+        />
         <meta
           name="description"
           content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
