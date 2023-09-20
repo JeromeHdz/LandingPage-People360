@@ -9,9 +9,9 @@ import { IconContext } from "react-icons";
 const HeroCentered = (props) => {
   return (
     <div className="mx-auto">
-      <div className="grid grid-cols-1  lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         {/* First Image */}
-        <div className="block lg:hidden relative w-full h-72">
+        <div className="block lg:hidden relative w-full h-48">
           <Image
             src="/img/solution360/management.png" // Mettez le chemin vers votre nouvelle image ici
             alt="Mobile Image"
@@ -20,7 +20,9 @@ const HeroCentered = (props) => {
             className="rounded-3xl"
           />
         </div>
-        <div className="hidden lg:block relative w-full h-72 lg:h-auto">
+
+        {/* First Image - Hidden on small screens */}
+        <div className="hidden lg:block relative col-span-1 w-full h-48">
           <Image
             src="/img/solution360/management-1-orange.png"
             alt="Benefits"
@@ -31,9 +33,9 @@ const HeroCentered = (props) => {
           />
         </div>
 
-        {/* Title and Subtitle */}
-        <div className="max-w-2xl mb-10 md:mx-auto text-center lg:max-w-5xl md:mb-12">
-          <h2 className=" mt-3 text-2xl  md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-snug tracking-tight mx-6">
+        {/* Title and Subtitle - Takes 3/5 of the width */}
+        <div className="col-span-3 max-w-2xl mb-10 md:mx-auto text-center lg:max-w-5xl md:mb-12">
+          <h2 className="mt-3 text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold leading-snug tracking-tight mx-6">
             {props.title}
           </h2>
           <p className="pt-6 mt-3 text-center text-lg leading-normal mx-6">
@@ -41,8 +43,8 @@ const HeroCentered = (props) => {
           </p>
         </div>
 
-        {/* Second Image - Hide on small screens */}
-        <div className="hidden lg:block relative w-full">
+        {/* Second Image - Hidden on small screens */}
+        <div className="hidden lg:block relative col-span-1 w-full h-48 pr-8">
           <Image
             src="/img/solution360/management-2-orange.png"
             alt="Benefits"
