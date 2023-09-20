@@ -7,13 +7,13 @@ function Hero() {
     <div className="container grid gap-6 mx-auto text-white text-left lg:grid-cols-6 justify-center flex items-center h-full">
       <div className="w-full lg:col-span-3 h-full">
         <div className="w-full lg:h-full flex flex-col justify-center">
-          <h1 className="text-3xl font-extrabold dark:text-gray-50">
+          <h1 className="text-3xl font-extrabold ">
             Nous croyons que les transitions de vie des collaborateurs bien
             gérées améliorent leur bien-être et les performances d'équipe.
           </h1>
         </div>
       </div>
-      <div className="w-full lg:col-span-3 lg:pl-6 py-16 rounded-md sm:px-12 md:px-16 dark:bg-gray-900 h-full flex items-center">
+      <div className="w-full lg:col-span-3 lg:pl-6 py-16 rounded-md sm:px-12 md:px-16 h-full flex items-center">
         <Image
           src={heroImg}
           width={480}

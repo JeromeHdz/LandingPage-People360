@@ -41,6 +41,17 @@ const Home = ({ blocks }) => {
           People 360 - Une expérience sur-mesure et captivante pour vos
           collaborateurs.
         </title>
+        <meta name="description" content="People 360 Homepage" />
+        <meta
+          property="og:title"
+          content="Réenchantez les transitions de vie de vos salariés, vivez une expérience 360°"
+        />
+        <meta
+          property="og:description"
+          content="People 360 accompagne chaque collaborateur (salarié, pair, manager) aux moments adéquats, sur les bons leviers, grâce à des programmes sur-mesure."
+        />
+        <meta property="og:url" content="https://www.people360.fr/" />
+        <meta property="og:image" content="/img/solution360/benefit-one.jpg" />
         <meta
           name="description"
           content="People 360 - Une expérience sur-mesure et captivante pour vos collaborateurs."
@@ -162,7 +173,6 @@ const Home = ({ blocks }) => {
         ></SectionTitle>
         <Stat data={cleanedData} />
       </Container>
-
 
       {/* CTA FOOTER SECTION */}
       {/* FOOTER  */}
