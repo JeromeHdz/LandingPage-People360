@@ -30,8 +30,8 @@ import { SiYourtraveldottv } from "react-icons/si";
 import { PiHandWavingLight } from "react-icons/pi";
 
 import benefitOneImg from "../public/img/solution360/benefit-one.jpg";
-import benefitTwoImg from "../public/img/solution360/benefit-Two.jpg";
-import benefitThreeImg from "../public/img/solution360/benefit-Three.jpg";
+import benefitTwoImg from "../public/img/solution360/benefit-two.jpg";
+import benefitThreeImg from "../public/img/solution360/benefit-three.jpg";
 
 import auditImg from "../public/img/home/audit.jpg";
 import coachingImg from "../public/img/home/coaching.jpg";
@@ -115,8 +115,7 @@ const benefitOne = {
   desc: `<b>Individualisée: </b>: Elles impliquent les bonnes personnes. <br/><br/>
   <b>Dynamique: </b>Bien plus qu'une to do list, des notifications sont envoyées automatiquement. <br/><br/>
   <b>Complète: </b>Rappels réglementaires, quizz, bonnes pratiques, contenus informatifs<br/><br/>
-  <b>Modulable: </b>Chaque collaborateur peut adapter sa roadmap selon ses thématiques, timings et préférences. <br/><br/>`
-    ,
+  <b>Modulable: </b>Chaque collaborateur peut adapter sa roadmap selon ses thématiques, timings et préférences. <br/><br/>`,
   image: benefitOneImg,
   tags: ["Modulable", "Dynamique", "Agile"],
   ctaTitle: "Envie de tester l'une de nos roadmaps ?",
@@ -229,8 +228,7 @@ const featuresList = [
     imgLink: dashboardImg,
     icon: <MdQueryStats />,
     title: "Mesurer votre impact",
-    description:
-      "Dashboard de suivi des performances.",
+    description: "Dashboard de suivi des performances.",
     link: "/solution-360#mesurer-votre-impact",
     titleNodtionId: "3d21f0ad900341d08cea8687dda715ef",
     descriptionNotionId: "6c37feb099dd469aa5269b8fb9b3e365",
