@@ -11,12 +11,22 @@ const HeroCentered = (props) => {
     <div className="mx-auto">
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-4">
         {/* First Image */}
-        <div className="relative w-full h-72 lg:h-auto">
+        <div className="block lg:hidden relative w-full h-72">
           <Image
-            src="/img/solution360/management.png"
+            src="/img/solution360/management.png" // Mettez le chemin vers votre nouvelle image ici
+            alt="Mobile Image"
+            layout="fill"
+            objectFit="contain"
+            className="rounded-3xl"
+          />
+        </div>
+        <div className="hidden lg:block relative w-full h-72 lg:h-auto">
+          <Image
+            src="/img/solution360/management-1-orange.png"
             alt="Benefits"
             layout="fill"
             objectFit="contain"
+            objectPosition="right"
             className="rounded-3xl lg:min-h-[500px]"
           />
         </div>
@@ -34,10 +44,11 @@ const HeroCentered = (props) => {
         {/* Second Image - Hide on small screens */}
         <div className="hidden lg:block relative w-full">
           <Image
-            src="/img/solution360/coaching.png"
+            src="/img/solution360/management-2-orange.png"
             alt="Benefits"
             layout="fill"
             objectFit="contain"
+            objectPosition="left"
             className="rounded-3xl lg:min-h-[500px]"
           />
         </div>
