@@ -21,38 +21,28 @@ function section1_2() {
             <br />
             <br />
             Ingrid et Laurent ont tous deux travaillé dans des grands groupes.
-            Ils ont su analyser et comprendre les dysfonctionnements des process
-            qui impactaient négativement les équipes à chaque nouvelle
-            transition de vie. Et l'histoire se répétait inlassablement, ici et
-            ailleurs...
+            Ils ont su analyser les dysfonctionnements des process qui
+            impactaient négativement les équipes à chaque transition de vie. Et
+            l'histoire se répétait inlassablement, ici et ailleurs...
             <br />
             <br />
             Après 15 ans chez l'Oréal, Ingrid a fondé Kidd'izy, une start up
             d'utilité sociale orientée santé et bien-être. Kidd'izy Entreprise
             accompagnait les parents et Kidd’izy Médical a été un acteur
-            incontournable de la lutte contre la Covid-19 en distribuant le
-            matériel médical aux pharmacies et entreprises partenaires.
+            incontournable de la lutte contre la Covid-19.
             <br />
-            Après des années dans la formation et l'édition, notamment chez
-            Télélangue, Laurent a fondé 1001 parents, une start up dédiée à
+            Pour sa part, Laurent, après 18 ans dans la formation et l'édition
+            (Telelangue, Berlitz…), a fondé 1001 parents, start up dédiée à
             l'accompagnement des salariés parents.
             <br />
             <br />
-            Ensemble, ils ont l’ambition{" "}
-            <b>
-              d’accompagner plus largement les transitions de vie qui impactent
-              l’équilibre, l’activité et la stabilité professionnelle des
-              salariés.
-            </b>{" "}
+            Très rapidement, ils s'associent à Jérôme, l'expert de la Tech et de
+            l'IA.
             <br />
-            Et pour donner vie à leur projet, ils s'associent à Jérôme, l'expert
-            de la tech et de l'IA. Il partage avec eux cette vision du bien-être
-            qui lui a cruellement manquée en Corée.
+            Ensemble, ils ont l’ambition d’accompagner plus largement les
+            transitions de vie qui impactent l’équilibre, l’activité et la
+            stabilité professionnelle des salariés.
             <br />
-            <br />
-            Nous voilà réunis pour donner vie à un projet très ambitieux qui va
-            révolutionner la vie des entreprises, des DRH et de tous les
-            collaborateurs à l'ère post covid.
           </p>
         </div>
         <div className="mb-6 w-full md:w-1/3 flex justify-center items-center">

@@ -10,6 +10,13 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
             rel="stylesheet"
           />
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js-eu1.hs-scripts.com/143410325.js"
+          ></script>
         </Head>
         <body>
           <Main />
