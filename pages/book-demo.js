@@ -77,40 +77,41 @@ const BookDemo = () => {
         <Navbar />
 
       </Container>       
-      <section className="relative w-full h-screen px-6 md:px-16 ">
+      <section className="relative w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-16">
+        <Container className="flex z-1 w-full flex-col space-y-4 sm:space-y-8 px-4 sm:px-8 md:px-16 lg:px-32 items-center justify-center text-left ">
 
-        <Container className="flex z-1 w-full flex-col space-y-8  px-32 sm:py-0 items-center justify-center text-left ">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full pt-8 lg:pt-16 space-y-4 lg:space-y-0">
 
-          <div className="flex items-center justify-center w-full pt-16">
-
-            <div className="flex items-center w-full lg:w-1/2 pt-16">
-              <div className="max-w-2xl mb-8">
-                <h1 className="text-4xl font-bold leading-snug tracking-tight  lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight ">
-                  {fr.BookDemo.hero.catchPhrase}
-                </h1>
-                <p className="py-5 text-xl leading-normal lg:text-xl xl:text-2xl ">
-                  {fr.BookDemo.hero.tagline}
-                </p>
-              </div>
-            </div>
             {/* Bloc du widget */}
-            <div className="lg:w-1/2">
+            <div className="w-full lg:w-1/2 px-4 sm:px-0">
               <InlineWidget
                 styles={{
                   height: "400px",
-                  width: "500px",
+                  width: "100%",
+                  maxWidth: "500px",
                 }}
                 url="https://calendly.com/hello-people360/30min"
               />
             </div>
 
+            <div className="flex items-center w-full lg:w-1/2 pt-8 lg:pt-16">
+              <div className="max-w-xl mb-8 px-4 sm:px-0">
+                <h1 className="text-3xl sm:text-4xl font-bold leading-snug tracking-tight lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
+                  {fr.BookDemo.hero.catchPhrase}
+                </h1>
+                <p className="py-3 sm:py-5 text-lg sm:text-xl leading-normal lg:text-xl xl:text-2xl">
+                  {fr.BookDemo.hero.tagline}
+                </p>
+              </div>
+            </div>
+
           </div>
         </Container>
       </section>
-      <section className="relative w-full h-full px-6 md:px-16 bg-pale-salmon ">
 
+      <section className="relative w-full px-6 md:px-16 bg-pale-salmon">
         <Container className="flex z-1 w-full flex-col space-y-8 px-32 sm:py-0 items-center justify-center text-left ">
-          <div className="flex justify-center items-center w-screen h-screen">
+          <div className="flex justify-center items-center w-screen ">
             <div className="container mx-auto my-4 px-4 lg:px-20 ">
 
               <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto mt-32 rounded-2xl shadow-2xl bg-dark-cerulean">
@@ -209,8 +210,7 @@ const BookDemo = () => {
           
     </Container >
       </section >
-      <section className="relative w-full h-screen px-6 md:px-16 pt-24">
-
+      <section className="relative w-full px-6 md:px-16 pt-24">
         <Container className="flex z-1 w-full flex-col space-y-8  px-32 sm:py-0 items-center justify-center text-left ">
       <Footer color={'dark-cerulean'}/>
     </Container >

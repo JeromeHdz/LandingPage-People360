@@ -116,7 +116,7 @@ export default function Footer({color}) {
               Actualités RH, infos clés, livres blancs et webinaires,
               inscrivez-vous à notre newsletter pour rester informé.
             </div>
-            <div className={`${color === "dark-cerulean" ? "pr-3" : ""}  flex flex-col w-full mt-8 `}>
+            <div className={`${color === "dark-cerulean" ? "md:pr-3 px-6" : ""}  flex flex-col w-full mt-8 `}>
               <BtnNewsletter color={color} title={"Je m'inscris à la newsletter"} />
             </div>
           </div>

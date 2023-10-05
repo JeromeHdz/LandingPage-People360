@@ -17,11 +17,27 @@ class MyDocument extends Document {
             defer
             src="//js-eu1.hs-scripts.com/143410325.js"
           ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.axeptioSettings = {
+                  clientId: "651ed2d2126eb94c492a2785",
+                  cookiesVersion: "people360-fr",
+                };
+                (function(d, s) {
+                  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+                  e.async = true; e.src = "//static.axept.io/sdk.js";
+                  t.parentNode.insertBefore(e, t);
+                })(document, "script");
+              `,
+            }}
+          />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
+        
       </Html>
     );
   }
