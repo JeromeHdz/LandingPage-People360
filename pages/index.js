@@ -66,13 +66,13 @@ const Home = ({ blocks }) => {
       </Head>
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-screen">
+      <section className="relative w-full min-h-screen overflow-y-auto">
         <img
           src="img/home/hero.bg-sans.jpg"
           className="absolute top-0 left-0 object-cover w-full h-full z-5"
           alt="Image alt text"
         />
-        <Container className="relative flex z-10 w-full h-screen flex-col space-y-8 px-8 md:px-32 xl:px-0 max-w-screen-xl text-left">
+        <Container className="relative flex z-10 w-full flex-col space-y-8 px-8 md:px-32 xl:px-0 max-w-screen-xl text-left">
           <Navbar />
           {/* <Hero data={cleanedData} /> */}
           <Hero2 />
