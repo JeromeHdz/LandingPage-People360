@@ -8,13 +8,15 @@ function Newsletter() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log(email)
     try {
       // Make a POST request to your Strapi API to create a new subscriber
       const response = await axios.post(
         "http://localhost:1337/api/subscribers",
         {
-          email,
+          data:{
+            email,
+          }
         }
       );
 

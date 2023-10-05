@@ -49,6 +49,8 @@ const Contact = () => {
           <Navbar />
         </div>
       </Container>
+      <Container className="flex z-1 w-full flex-col space-y-8 py-46 md:py-32 px-32  sm:py-0 items-center justify-center text-left ">
+
       <section className="relative w-full h-screen ">
         <img
           src="img/solution360/hero-bg.png"
@@ -60,6 +62,8 @@ const Contact = () => {
         </section>
         <div className="absolute  bottom-0 left-0  right-0 h-40 bg-gradient-to-t from-pale-salmon to-transparent z-6"></div>
       </section>
+      </Container>
+
       <section className="relative md:px-24 w-screen bg-pale-salmon ">
         <Container className="flex z-1 w-full flex-col space-y-8 py-32 sm:py-0 items-center justify-center">
           <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-floral-white to-transparent z-6"></div>
