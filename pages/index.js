@@ -106,7 +106,7 @@ const Home = ({ blocks }) => {
         <Features data={cleanedData} />
       </Container>
       <img
-        src="img/home/feature-bottom.jpg"
+        src="img/home/feature-bottom-v4.jpg"
         className=" top-0 left-0 object-cover w-full h-full z-5"
         alt="Image alt text"
       />
