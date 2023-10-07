@@ -47,7 +47,7 @@ function section1_2() {
         </div>
         <div className="mb-6 w-full md:w-1/3 flex justify-center items-center">
           <Image
-            src="/img/team/p360-logo.png"
+            src="/img/team/p360-logo-v2.png"
             alt="logo people 360"
             width={300} // Mettez la largeur originale de l'image ici
             height={365} // Mettez la hauteur originale de l'image ici

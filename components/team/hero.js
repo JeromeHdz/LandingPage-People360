@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../../public/img/team/team2.jpg";
+import heroImg from "../../public/img/team/team3.jpg";
 import Image from "next/image";
 
 function Hero() {
