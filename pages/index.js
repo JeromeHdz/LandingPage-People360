@@ -187,7 +187,7 @@ const Home = ({ blocks }) => {
         </Container>
       </section>
 
-      <PopupWidget />
+      {/* <PopupWidget /> */}
     </>
   );
 };

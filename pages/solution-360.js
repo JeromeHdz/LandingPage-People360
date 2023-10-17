@@ -108,7 +108,7 @@ const Solution360 = () => {
       <section>
         <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
         <CtaFooter props={fr.Solution360.ctaFooter} />
-        <PopupWidget />
+        {/* <PopupWidget /> */}
       </Container>
       </section>
       {/* FOOTER  */}

@@ -5,7 +5,7 @@ import Navbar from "../components/navbar";
 import Container from "../components/container";
 import Footer from "../components/footer";
 import SectionTitle from "../components/sectionTitle"
-import PopupWidget from "../components/popupWidget";
+// import PopupWidget from "../components/popupWidget";
 
 import { BsLinkedin } from "react-icons/bs";
 import { useForm, useWatch } from "react-hook-form";
@@ -215,7 +215,7 @@ const BookDemo = () => {
       <Footer color={'dark-cerulean'}/>
     </Container >
       </section >
-      <PopupWidget />
+      {/* <PopupWidget /> */}
     </>
   );
 };
