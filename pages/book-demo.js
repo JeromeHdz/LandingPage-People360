@@ -24,43 +24,23 @@ const BookDemo = () => {
   } = useForm({
     mode: "onTouched",
   });
+
   const [isSuccess, setIsSuccess] = useState(false);
   const [Message, setMessage] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
 
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
-
-  const onSubmit = async (data, e) => {
-    console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(data, null, 2),
-    })
-      .then(async (response) => {
-        let json = await response.json();
-        if (json.success) {
-          setIsSuccess(true);
-          setMessage(json.message);
-          e.target.reset();
-          reset();
-        } else {
-          setIsSuccess(false);
-          setMessage(json.message);
-        }
-      })
-      .catch((error) => {
-        setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
-        console.log(error);
-      });
-  };
 
   async function handleFormSubmit(event) {
     console.log("handlesubmit ");
     event.preventDefault();
+
+    // Check for form errors
+    if (Object.keys(errors).length > 0) {
+      console.error("Form has errors. Not submitting.");
+      return; // exit early if there are errors
+    }
+
     const formData = new FormData(event.target);
 
     formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS);
@@ -77,9 +57,22 @@ const BookDemo = () => {
       body: json,
     });
     const result = await response.json();
+
     if (result.success) {
-      console.log(result);
+      setIsSuccess(true);
+      setMessage(result.message);
+      event.target.reset();
+      reset();
+      setShowAlert(true);
+    } else {
+      setIsSuccess(false);
+      setMessage(result.message);
+      setShowAlert(true);
     }
+
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 5000); // hides after 5 seconds
   }
 
   return (
@@ -137,7 +130,28 @@ const BookDemo = () => {
                     Contactez-nous directement
                   </h1>
                 </div>
-                <form onSubmit={handleFormSubmit}>
+                {showAlert && (
+                  <div
+                    className={`text-white px-6 py-4 border-0 rounded relative mb-4 bg-${
+                      isSuccess ? "green-500" : "red-500"
+                    }`}
+                  >
+                    <span className="text-xl inline-block mr-5 align-middle">
+                      <i className="fas fa-bell" />
+                    </span>
+                    <span className="inline-block align-middle mr-8">
+                      {Message}
+                    </span>
+                    <button
+                      className="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
+                      onClick={() => setShowAlert(false)}
+                    >
+                      <span>×</span>
+                    </button>
+                  </div>
+                )}
+
+                <form onSubmit={handleFormSubmit} id="form">
                   {/* <form onSubmit={handleSubmit(onSubmit)} noValidate id="form"> */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5  mt-5">
                     {/* <input

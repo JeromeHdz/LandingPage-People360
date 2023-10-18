@@ -1,7 +1,7 @@
 {
-  "name": "nextly-template",
+  "name": "People 360 Landing Page",
   "version": "0.1.0",
-  "description": "Nextly Landing Page Template",
+  "description": "People 360 Landing Page",
   "private": true,
   "scripts": {
     "dev": "next dev",
