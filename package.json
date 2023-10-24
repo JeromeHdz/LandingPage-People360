@@ -4,8 +4,8 @@
   "description": "People 360 Landing Page",
   "private": true,
   "scripts": {
-    "dev": "node blog/lib/jsonGenerator.js && next dev",
-    "build": "node lib/jsonGenerator.js && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start"
   },
   "repository": {
