@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@blog/*": ["blog/*"],
+      "@layouts/*": ["blog/layouts/*"],
+      "@components/*": ["blog/layouts/components/*"],
+      "@partials/*": ["blog/layouts/partials/*"],
+      "@shortcodes/*": ["blog/layouts/shortcodes/*"],
+      "@config/*": ["blog/config/*"],
+      "@json/*": ["blog/json/*"],
+      "@hooks/*": ["blog/hooks/*"],
+      "@lib/*": ["blog/lib/*"]
+    }
+  }
+}

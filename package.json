@@ -4,8 +4,8 @@
   "description": "People 360 Landing Page",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node blog/lib/jsonGenerator.js && next dev",
+    "build": "node lib/jsonGenerator.js && next build",
     "start": "next start"
   },
   "repository": {
@@ -29,14 +29,21 @@
     "@notionhq/client": "^2.2.11",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "axios": "^1.5.0",
+    "github-slugger": "^2.0.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^4.2.4",
     "next": "^13.3.1",
+    "next-mdx-remote": "^4.4.1",
     "next-themes": "^0.2.1",
     "notion-client": "^6.16.0",
     "react": "^18.2.0",
     "react-calendly": "^4.1.1",
     "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11",
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.10.1",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1",
     "scroll-carousel": "^1.2.7"
   },
   "peerDependencies": {
@@ -49,6 +56,9 @@
     "daisyui": "^3.5.0",
     "eslint-config-prettier": "^8.8.0",
     "postcss": "^8.4.23",
-    "tailwindcss": "^3.3.1"
+    "tailwindcss": "^3.3.1",
+    "sass": "^1.57.0",
+    "date-fns": "^2.29.3",
+    "date-fns-tz": "^1.3.7"
   }
 }

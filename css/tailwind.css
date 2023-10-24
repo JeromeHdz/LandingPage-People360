@@ -8,44 +8,42 @@
     /* @apply dark:bg-trueGray-900; */
     @apply bg-floral-white;
     @apply text-dark-cerulean;
-}
+  }
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 
-.left-fade,
-.right-fade {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 20%;
-  /* Adjust the width as needed */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.0) 0%, #FFBE85 100%);
-  z-index: 1;
-  animation: fadeInOut 3s linear infinite;
-  /* Adjust the animation duration as needed */
-}
+  .left-fade,
+  .right-fade {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    /* Adjust the width as needed */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #ffbe85 100%);
+    z-index: 1;
+    animation: fadeInOut 3s linear infinite;
+    /* Adjust the animation duration as needed */
+  }
 
-.left-fade {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.0) 0%, #FFBE85 100%);
-  left: 0;
-}
+  .left-fade {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #ffbe85 100%);
+    left: 0;
+  }
 
-.right-fade {
-  right: 0;
-}
+  .right-fade {
+    right: 0;
+  }
 
-@keyframes fadeInOut {
-  
-}
+  @keyframes fadeInOut {
+  }
 
   .VJL48qbQzWENTFAh1Knk e9TS9yoMqqIN2PqBo1QG f3c_Dda7HKHqraeedxG1 {
     display: none;
   }
-
 }
 
 .icon,
