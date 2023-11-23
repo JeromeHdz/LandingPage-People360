@@ -6,7 +6,7 @@ import BtnNewsletter from "./btnNewsletter";
 
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { RiHomeSmileFill } from "react-icons/ri";
-import { MdAlternateEmail } from "react-icons/md";
+import { MdAlternateEmail, MdPhone } from "react-icons/md";
 import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Footer({color}) {
@@ -81,6 +81,23 @@ export default function Footer({color}) {
                 </div>
               </a>
             </div>
+
+            <div className="flex mt-4 space-x-5">
+              <a
+                href="tel:+33661164023" // Replace with your phone number
+                target="_blank"
+                className="w-full rounded-md hover:text-light-cerulean focus:text-blue-700 focus:bg-indigo-100 focus:outline-none"
+              >
+                <div>
+                  <span className="icon">
+                    <MdPhone />
+                  </span>
+                  <span className="phone">Tel: 06 61 16 40 23</span> 
+                </div>
+              </a>
+            </div>
+
+            
             <div className="flex mt-4 space-x-5 ">
               <a
                 href="https://goo.gl/maps/qrTxBDsxQAhtyVYg8"

@@ -113,14 +113,14 @@ const BookDemo = () => {
       } else {
         console.log("Form submitted to HubSpot successfully.");
         setIsSuccess(true);
-        setMessage("Form submission successful!");
+        setMessage("Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.");
         event.target.reset();
         reset();
       }
     } catch (error) {
       console.error("Error submitting form to HubSpot:", error);
       setIsSuccess(false);
-      setMessage("Error submitting form. Please try again.");
+      setMessage("Une erreur est survenu, veuillez ressayer s'il vous palit.");
     }
 
     setShowAlert(true);
@@ -145,36 +145,8 @@ const BookDemo = () => {
       <Container className="relative flex z-10 w-full flex-col space-y-8 px-8 md:px-32 xl:px-0 max-w-screen-xl h-full text-left">
         <Navbar />
       </Container>
-      <section className="relative w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-16">
-        <Container className="flex z-1 w-full flex-col space-y-4 sm:space-y-8 px-4 sm:px-8 md:px-16 lg:px-32 items-center justify-center text-left ">
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full pt-8 lg:pt-16 space-y-4 lg:space-y-0">
-            {/* Bloc du widget */}
-            <div className="w-full lg:w-1/2 px-4 sm:px-0">
-              <InlineWidget
-                styles={{
-                  height: "400px",
-                  width: "100%",
-                  maxWidth: "500px",
-                }}
-                url="https://calendly.com/hello-people360/30min"
-              />
-            </div>
-
-            <div className="flex items-center w-full lg:w-1/2 pt-8 lg:pt-16">
-              <div className="max-w-xl mb-8 px-4 sm:px-0">
-                <h1 className="text-3xl sm:text-4xl font-bold leading-snug tracking-tight lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
-                  {fr.BookDemo.hero.catchPhrase}
-                </h1>
-                <p className="py-3 sm:py-5 text-lg sm:text-xl leading-normal lg:text-xl xl:text-2xl">
-                  {fr.BookDemo.hero.tagline}
-                </p>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="relative w-full px-6 md:px-16 bg-pale-salmon">
+      <section className="relative w-full min-h-screen px-4 sm:px-6 md:px-8 lg:px-16 ">
+       
         <Container className="flex z-1 w-full flex-col space-y-8 px-32 sm:py-0 items-center justify-center text-left ">
           <div className="flex justify-center items-center w-screen ">
             <div className="container mx-auto my-4 px-4 lg:px-20 ">
@@ -185,22 +157,20 @@ const BookDemo = () => {
                   </h1>
                 </div>
                 {showAlert && (
-                  <div
-                    className={`text-white px-6 py-4 border-0 rounded relative mb-4 bg-${
-                      isSuccess ? "green-500" : "red-500"
-                    }`}
-                  >
-                    <span className="text-xl inline-block mr-5 align-middle">
-                      <i className="fas fa-bell" />
-                    </span>
-                    <span className="inline-block align-middle mr-8">
-                    </span>
-                    <button
-                      className="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
-                      onClick={() => setShowAlert(false)}
-                    >
-                      <span></span>
-                    </button>
+                  <div className="fixed bottom-0 right-0 mb-4 mr-4 z-50 max-w-sm">
+                    <div className={`border-t-4 px-4 py-3 shadow-md rounded-b ${isSuccess ? 'bg-green-100 border-green-500 text-green-900' : 'bg-red-100 border-red-500 text-red-900'}`} role="alert">
+                      <div class="flex">
+                        <div class="py-1">
+                          <svg class={`fill-current h-6 w-6 ${isSuccess ? 'text-teal-500' : 'text-red-500'} mr-4`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            {/* Icon path here... Adjust the SVG path if you want a different icon for error */}
+                          </svg>
+                        </div>
+                        <div>
+                          <p class="font-bold">{isSuccess ? 'Success' : 'Error'}</p>
+                          <p class="text-sm">{Message}</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 )}
 
@@ -216,11 +186,10 @@ const BookDemo = () => {
                       {...register("firstname", {
                         required: "Prénom est requis.",
                       })}
-                      className={`w-full bg-floral-white ${
-                        errors.firstName
+                      className={`w-full bg-floral-white ${errors.firstName
                           ? "text-red-500 placeholder-red-500"
                           : "text-dark-cerulean"
-                      } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
+                        } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
                       type="text"
                       placeholder={
                         errors.firstName ? "Prénom est requis." : "Prénom*"
@@ -228,11 +197,10 @@ const BookDemo = () => {
                     />
                     <input
                       {...register("lastname", { required: "Nom est requis." })}
-                      className={`w-full bg-floral-white ${
-                        errors.lastName
+                      className={`w-full bg-floral-white ${errors.lastName
                           ? "text-red-500 placeholder-red-500"
                           : "text-dark-cerulean"
-                      } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
+                        } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
                       type="text"
                       placeholder={errors.lastName ? "Nom est requis." : "Nom*"}
                     />
@@ -244,11 +212,10 @@ const BookDemo = () => {
                           message: "Adresse e-mail invalide",
                         },
                       })}
-                      className={`w-full bg-floral-white ${
-                        errors.email
+                      className={`w-full bg-floral-white ${errors.email
                           ? "text-red-500 placeholder-red-500"
                           : "text-dark-cerulean"
-                      } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
+                        } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
                       type="email"
                       placeholder={
                         errors.email
@@ -260,11 +227,10 @@ const BookDemo = () => {
                       {...register("phone", {
                         required: "Téléphone est requis.",
                       })}
-                      className={`w-full bg-floral-white ${
-                        errors.phone
+                      className={`w-full bg-floral-white ${errors.phone
                           ? "text-red-500 placeholder-red-500"
                           : "text-dark-cerulean"
-                      } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
+                        } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
                       type="tel"
                       placeholder={
                         errors.phone ? "Téléphone est requis." : "Téléphone*"
@@ -276,11 +242,10 @@ const BookDemo = () => {
                       {...register("message", {
                         required: "Message est requis.",
                       })}
-                      className={`w-full bg-floral-white ${
-                        errors.message
+                      className={`w-full bg-floral-white ${errors.message
                           ? "text-red-500 placeholder-red-500"
                           : "text-dark-cerulean"
-                      } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
+                        } mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline`}
                       placeholder={
                         errors.message ? "Message est requis." : "Message*"
                       }
@@ -297,7 +262,7 @@ const BookDemo = () => {
                 </form>
               </div>
 
-              <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-floral-white rounded-2xl shadow-xl">
+              <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-floral-white rounded-2xl shadow-2xl">
                 <div className="flex flex-col text-dark-cerulean">
                   <h1 className="font-bold uppercase text-4xl my-4">
                     Visitez nos locaux
@@ -342,6 +307,35 @@ const BookDemo = () => {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="relative w-full px-6 md:px-16 bg-pale-salmon">
+        <Container className="flex z-1 w-full flex-col space-y-4 sm:space-y-8 px-4 sm:px-8 md:px-16 lg:px-32 items-center justify-center text-left ">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full pt-8 lg:pt-16 space-y-4 lg:space-y-0">
+            {/* Bloc du widget */}
+            <div className="w-full lg:w-1/2 px-4 sm:px-0">
+              <InlineWidget
+                styles={{
+                  height: "400px",
+                  width: "100%",
+                  maxWidth: "500px",
+                }}
+                url="https://calendly.com/hello-people360/30min"
+              />
+            </div>
+
+            <div className="flex items-center w-full lg:w-1/2 pt-8 lg:pt-16">
+              <div className="max-w-xl mb-8 px-4 sm:px-0">
+                <h1 className="text-3xl sm:text-4xl font-bold leading-snug tracking-tight lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
+                  {fr.BookDemo.hero.catchPhrase}
+                </h1>
+                <p className="py-3 sm:py-5 text-lg sm:text-xl leading-normal lg:text-xl xl:text-2xl">
+                  {fr.BookDemo.hero.tagline}
+                </p>
               </div>
             </div>
           </div>
