@@ -13,7 +13,7 @@ import Testimonials from "../components/testimonials";
 import CtaFooter from "../components/ctaFooter";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
-import PopupWidget from "../components/popupWidget";
+// import PopupWidget from "../components/popupWidget";
 import Newsletter from "../components/contact/newsletter";
 import Features from "../components/solution360/features";
 import Section3 from "../components/solution360/section3";
@@ -111,7 +111,7 @@ const Contact = () => {
       <section>
         <Container className="flex z-1 w-full flex-col px-6 space-y-8 py-32 sm:py-0 items-center justify-center text-left">
           <CtaFooter props={fr.Solution360.ctaFooter} />
-          <PopupWidget />
+          {/* <PopupWidget /> */}
         </Container>
       </section>
       {/* FOOTER  */}

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import Container from "../components/container";
@@ -31,18 +31,6 @@ const BookDemo = () => {
 
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
 
-  const [hutk, setHutk] = useState('');
-
-  useEffect(() => {
-    const getHubSpotTrackingCookie = () => {
-      const cookies = document.cookie.split('; ');
-      const hubspotCookie = cookies.find(row => row.startsWith('hubspotutk='));
-      return hubspotCookie ? hubspotCookie.split('=')[1] : null;
-    };
-
-    setHutk(getHubSpotTrackingCookie());
-  }, []);
-
   async function handleFormSubmit(event) {
     console.log("handlesubmit ");
     event.preventDefault();
@@ -53,80 +41,38 @@ const BookDemo = () => {
       return; // exit early if there are errors
     }
 
-    const portalId = "143410325"; // Replace with your HubSpot portal ID
-    const formGuid = "02a3fdf3-4a43-44d9-8190-dc3b03c35fc1"; // Replace with your form GUID
-    const hubspotEndpoint = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
-
     const formData = new FormData(event.target);
 
-    // Convert FormData into a simple object
-    const formObject = {};
-    formData.forEach((value, key) => { formObject[key] = value; });
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS);
 
-    // Create fields array dynamically based on the form data
-    const fields = Object.keys(formObject).map(key => ({
-      objectTypeId: "0-1", // Update this as per your form field's requirements
-      name: key,
-      value: formObject[key]
-    }));
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-    // Prepare the HubSpot request body
-    const hubspotRequestBody = {
-      submittedAt: Date.now(),
-      fields: fields,
-      context: {
-        hutk: hutk, // Replace with actual HubSpot tracking cookie value if available
-        pageUri: "https://www.people360.fr/book-demo", // Update with your page information
-        pageName: "Book-Demo" // Update with your page name
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
       },
-      // legalConsentOptions: {
-      //   consent: {
-      //     consentToProcess: true,
-      //     text: "I agree to allow Example Company to store and process my personal data.",
-      //     communications: [
-      //       {
-      //         value: true,
-      //         subscriptionTypeId: 999,
-      //         text: "I agree to receive marketing communications from Example Company."
-      //       }
-      //     ]
-      //   }
-      // }
-    };
+      body: json,
+    });
+    const result = await response.json();
 
-    // Perform the HubSpot fetch request
-    try {
-      const response = await fetch(hubspotEndpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(hubspotRequestBody),
-      });
-      const result = await response.json();
-
-      if (result.status === "error") {
-        console.error("HubSpot submission error:", result.message);
-        setIsSuccess(false);
-        setMessage(result.message);
-      } else {
-        console.log("Form submitted to HubSpot successfully.");
-        setIsSuccess(true);
-        setMessage("Form submission successful!");
-        event.target.reset();
-        reset();
-      }
-    } catch (error) {
-      console.error("Error submitting form to HubSpot:", error);
+    if (result.success) {
+      setIsSuccess(true);
+      setMessage(result.message);
+      event.target.reset();
+      reset();
+      setShowAlert(true);
+    } else {
       setIsSuccess(false);
-      setMessage("Error submitting form. Please try again.");
+      setMessage(result.message);
+      setShowAlert(true);
     }
 
-    setShowAlert(true);
     setTimeout(() => {
       setShowAlert(false);
-    }, 5000); // hides alert after 5 seconds
+    }, 5000); // hides after 5 seconds
   }
 
   return (
@@ -194,12 +140,13 @@ const BookDemo = () => {
                       <i className="fas fa-bell" />
                     </span>
                     <span className="inline-block align-middle mr-8">
+                      {x}
                     </span>
                     <button
                       className="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
                       onClick={() => setShowAlert(false)}
                     >
-                      <span></span>
+                      <span>×</span>
                     </button>
                   </div>
                 )}
