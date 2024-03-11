@@ -63,12 +63,6 @@ const Home = ({ blocks }) => {
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <script
-          async
-          dangerouslySetInnerHTML={{
-            __html: `(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='57fb48e6553f1a99b0225c5776960096cb8d1df8ae9a4a3788ee1a36cab1ac6e';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumome.com/');`,
-          }}
-        />
       </Head>
 
       {/* HERO SECTION */}
