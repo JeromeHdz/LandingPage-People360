@@ -76,8 +76,43 @@ function Customers() {
           className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
         />
       </div>
+      <div className="flex items-center justify-center">
+        <Image
+          src="/img/team/fixed/logo-lee.4286df76.svg"
+          alt="P"
+          width="175"
+          height="100"
+          className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
+        />
+      </div>
+      <div className="flex items-center justify-center">
+        <Image
+          src="/img/team/fixed/logo-footer.svg"
+          alt="P"
+          width="175"
+          height="100"
+          className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
+        />
+      </div>
+      <div className="flex items-center justify-center">
+        <Image
+          src="/img/team/fixed/happytech-logo-1024x253.png"
+          alt="P"
+          width="175"
+          height="100"
+          className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
+        />
+      </div>
+      <div className="flex items-center justify-center">
+        <Image
+          src="/img/team/fixed/cpme.svg"
+          alt="P"
+          width="175"
+          height="100"
+          className="transform hover:scale-105 grayscale hover:grayscale-0 transition-transform transition-filter"
+        />
+      </div>
     </div>
-
   );
 }
 
