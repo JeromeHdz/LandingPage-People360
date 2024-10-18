@@ -1137,9 +1137,16 @@
   .w-layout-blockcontainer {
     max-width: 728px;
   }
+  .hero-section-animation-holder {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .hero-section-animation-holder {
+    display: none !important;
+  }
+
   .w-commerce-commercelayoutcontainer {
     flex-direction: column;
     align-items: stretch;
@@ -14228,6 +14235,76 @@ blockquote {
 
   #w-node-af92bc5e-9f87-0037-b6d5-960a6e30bf57-2cd53aed {
     grid-column: span 2 / span 2;
+  }
+}
+
+/* Container principal */
+.custom-layout-blockcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flex pour chaque élément */
+.custom-data-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center; /* Centrer le texte */
+}
+
+/* Chaque item */
+.custom-data-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: none;
+  border-radius: none;
+  width: 30%; /* 30% sur les grands écrans */
+}
+
+/* Numéros avec les polices et tailles d'origine */
+.custom-data-number {
+  font-size: 4rem; /* Taille de police conservée */
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  font-family: inherit; /* Conserver la police d'origine */
+}
+
+/* Texte descriptif avec la police et taille d'origine */
+.custom-data-text {
+  font-size: 1.5rem; /* Taille de police conservée */
+  color: #333;
+  font-family: inherit; /* Conserver la police d'origine */
+  text-align: center; /* Centre le texte */
+}
+
+/* Styles pour tablette */
+@media (max-width: 991px) {
+  .custom-data-grid-item {
+    width: 45%; /* 2 éléments par ligne sur tablette */
+    justify-content: space-between; /* Espacement space-between pour 2 éléments par ligne */
+  }
+}
+
+/* Styles pour mobile */
+@media (max-width: 767px) {
+  .custom-data-grid-item {
+    width: 100%; /* 1 élément par ligne sur mobile */
+  }
+
+  .custom-data-number {
+    font-size: 3rem; /* Ajustement pour mobile */
+  }
+
+  .custom-data-text {
+    font-size: 2rem; /* Ajustement pour mobile */
   }
 }
 
